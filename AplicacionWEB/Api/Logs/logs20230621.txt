@@ -1,0 +1,4 @@
+2023-06-21 14:05:47.506 -03:00 [ERR] Ocurrio un error en el metodo InsertEmpleado: No existe ningun empleado
+2023-06-21 14:07:24.280 -03:00 [ERR] Ocurrio un error en el metodo InsertEmpleado: No existe ningun empleado
+2023-06-21 14:07:25.942 -03:00 [ERR] Ocurrio un error en el metodo InsertEmpleado: No existe ningun empleado
+2023-06-21 14:07:26.811 -03:00 [ERR] Ocurrio un error en el metodo InsertEmpleado: No existe ningun empleado
