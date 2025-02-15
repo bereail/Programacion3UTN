@@ -82,7 +82,7 @@
           <mxGeometry x="-5" y="145" width="290" height="30" as="geometry" />
         </mxCell>
         <mxCell id="zpRsEXmZ7y7rmX2nnbqE-37" value="ORDER_DETAILS" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="380" y="530" width="250" height="215" as="geometry" />
+          <mxGeometry x="380" y="530" width="250" height="160" as="geometry" />
         </mxCell>
         <mxCell id="zpRsEXmZ7y7rmX2nnbqE-38" value="OrderDetailId (PK)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="zpRsEXmZ7y7rmX2nnbqE-37" vertex="1">
           <mxGeometry x="5" y="40" width="120" height="30" as="geometry" />
@@ -95,9 +95,6 @@
         </mxCell>
         <mxCell id="zpRsEXmZ7y7rmX2nnbqE-41" value="Quantity" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="zpRsEXmZ7y7rmX2nnbqE-37" vertex="1">
           <mxGeometry y="130" width="70" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="mvwaZfpoOtb_v0eCeMUj-12" value="Subtotal -&amp;gt; ( Quantity * Price )" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="zpRsEXmZ7y7rmX2nnbqE-37">
-          <mxGeometry x="5" y="160" width="180" height="30" as="geometry" />
         </mxCell>
         <mxCell id="mvwaZfpoOtb_v0eCeMUj-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.003;entryY=-0.1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="mvwaZfpoOtb_v0eCeMUj-3" target="mvwaZfpoOtb_v0eCeMUj-1">
           <mxGeometry relative="1" as="geometry">
