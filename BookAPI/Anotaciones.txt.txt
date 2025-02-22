@@ -1,0 +1,42 @@
+• Repository
+Propósito:
+Se encarga de la interacción directa con la base de datos. Es el lugar donde se realizan las operaciones CRUD (crear, leer, actualizar, eliminar) sobre las entidades.
+
+
+• Service
+Propósito:
+Manejar la lógica de negocio de la aplicación. Coordina y orquesta las operaciones que pueden involucrar uno o más repositorios, validaciones, reglas de negocio y transformaciones (como el mapeo de entidades a DTOs).
+
+
+
+. IUserRepository en Domain.Interfaces
+ - Define la abstracción de acceso a datos (Repository Pattern), es decir, cómo interactuar con la base de datos 
+o la fuente de datos sin depender de una implementación concreta.
+ - Se encarga de las operaciones CRUD específicas de User (GetAllUsers, GetUserById, AddUser, UpdateUser, DeleteUser).
+ - Depende solo del dominio (Domain.Entities.User) y no de ninguna tecnología específica como bases de datos, frameworks, etc.
+
+. IUserService en Application.Data.Interfaces
+  - Define la lógica de negocio y las reglas específicas para manejar usuarios dentro del sistema.
+  - Usa IUserRepository internamente para interactuar con los datos.
+  - Se enfoca en la coordinación de operaciones, validaciones y reglas de negocio
+
+📌 ¿Por qué esta separación?
+Principio de responsabilidad única (SRP - SOLID)
+
+IUserRepository maneja la persistencia de datos.
+IUserService maneja la lógica de negocio.
+
+Desacoplamiento entre capas
+
+IUserRepository solo sabe de los datos y no de la lógica de la aplicación.
+IUserService usa IUserRepository y puede cambiar la lógica sin afectar la capa de acceso a datos.
+
+📌 Resumen
+✅ IUserRepository: Definido en Domain.Interfaces, se encarga de la persistencia de datos.
+✅ IUserService: Definido en Application.Data.Interfaces, maneja la lógica de negocio y usa IUserRepository internamente.
+
+📌 Ventajas:
+
+UserController no tiene lógica de negocio.
+UserService maneja validaciones antes de eliminar.
+UserRepository solo ejecuta la acción en la base de datos.

@@ -1,0 +1,1064 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\UTN\\Prog3\\BookAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|e:\\utn\\prog3\\bookapi\\application\\data\\services\\usercomparisonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\data\\services\\usercomparisonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|e:\\utn\\prog3\\bookapi\\bookapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|solutionrelative:bookapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|e:\\utn\\prog3\\bookapi\\bookapi\\controllers\\autenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|solutionrelative:bookapi\\controllers\\autenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|e:\\utn\\prog3\\bookapi\\domain\\interfaces\\iusercomparisonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\iusercomparisonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1B539F4-C5F6-4E56-B9B6-31C143E1C5F6}|Infraestructure\\Infraestructure.csproj|e:\\utn\\prog3\\bookapi\\infraestructure\\repositories\\usercomparerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1B539F4-C5F6-4E56-B9B6-31C143E1C5F6}|Infraestructure\\Infraestructure.csproj|solutionrelative:infraestructure\\repositories\\usercomparerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1B539F4-C5F6-4E56-B9B6-31C143E1C5F6}|Infraestructure\\Infraestructure.csproj|e:\\utn\\prog3\\bookapi\\infraestructure\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1B539F4-C5F6-4E56-B9B6-31C143E1C5F6}|Infraestructure\\Infraestructure.csproj|solutionrelative:infraestructure\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|e:\\utn\\prog3\\bookapi\\application\\data\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\data\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|e:\\utn\\prog3\\bookapi\\bookapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|solutionrelative:bookapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|e:\\utn\\prog3\\bookapi\\domain\\enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|solutionrelative:domain\\enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|e:\\utn\\prog3\\bookapi\\domain\\models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|solutionrelative:domain\\models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1B539F4-C5F6-4E56-B9B6-31C143E1C5F6}|Infraestructure\\Infraestructure.csproj|e:\\utn\\prog3\\bookapi\\infraestructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1B539F4-C5F6-4E56-B9B6-31C143E1C5F6}|Infraestructure\\Infraestructure.csproj|solutionrelative:infraestructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|e:\\utn\\prog3\\bookapi\\domain\\models\\authenticationrequestbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|solutionrelative:domain\\models\\authenticationrequestbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|e:\\utn\\prog3\\bookapi\\application\\data\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\data\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|e:\\utn\\prog3\\bookapi\\domain\\interfaces\\icustomauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\icustomauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1B539F4-C5F6-4E56-B9B6-31C143E1C5F6}|Infraestructure\\Infraestructure.csproj|e:\\utn\\prog3\\bookapi\\infraestructure\\repositories\\authenticationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1B539F4-C5F6-4E56-B9B6-31C143E1C5F6}|Infraestructure\\Infraestructure.csproj|solutionrelative:infraestructure\\repositories\\authenticationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|e:\\utn\\prog3\\bookapi\\bookapi\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|solutionrelative:bookapi\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1B539F4-C5F6-4E56-B9B6-31C143E1C5F6}|Infraestructure\\Infraestructure.csproj|e:\\utn\\prog3\\bookapi\\infraestructure\\repositories\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1B539F4-C5F6-4E56-B9B6-31C143E1C5F6}|Infraestructure\\Infraestructure.csproj|solutionrelative:infraestructure\\repositories\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|e:\\utn\\prog3\\bookapi\\domain\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|e:\\utn\\prog3\\bookapi\\application\\data\\services\\saleorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\data\\services\\saleorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|e:\\utn\\prog3\\bookapi\\domain\\interfaces\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|e:\\utn\\prog3\\bookapi\\domain\\models\\verifyaccountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|solutionrelative:domain\\models\\verifyaccountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|e:\\utn\\prog3\\bookapi\\domain\\interfaces\\igenerateverificationtokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\igenerateverificationtokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|e:\\utn\\prog3\\bookapi\\domain\\models\\authenticationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|solutionrelative:domain\\models\\authenticationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|e:\\utn\\prog3\\bookapi\\bookapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|solutionrelative:bookapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|e:\\utn\\prog3\\bookapi\\domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|solutionrelative:domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|e:\\utn\\prog3\\bookapi\\application\\data\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\data\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|e:\\utn\\prog3\\bookapi\\bookapi\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|solutionrelative:bookapi\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|e:\\utn\\prog3\\bookapi\\domain\\interfaces\\iclientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\iclientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|e:\\utn\\prog3\\bookapi\\application\\data\\services\\clientservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\data\\services\\clientservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|e:\\utn\\prog3\\bookapi\\domain\\interfaces\\isaleorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\isaleorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|e:\\utn\\prog3\\bookapi\\domain\\models\\entities\\saleorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|solutionrelative:domain\\models\\entities\\saleorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|e:\\utn\\prog3\\bookapi\\application\\dtos\\userdto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\dtos\\userdto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|e:\\utn\\prog3\\bookapi\\application\\automapperprofiles\\usermappingprogile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\automapperprofiles\\usermappingprogile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|e:\\utn\\prog3\\bookapi\\application\\dtos\\userdto\\userforupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\dtos\\userdto\\userforupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|e:\\utn\\prog3\\bookapi\\application\\dtos\\saleorderdtos\\saleordertocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\dtos\\saleorderdtos\\saleordertocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|e:\\utn\\prog3\\bookapi\\application\\automapperprofiles\\saleorderprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\automapperprofiles\\saleorderprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|e:\\utn\\prog3\\bookapi\\application\\automapperprofiles\\productprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\automapperprofiles\\productprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|e:\\utn\\prog3\\bookapi\\application\\automapperprofiles\\clientprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\automapperprofiles\\clientprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|e:\\utn\\prog3\\bookapi\\application\\automapperprofiles\\adminprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\automapperprofiles\\adminprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|e:\\utn\\prog3\\bookapi\\bookapi\\controllers\\saleordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|solutionrelative:bookapi\\controllers\\saleordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|e:\\utn\\prog3\\bookapi\\application\\data\\services\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\data\\services\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|e:\\utn\\prog3\\bookapi\\application\\data\\services\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\data\\services\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1B539F4-C5F6-4E56-B9B6-31C143E1C5F6}|Infraestructure\\Infraestructure.csproj|e:\\utn\\prog3\\bookapi\\infraestructure\\repositories\\saleorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1B539F4-C5F6-4E56-B9B6-31C143E1C5F6}|Infraestructure\\Infraestructure.csproj|solutionrelative:infraestructure\\repositories\\saleorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1B539F4-C5F6-4E56-B9B6-31C143E1C5F6}|Infraestructure\\Infraestructure.csproj|e:\\utn\\prog3\\bookapi\\infraestructure\\repositories\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1B539F4-C5F6-4E56-B9B6-31C143E1C5F6}|Infraestructure\\Infraestructure.csproj|solutionrelative:infraestructure\\repositories\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1B539F4-C5F6-4E56-B9B6-31C143E1C5F6}|Infraestructure\\Infraestructure.csproj|e:\\utn\\prog3\\bookapi\\infraestructure\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1B539F4-C5F6-4E56-B9B6-31C143E1C5F6}|Infraestructure\\Infraestructure.csproj|solutionrelative:infraestructure\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|e:\\utn\\prog3\\bookapi\\bookapi\\migrations\\20250219203008_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|solutionrelative:bookapi\\migrations\\20250219203008_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\UTN\\Prog3\\BookAPI\\BookAPI\\Migrations\\20250219202738_initialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BookAPI\\Migrations\\20250219202738_initialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|e:\\utn\\prog3\\bookapi\\domain\\models\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|solutionrelative:domain\\models\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|e:\\utn\\prog3\\bookapi\\domain\\models\\entities\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|solutionrelative:domain\\models\\entities\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|e:\\utn\\prog3\\bookapi\\domain\\models\\entities\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|solutionrelative:domain\\models\\entities\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\UTN\\Prog3\\BookAPI\\BookAPI\\Migrations\\20250219193824_initialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BookAPI\\Migrations\\20250219193824_initialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\UTN\\Prog3\\BookAPI\\BookAPI\\Migrations\\20250219193359_initialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BookAPI\\Migrations\\20250219193359_initialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\UTN\\Prog3\\BookAPI\\BookAPI\\Migrations\\20250219171901_initialMigrationDb2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BookAPI\\Migrations\\20250219171901_initialMigrationDb2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\UTN\\Prog3\\BookAPI\\BookAPI\\Migrations\\20250219171604_initialMigrationDb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BookAPI\\Migrations\\20250219171604_initialMigrationDb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|e:\\utn\\prog3\\bookapi\\bookapi\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|solutionrelative:bookapi\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|e:\\utn\\prog3\\bookapi\\application\\dtos\\saleorderdtos\\saleorderstatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\dtos\\saleorderdtos\\saleorderstatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|e:\\utn\\prog3\\bookapi\\application\\dtos\\saleorderdtos\\saleorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\dtos\\saleorderdtos\\saleorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|e:\\utn\\prog3\\bookapi\\application\\dtos\\clientdtos\\clienttocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\dtos\\clientdtos\\clienttocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|e:\\utn\\prog3\\bookapi\\application\\dtos\\clientdtos\\clientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\dtos\\clientdtos\\clientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|e:\\utn\\prog3\\bookapi\\application\\dtos\\bookdtos\\bookstockdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\dtos\\bookdtos\\bookstockdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|e:\\utn\\prog3\\bookapi\\application\\dtos\\bookdtos\\booktocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\dtos\\bookdtos\\booktocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|e:\\utn\\prog3\\bookapi\\application\\dtos\\bookdtos\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\dtos\\bookdtos\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\BookAPI\\Program.cs",
+              "RelativeDocumentMoniker": "BookAPI\\Program.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\BookAPI\\Program.cs",
+              "RelativeToolTip": "BookAPI\\Program.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAIwFMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T19:38:40.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\BookAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "BookAPI\\appsettings.json",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\BookAPI\\appsettings.json",
+              "RelativeToolTip": "BookAPI\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-22T17:05:29.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IUserComparisonRepository.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Interfaces\\IUserComparisonRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\IUserComparisonRepository.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Interfaces\\IUserComparisonRepository.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\IUserComparisonRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T20:40:41.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserComparisonService.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Application\\Data\\Services\\UserComparisonService.cs",
+              "RelativeDocumentMoniker": "Application\\Data\\Services\\UserComparisonService.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Application\\Data\\Services\\UserComparisonService.cs*",
+              "RelativeToolTip": "Application\\Data\\Services\\UserComparisonService.cs*",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAowB0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T20:41:20.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserCompareRepository.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Infraestructure\\Repositories\\UserCompareRepository.cs",
+              "RelativeDocumentMoniker": "Infraestructure\\Repositories\\UserCompareRepository.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Infraestructure\\Repositories\\UserCompareRepository.cs",
+              "RelativeToolTip": "Infraestructure\\Repositories\\UserCompareRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T21:08:35.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserServices.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Application\\Data\\Services\\UserServices.cs",
+              "RelativeDocumentMoniker": "Application\\Data\\Services\\UserServices.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Application\\Data\\Services\\UserServices.cs",
+              "RelativeToolTip": "Application\\Data\\Services\\UserServices.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAawBMAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T19:32:01.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationContext.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Infraestructure\\ApplicationContext.cs",
+              "RelativeDocumentMoniker": "Infraestructure\\ApplicationContext.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Infraestructure\\ApplicationContext.cs",
+              "RelativeToolTip": "Infraestructure\\ApplicationContext.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwAcAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T10:07:56.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AutenticationController.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\BookAPI\\Controllers\\AutenticationController.cs",
+              "RelativeDocumentMoniker": "BookAPI\\Controllers\\AutenticationController.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\BookAPI\\Controllers\\AutenticationController.cs",
+              "RelativeToolTip": "BookAPI\\Controllers\\AutenticationController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T19:31:11.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ICustomAuthenticationService.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Interfaces\\ICustomAuthenticationService.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\ICustomAuthenticationService.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Interfaces\\ICustomAuthenticationService.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\ICustomAuthenticationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T20:49:43.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Enums\\UserRole.cs",
+              "RelativeDocumentMoniker": "Domain\\Enums\\UserRole.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Enums\\UserRole.cs",
+              "RelativeToolTip": "Domain\\Enums\\UserRole.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T20:42:09.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Models\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Entities\\User.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Models\\Entities\\User.cs",
+              "RelativeToolTip": "Domain\\Models\\Entities\\User.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBwAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T10:06:06.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AuthenticationRequestBody.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Models\\AuthenticationRequestBody.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\AuthenticationRequestBody.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Models\\AuthenticationRequestBody.cs",
+              "RelativeToolTip": "Domain\\Models\\AuthenticationRequestBody.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T17:52:50.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Application\\Data\\Services\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "Application\\Data\\Services\\AuthenticationService.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Application\\Data\\Services\\AuthenticationService.cs",
+              "RelativeToolTip": "Application\\Data\\Services\\AuthenticationService.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T17:24:35.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Infraestructure\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Infraestructure\\Repositories\\UserRepository.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Infraestructure\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "Infraestructure\\Repositories\\UserRepository.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAEEAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T19:27:57.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AuthenticationRepository.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Infraestructure\\Repositories\\AuthenticationRepository.cs",
+              "RelativeDocumentMoniker": "Infraestructure\\Repositories\\AuthenticationRepository.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Infraestructure\\Repositories\\AuthenticationRepository.cs",
+              "RelativeToolTip": "Infraestructure\\Repositories\\AuthenticationRepository.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAowBMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T21:05:49.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T10:06:53.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\BookAPI\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "BookAPI\\Controllers\\BooksController.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\BookAPI\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "BookAPI\\Controllers\\BooksController.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAAEoAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T14:02:47.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SaleOrderRepository.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Application\\Data\\Services\\SaleOrderRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Data\\Services\\SaleOrderRepository.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Application\\Data\\Services\\SaleOrderRepository.cs",
+              "RelativeToolTip": "Application\\Data\\Services\\SaleOrderRepository.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAAACgAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T13:35:45.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ClientRepository.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Infraestructure\\Repositories\\ClientRepository.cs",
+              "RelativeDocumentMoniker": "Infraestructure\\Repositories\\ClientRepository.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Infraestructure\\Repositories\\ClientRepository.cs",
+              "RelativeToolTip": "Infraestructure\\Repositories\\ClientRepository.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T13:26:51.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IAuthenticationService.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Interfaces\\IAuthenticationService.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\IAuthenticationService.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Interfaces\\IAuthenticationService.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\IAuthenticationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T17:22:43.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "VerifyAccountDto.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Models\\VerifyAccountDto.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\VerifyAccountDto.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Models\\VerifyAccountDto.cs",
+              "RelativeToolTip": "Domain\\Models\\VerifyAccountDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T20:51:34.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IGenerateVerificationTokenService.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Interfaces\\IGenerateVerificationTokenService.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\IGenerateVerificationTokenService.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Interfaces\\IGenerateVerificationTokenService.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\IGenerateVerificationTokenService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T20:50:34.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AuthenticationResult.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Models\\AuthenticationResult.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\AuthenticationResult.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Models\\AuthenticationResult.cs",
+              "RelativeToolTip": "Domain\\Models\\AuthenticationResult.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T20:38:12.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\BookAPI\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "BookAPI\\Controllers\\UserController.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\BookAPI\\Controllers\\UserController.cs",
+              "RelativeToolTip": "BookAPI\\Controllers\\UserController.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAwwAEAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T19:37:10.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Domain.csproj",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Domain.csproj",
+              "RelativeDocumentMoniker": "Domain\\Domain.csproj",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Domain.csproj",
+              "RelativeToolTip": "Domain\\Domain.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-19T10:04:30.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IClientRepository.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Interfaces\\IClientRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\IClientRepository.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Interfaces\\IClientRepository.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\IClientRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T14:18:52.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ClientController.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\BookAPI\\Controllers\\ClientController.cs",
+              "RelativeDocumentMoniker": "BookAPI\\Controllers\\ClientController.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\BookAPI\\Controllers\\ClientController.cs",
+              "RelativeToolTip": "BookAPI\\Controllers\\ClientController.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAgwCUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T19:36:45.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AdminService.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Application\\Data\\Services\\AdminService.cs",
+              "RelativeDocumentMoniker": "Application\\Data\\Services\\AdminService.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Application\\Data\\Services\\AdminService.cs",
+              "RelativeToolTip": "Application\\Data\\Services\\AdminService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T22:04:29.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ClientServices.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Application\\Data\\Services\\ClientServices.cs",
+              "RelativeDocumentMoniker": "Application\\Data\\Services\\ClientServices.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Application\\Data\\Services\\ClientServices.cs",
+              "RelativeToolTip": "Application\\Data\\Services\\ClientServices.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T13:35:58.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "SaleOrder.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Models\\Entities\\SaleOrder.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Entities\\SaleOrder.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Models\\Entities\\SaleOrder.cs",
+              "RelativeToolTip": "Domain\\Models\\Entities\\SaleOrder.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAtwBIAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T10:06:51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "UserForUpdateRequest.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Application\\Dtos\\UserDto\\UserForUpdateRequest.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\UserDto\\UserForUpdateRequest.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Application\\Dtos\\UserDto\\UserForUpdateRequest.cs",
+              "RelativeToolTip": "Application\\Dtos\\UserDto\\UserForUpdateRequest.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T14:04:39.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ISaleOrderRepository.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Interfaces\\ISaleOrderRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\ISaleOrderRepository.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Interfaces\\ISaleOrderRepository.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\ISaleOrderRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T14:18:39.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Application\\Dtos\\UserDto\\UserDto.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\UserDto\\UserDto.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Application\\Dtos\\UserDto\\UserDto.cs",
+              "RelativeToolTip": "Application\\Dtos\\UserDto\\UserDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T14:03:01.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "UserMappingProgile.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Application\\AutoMapperProfiles\\UserMappingProgile.cs",
+              "RelativeDocumentMoniker": "Application\\AutoMapperProfiles\\UserMappingProgile.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Application\\AutoMapperProfiles\\UserMappingProgile.cs",
+              "RelativeToolTip": "Application\\AutoMapperProfiles\\UserMappingProgile.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T14:25:17.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "SaleOrderProfile.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Application\\AutoMapperProfiles\\SaleOrderProfile.cs",
+              "RelativeDocumentMoniker": "Application\\AutoMapperProfiles\\SaleOrderProfile.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Application\\AutoMapperProfiles\\SaleOrderProfile.cs",
+              "RelativeToolTip": "Application\\AutoMapperProfiles\\SaleOrderProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T13:50:41.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ProductProfile.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Application\\AutoMapperProfiles\\ProductProfile.cs",
+              "RelativeDocumentMoniker": "Application\\AutoMapperProfiles\\ProductProfile.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Application\\AutoMapperProfiles\\ProductProfile.cs",
+              "RelativeToolTip": "Application\\AutoMapperProfiles\\ProductProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T13:50:32.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ClientProfile.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Application\\AutoMapperProfiles\\ClientProfile.cs",
+              "RelativeDocumentMoniker": "Application\\AutoMapperProfiles\\ClientProfile.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Application\\AutoMapperProfiles\\ClientProfile.cs",
+              "RelativeToolTip": "Application\\AutoMapperProfiles\\ClientProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T13:50:21.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "AdminProfile.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Application\\AutoMapperProfiles\\AdminProfile.cs",
+              "RelativeDocumentMoniker": "Application\\AutoMapperProfiles\\AdminProfile.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Application\\AutoMapperProfiles\\AdminProfile.cs",
+              "RelativeToolTip": "Application\\AutoMapperProfiles\\AdminProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T13:50:08.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "SaleOrderToCreateDTO.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Application\\Dtos\\SaleOrderDTOs\\SaleOrderToCreateDTO.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\SaleOrderDTOs\\SaleOrderToCreateDTO.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Application\\Dtos\\SaleOrderDTOs\\SaleOrderToCreateDTO.cs",
+              "RelativeToolTip": "Application\\Dtos\\SaleOrderDTOs\\SaleOrderToCreateDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T19:36:29.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "BookRepository.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Application\\Data\\Services\\BookRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Data\\Services\\BookRepository.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Application\\Data\\Services\\BookRepository.cs",
+              "RelativeToolTip": "Application\\Data\\Services\\BookRepository.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAIwB8AAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T13:36:04.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Application\\Data\\Services\\Repository.cs",
+              "RelativeDocumentMoniker": "Application\\Data\\Services\\Repository.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Application\\Data\\Services\\Repository.cs",
+              "RelativeToolTip": "Application\\Data\\Services\\Repository.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwB0AAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T13:30:44.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "SaleOrderController.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\BookAPI\\Controllers\\SaleOrderController.cs",
+              "RelativeDocumentMoniker": "BookAPI\\Controllers\\SaleOrderController.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\BookAPI\\Controllers\\SaleOrderController.cs",
+              "RelativeToolTip": "BookAPI\\Controllers\\SaleOrderController.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAIwE4AAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T19:30:29.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Infraestructure\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "Infraestructure\\Repositories\\Repository.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Infraestructure\\Repositories\\Repository.cs",
+              "RelativeToolTip": "Infraestructure\\Repositories\\Repository.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAqwAUAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T13:30:00.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "SaleOrderRepository.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Infraestructure\\Repositories\\SaleOrderRepository.cs",
+              "RelativeDocumentMoniker": "Infraestructure\\Repositories\\SaleOrderRepository.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Infraestructure\\Repositories\\SaleOrderRepository.cs",
+              "RelativeToolTip": "Infraestructure\\Repositories\\SaleOrderRepository.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAgwCQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T13:27:11.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "BookRepository.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Infraestructure\\Repositories\\BookRepository.cs",
+              "RelativeDocumentMoniker": "Infraestructure\\Repositories\\BookRepository.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Infraestructure\\Repositories\\BookRepository.cs",
+              "RelativeToolTip": "Infraestructure\\Repositories\\BookRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAUwBwAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T13:25:20.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "20250219203008_initialMigration.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\BookAPI\\Migrations\\20250219203008_initialMigration.cs",
+              "RelativeDocumentMoniker": "BookAPI\\Migrations\\20250219203008_initialMigration.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\BookAPI\\Migrations\\20250219203008_initialMigration.cs",
+              "RelativeToolTip": "BookAPI\\Migrations\\20250219203008_initialMigration.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAgwCUAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T20:30:08.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "20250219193824_initialMigration.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\BookAPI\\Migrations\\20250219193824_initialMigration.cs",
+              "RelativeDocumentMoniker": "BookAPI\\Migrations\\20250219193824_initialMigration.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\BookAPI\\Migrations\\20250219193824_initialMigration.cs",
+              "RelativeToolTip": "BookAPI\\Migrations\\20250219193824_initialMigration.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T19:38:25.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Models\\Entities\\Admin.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Entities\\Admin.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Models\\Entities\\Admin.cs",
+              "RelativeToolTip": "Domain\\Models\\Entities\\Admin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T20:14:18.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Client.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Models\\Entities\\Client.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Entities\\Client.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Models\\Entities\\Client.cs",
+              "RelativeToolTip": "Domain\\Models\\Entities\\Client.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T20:15:11.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "20250219202738_initialMigration.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\BookAPI\\Migrations\\20250219202738_initialMigration.cs",
+              "RelativeDocumentMoniker": "BookAPI\\Migrations\\20250219202738_initialMigration.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\BookAPI\\Migrations\\20250219202738_initialMigration.cs",
+              "RelativeToolTip": "BookAPI\\Migrations\\20250219202738_initialMigration.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T20:27:38.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "20250219171901_initialMigrationDb2.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\BookAPI\\Migrations\\20250219171901_initialMigrationDb2.cs",
+              "RelativeDocumentMoniker": "BookAPI\\Migrations\\20250219171901_initialMigrationDb2.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\BookAPI\\Migrations\\20250219171901_initialMigrationDb2.cs",
+              "RelativeToolTip": "BookAPI\\Migrations\\20250219171901_initialMigrationDb2.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T17:19:01.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Book.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Models\\Entities\\Book.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Entities\\Book.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Models\\Entities\\Book.cs",
+              "RelativeToolTip": "Domain\\Models\\Entities\\Book.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAqwAYAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T10:06:30.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "20250219171604_initialMigrationDb.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\BookAPI\\Migrations\\20250219171604_initialMigrationDb.cs",
+              "RelativeDocumentMoniker": "BookAPI\\Migrations\\20250219171604_initialMigrationDb.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\BookAPI\\Migrations\\20250219171604_initialMigrationDb.cs",
+              "RelativeToolTip": "BookAPI\\Migrations\\20250219171604_initialMigrationDb.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T17:16:05.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "20250219193359_initialMigration.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\BookAPI\\Migrations\\20250219193359_initialMigration.cs",
+              "RelativeDocumentMoniker": "BookAPI\\Migrations\\20250219193359_initialMigration.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\BookAPI\\Migrations\\20250219193359_initialMigration.cs",
+              "RelativeToolTip": "BookAPI\\Migrations\\20250219193359_initialMigration.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T19:34:00.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "SaleOrderStatusDTO.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Application\\Dtos\\SaleOrderDTOs\\SaleOrderStatusDTO.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\SaleOrderDTOs\\SaleOrderStatusDTO.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Application\\Dtos\\SaleOrderDTOs\\SaleOrderStatusDTO.cs",
+              "RelativeToolTip": "Application\\Dtos\\SaleOrderDTOs\\SaleOrderStatusDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T19:36:22.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "SaleOrderDTO.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Application\\Dtos\\SaleOrderDTOs\\SaleOrderDTO.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\SaleOrderDTOs\\SaleOrderDTO.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Application\\Dtos\\SaleOrderDTOs\\SaleOrderDTO.cs",
+              "RelativeToolTip": "Application\\Dtos\\SaleOrderDTOs\\SaleOrderDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T19:36:17.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "ClientToCreateDTO.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Application\\Dtos\\ClientDTOs\\ClientToCreateDTO.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\ClientDTOs\\ClientToCreateDTO.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Application\\Dtos\\ClientDTOs\\ClientToCreateDTO.cs",
+              "RelativeToolTip": "Application\\Dtos\\ClientDTOs\\ClientToCreateDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T19:36:14.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\BookAPI\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "BookAPI\\Controllers\\AdminController.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\BookAPI\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "BookAPI\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAcwE0AAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T19:36:33.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "ClientDTO.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Application\\Dtos\\ClientDTOs\\ClientDTO.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\ClientDTOs\\ClientDTO.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Application\\Dtos\\ClientDTOs\\ClientDTO.cs",
+              "RelativeToolTip": "Application\\Dtos\\ClientDTOs\\ClientDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T19:29:21.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "BookToCreateDTO.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Application\\Dtos\\BookDTOs\\BookToCreateDTO.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\BookDTOs\\BookToCreateDTO.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Application\\Dtos\\BookDTOs\\BookToCreateDTO.cs",
+              "RelativeToolTip": "Application\\Dtos\\BookDTOs\\BookToCreateDTO.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAD4vwsAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T19:29:16.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "BookStockDTO.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Application\\Dtos\\BookDTOs\\BookStockDTO.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\BookDTOs\\BookStockDTO.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Application\\Dtos\\BookDTOs\\BookStockDTO.cs",
+              "RelativeToolTip": "Application\\Dtos\\BookDTOs\\BookStockDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T19:29:14.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "BookDTO.cs",
+              "DocumentMoniker": "E:\\UTN\\Prog3\\BookAPI\\Application\\Dtos\\BookDTOs\\BookDTO.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\BookDTOs\\BookDTO.cs",
+              "ToolTip": "E:\\UTN\\Prog3\\BookAPI\\Application\\Dtos\\BookDTOs\\BookDTO.cs",
+              "RelativeToolTip": "Application\\Dtos\\BookDTOs\\BookDTO.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAUwBQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T19:28:17.594Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

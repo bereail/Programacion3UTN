@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "t1ZwrQLUMUh6YmCVDiOYf2/nzWbfv+dUNBDddCw9SXWPa6Wg0vAFWjC8ksuIbrI/ZUoVuSbyOTmwijT8n8jOQA==",
+  "success": true,
+  "projectFilePath": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.31\\microsoft.windowsdesktop.app.ref.6.0.31.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.31\\microsoft.netcore.app.ref.6.0.31.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.31\\microsoft.aspnetcore.app.ref.6.0.31.nupkg.sha512"
+  ],
+  "logs": []
+}
