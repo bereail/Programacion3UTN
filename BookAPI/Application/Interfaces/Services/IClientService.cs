@@ -1,0 +1,20 @@
+﻿using Application.Dtos.ClientDTOs;
+using Application.Dtos.SaleOrderDTOs;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Application.Interfaces.Services
+{
+    public interface IClientService : IUserService
+    {
+        public ClientDTO AddClient(ClientToCreateDTO clientToCreateDTO);
+
+        public ICollection<SaleOrderDTO> GetClientSaleOrders(int clientId);
+
+        public void UpdateClient(ClientToUpdateDTO clientToUpdateDTO, int clietId);
+
+    }
+}

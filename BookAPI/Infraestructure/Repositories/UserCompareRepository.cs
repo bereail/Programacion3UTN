@@ -1,4 +1,4 @@
-﻿using Domain.Interfaces;
+﻿/*using Application.Interfaces.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,10 +33,11 @@ namespace Infraestructure.Repositories
                 Console.WriteLine($"User ID in Claims: {loggedInUserId}, ID to compare: {id}");
 
 
-                return isAdmin || (id == loggedInUserId);
+                return isAdmin || id == loggedInUserId;
             }
 
             return false;
         }
     }
 }
+*/

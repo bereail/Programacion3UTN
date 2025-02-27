@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BKa63DvzasIanPTN7dICcijQRRx4RdI4iHBI+oF7NAo+RFoP5FZjNCvcbcSgbKJSIKCBg5mlhxIaVf75iJuW+w==",
+  "dgSpecHash": "PY2qan9bt6X2MVKBan4fupAzEWPI/BXyXWCQhg5hdmlfXbU3mJQLOQBeyDU6GhgfxvdQw9Qr0WY9PqRc8qj0Mw==",
   "success": true,
-  "projectFilePath": "E:\\UTN\\Prog3\\BookAPI\\BookAPI\\BookAPI.csproj",
+  "projectFilePath": "E:\\BookAPI-ULTIMO\\BookAPI\\BookAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrador\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

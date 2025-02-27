@@ -171,17 +171,8 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Tools/6.0.36": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "6.0.36"
-        },
-        "compile": {
-          "lib/net6.0/_._": {}
-        },
-        "runtime": {
-          "lib/net6.0/_._": {}
-        }
+      "Microsoft.EntityFrameworkCore.Tools/9.0.2": {
+        "type": "package"
       },
       "Microsoft.Extensions.Caching.Abstractions/6.0.1": {
         "type": "package",
@@ -845,17 +836,17 @@
         "microsoft.entityframeworkcore.sqlite.core.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Tools/6.0.36": {
-      "sha512": "zBo/oepzDsoXCwfE4mwxzA3lBrYMtfpmkQ1rmtQnuvaORY6yCeVIx4Vpr/ENz3DShuHiNYr7c1ClBSZleW78Dw==",
+    "Microsoft.EntityFrameworkCore.Tools/9.0.2": {
+      "sha512": "5D4LQ9zYexFOcq0WzXOCCnP74+s9mBGNjh5mtkWFzM/DbY+rpDqrXjPq7peob/ZHAAqK+9Pfv2VK+tNf8C6QaQ==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.tools/6.0.36",
+      "path": "microsoft.entityframeworkcore.tools/9.0.2",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "lib/net6.0/_._",
-        "microsoft.entityframeworkcore.tools.6.0.36.nupkg.sha512",
+        "docs/PACKAGE.md",
+        "microsoft.entityframeworkcore.tools.9.0.2.nupkg.sha512",
         "microsoft.entityframeworkcore.tools.nuspec",
         "tools/EntityFrameworkCore.PS2.psd1",
         "tools/EntityFrameworkCore.PS2.psm1",
@@ -863,9 +854,9 @@
         "tools/EntityFrameworkCore.psm1",
         "tools/about_EntityFrameworkCore.help.txt",
         "tools/init.ps1",
-        "tools/net461/any/ef.exe",
-        "tools/net461/win-arm64/ef.exe",
-        "tools/net461/win-x86/ef.exe",
+        "tools/net472/any/ef.exe",
+        "tools/net472/win-arm64/ef.exe",
+        "tools/net472/win-x86/ef.exe",
         "tools/netcoreapp2.0/any/ef.dll",
         "tools/netcoreapp2.0/any/ef.runtimeconfig.json"
       ]
@@ -1429,7 +1420,7 @@
       "Microsoft.EntityFrameworkCore >= 6.0.36",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.36",
       "Microsoft.EntityFrameworkCore.Sqlite >= 6.0.36",
-      "Microsoft.EntityFrameworkCore.Tools >= 6.0.36"
+      "Microsoft.EntityFrameworkCore.Tools >= 9.0.2"
     ]
   },
   "packageFolders": {
@@ -1439,11 +1430,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\UTN\\Prog3\\BookAPI\\Infraestructure\\Infraestructure.csproj",
+      "projectUniqueName": "E:\\BookAPI-ULTIMO\\Infraestructure\\Infraestructure.csproj",
       "projectName": "Infraestructure",
-      "projectPath": "E:\\UTN\\Prog3\\BookAPI\\Infraestructure\\Infraestructure.csproj",
+      "projectPath": "E:\\BookAPI-ULTIMO\\Infraestructure\\Infraestructure.csproj",
       "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-      "outputPath": "E:\\UTN\\Prog3\\BookAPI\\Infraestructure\\obj\\",
+      "outputPath": "E:\\BookAPI-ULTIMO\\Infraestructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1464,8 +1455,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\UTN\\Prog3\\BookAPI\\Application\\Application.csproj": {
-              "projectPath": "E:\\UTN\\Prog3\\BookAPI\\Application\\Application.csproj"
+            "E:\\BookAPI-ULTIMO\\Application\\Application.csproj": {
+              "projectPath": "E:\\BookAPI-ULTIMO\\Application\\Application.csproj"
             }
           }
         }
@@ -1503,7 +1494,7 @@
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[6.0.36, )"
+            "version": "[9.0.2, )"
           }
         },
         "imports": [

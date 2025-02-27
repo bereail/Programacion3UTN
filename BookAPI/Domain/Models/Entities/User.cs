@@ -13,7 +13,7 @@ namespace Domain.Models.Entities
         [Key]
         //Autogenero un Key por entidad creada en la BD: La opción Identity es que es autoincremental
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int UserId { get; set; }
+        public int Id { get; set; }
 
         [MaxLength(20)]
         public string? Name { get; set; }
@@ -26,9 +26,12 @@ namespace Domain.Models.Entities
         [Required]
         public string UserName { get; set; }
 
+        [Required]
+        [Column("Role")]
+        [EnumDataType(typeof(UserRole))]
         public UserRole Role { get; set; }
 
-        public bool IsActive { get; set; }
+        public bool IsActive { get; set; } = true;
 
     }
 }

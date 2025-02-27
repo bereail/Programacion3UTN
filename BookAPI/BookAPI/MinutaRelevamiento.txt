@@ -61,3 +61,7 @@ Administrador:
 Tiene acceso completo para administrar productos y usuarios.
 Puede modificar, agregar y eliminar productos.
 Puede gestionar cuentas de usuarios, incluyendo la eliminación de usuarios del sistema.
+
+
+
+

@@ -1,5 +1,5 @@
 ﻿using Application.Dtos.SaleOrderDTOs;
-using Domain.Interfaces;
+using Application.Interfaces.Repository;
 using Domain.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -15,7 +15,7 @@ namespace Infraestructure.Repositories
         public ICollection<SaleOrder> GetClientSaleOrders(int clientId)
         {
             return _context.Clients
-                 .Where(c => c.UserId== clientId)
+                 .Where(c => c.Id == clientId)
                  .SelectMany(c => c.SaleOrders)
                  .Include(s => s.Book)
                  .ToList();

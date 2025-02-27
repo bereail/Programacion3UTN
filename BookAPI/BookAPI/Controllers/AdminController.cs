@@ -1,5 +1,5 @@
 ﻿/*using Application.Dtos.AdminDTOs;
-using Domain.Entities.Dtos.AdminDTOs;
+using Application.Interfaces.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
@@ -27,7 +27,7 @@ namespace BookAPI.Controllers
             return Ok(admins);
         }
 
-        [HttpGet("GetAdminById")]
+        [HttpGet("GetUserById/{id}")]
         public ActionResult<AdminDTO> GetAdminById()
         {
             var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
@@ -42,15 +42,7 @@ namespace BookAPI.Controllers
             return Ok(admin);
         }
 
-        [HttpPost("SingIn")]
-        [AllowAnonymous]
-        public ActionResult AddAdmin(AdminToCreateDTO admin)
-        {
-            var createdAdmin = _adminService.AddAdmin(admin);
-            return NoContent();
-        }
-
-        [HttpPut("Update")]
+        [HttpPut("Update/{id}")]
         public ActionResult UpdateAdmin(AdminToUpdateDTO admin)
         {
             var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
@@ -62,7 +54,7 @@ namespace BookAPI.Controllers
             return Ok("Usuario actualizado con exito");
         }
 
-        [HttpDelete("Delete")]
+        [HttpDelete("Delete/{id}")]
         public ActionResult DeleteAdmin()
         {
             var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
@@ -74,5 +66,4 @@ namespace BookAPI.Controllers
             return Ok("Usuario eliminado con exito");
         }
     }
-}
-*/
+}*/

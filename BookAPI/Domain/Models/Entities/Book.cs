@@ -30,9 +30,6 @@ namespace Domain.Models.Entities
 
         public string? Description { get; set; }
 
-        [Required]
-        public BookStatus Status { get; set; }
-
         public ICollection<SaleOrder> SaleOrders { get; set; } = new List<SaleOrder>();
     }
 }

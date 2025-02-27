@@ -1,14 +1,16 @@
-
-using Application.Data.Implementations;
-using Application.Data.Services;
-using Domain.Interfaces;
 using Infraestructure;
-using Infraestructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Application.Services;
+using Application.Interfaces.Repository;
+using Application.Interfaces.Services;
+using Infraestructure.Repositories;
+using Infraestructure.Data.Repositories;
+using Application.Data.Implementations;
+using Shop.API.Services.Implementations;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -52,8 +54,8 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 
 //Auth
-builder.Services.AddAuthentication("Bearer")  //"Bearer" es el tipo de auntenticación que tenemos que elegir después en PostMan para pasarle el token
-    .AddJwtBearer(options =>  //Acá definimos la configuración de la autenticación. le decimos qué cosas queremos comprobar. La fecha de expiración se valida por defecto.
+builder.Services.AddAuthentication("Bearer")  
+    .AddJwtBearer(options => 
     {
         options.TokenValidationParameters = new()
         {
@@ -67,18 +69,26 @@ builder.Services.AddAuthentication("Bearer")  //"Bearer" es el tipo de auntentic
     }
 );
 
-//Services
-builder.Services.AddScoped<UserService>();
-builder.Services.AddScoped<ClientServices>();
-
-
-
-//Repositories
+// Repositories
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IAuthenticationRepository, AuthenticationRepository>();
+builder.Services.AddScoped<IUserComparisonRepository, UserComparisonRepository>();
+builder.Services.AddScoped<IBookRepository, BookRepository>();
 builder.Services.AddScoped<IClientRepository, ClientRepository>();
-builder.Services.AddScoped<IAuthenticationService, AuthenticationService>(); 
+builder.Services.AddScoped<ISaleOrderRepository, SaleOrderRepository>();
+
+
+
+
+// Services
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IClientService, ClientService>();
 builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
-builder.Services.AddScoped<IUserComparisonRepository, UserComparisonService>();
+builder.Services.AddScoped<IUserComparisonService, UserComparisonService>();
+builder.Services.AddScoped<IBookService, BookServices>();
+builder.Services.AddScoped<ISaleOrderService, SaleOrderService>();
+
+
 
 
 var app = builder.Build();

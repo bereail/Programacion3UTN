@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CXgKc75IkXkLkUXwDoUsH16TZz29XqKhZhJVq5teWq1Dun0eiSE1quSvDlxP0yHVBLJ7Nz8naixqcK4bW7tUfA==",
+  "dgSpecHash": "p4GHh84uLP2SV9XhDKEVESwo7mt7mG5FnSTeJcgVilKJ39brrXhX8rKLEBn2crAgacf75+iGGvxkxKZr7/ANhQ==",
   "success": true,
-  "projectFilePath": "E:\\UTN\\Prog3\\BookAPI\\Application\\Application.csproj",
+  "projectFilePath": "E:\\BookAPI-ULTIMO\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrador\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

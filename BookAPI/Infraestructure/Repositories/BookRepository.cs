@@ -1,14 +1,20 @@
-﻿using Domain.Interfaces;
+﻿using Application.Interfaces.Repository;
 using Domain.Models.Entities;
 using Microsoft.EntityFrameworkCore;
+using System.Net;
 
 
 namespace Infraestructure.Repositories
 {
     public class BookRepository : Repository, IBookRepository
     {
-        public BookRepository(ApplicationContext context, IBookRepository bookRepository) : base(context)
+        public BookRepository(ApplicationContext context) : base(context)
         {
+        }
+
+        public void AddBook(Book newBook)
+        {
+            _context.Books.Add(newBook);
         }
 
         public IEnumerable<Book> GetAllBooks()
@@ -24,9 +30,19 @@ namespace Infraestructure.Repositories
             return _context.Books.Find(bookId);
         }
 
-        public void AddBook(Book newBook)
+
+        public void UpdateBook(Book book)
         {
-            _context.Books.Add(newBook);
+            _context.Books.Update(book);
+            _context.SaveChanges();
         }
+
+
+
+        public Book? GetBookByTitle(string title)
+        {
+            return _context.Books.FirstOrDefault(b => b.Title == title);
+        }
+
     }
 }

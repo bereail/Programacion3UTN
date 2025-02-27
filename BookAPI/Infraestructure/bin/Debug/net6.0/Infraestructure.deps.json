@@ -12,7 +12,7 @@
           "Microsoft.EntityFrameworkCore": "6.0.36",
           "Microsoft.EntityFrameworkCore.Design": "6.0.36",
           "Microsoft.EntityFrameworkCore.Sqlite": "6.0.36",
-          "Microsoft.EntityFrameworkCore.Tools": "6.0.36"
+          "Microsoft.EntityFrameworkCore.Tools": "9.0.2"
         },
         "runtime": {
           "Infraestructure.dll": {}
@@ -118,11 +118,7 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Tools/6.0.36": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "6.0.36"
-        }
-      },
+      "Microsoft.EntityFrameworkCore.Tools/9.0.2": {},
       "Microsoft.Extensions.Caching.Abstractions/6.0.1": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "6.0.1"
@@ -528,12 +524,12 @@
       "path": "microsoft.entityframeworkcore.sqlite.core/6.0.36",
       "hashPath": "microsoft.entityframeworkcore.sqlite.core.6.0.36.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Tools/6.0.36": {
+    "Microsoft.EntityFrameworkCore.Tools/9.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-zBo/oepzDsoXCwfE4mwxzA3lBrYMtfpmkQ1rmtQnuvaORY6yCeVIx4Vpr/ENz3DShuHiNYr7c1ClBSZleW78Dw==",
-      "path": "microsoft.entityframeworkcore.tools/6.0.36",
-      "hashPath": "microsoft.entityframeworkcore.tools.6.0.36.nupkg.sha512"
+      "sha512": "sha512-5D4LQ9zYexFOcq0WzXOCCnP74+s9mBGNjh5mtkWFzM/DbY+rpDqrXjPq7peob/ZHAAqK+9Pfv2VK+tNf8C6QaQ==",
+      "path": "microsoft.entityframeworkcore.tools/9.0.2",
+      "hashPath": "microsoft.entityframeworkcore.tools.9.0.2.nupkg.sha512"
     },
     "Microsoft.Extensions.Caching.Abstractions/6.0.1": {
       "type": "package",

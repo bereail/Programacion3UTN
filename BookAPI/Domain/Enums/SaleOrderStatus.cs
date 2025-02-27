@@ -5,6 +5,6 @@
         Pendiente,
         Pagado,
         Cancelado,
-        Completado
+        Finalizado
     }
 }

@@ -1,5 +1,7 @@
-﻿using Domain.Enums;
-using Domain.Interfaces;
+﻿using Application.Interfaces.Repository;
+using Application.Interfaces.Services;
+using AutoMapper;
+using Domain.Enums;
 using Domain.Models;
 using Domain.Models.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -11,77 +13,79 @@ using System.Threading.Tasks;
 
 namespace Infraestructure.Repositories
 {
-    public class UserRepository : IUserRepository
+    public class UserRepository : Repository, IUserRepository
     {
-        private readonly ApplicationContext _context;
 
-        public UserRepository(ApplicationContext context)
-        { 
-            _context = context;
-        }
-        public ICollection<User> GetAllUsers(string role)
+        public UserRepository(ApplicationContext context) : base(context)
         {
-            //para converir el string a Role
-            //true ignora mayuscula/minúscula
-            if (!Enum.TryParse<UserRole>(role, true, out var parsedRole))
+        }
+
+        //OK
+        public User? GetUserById(int id)
+        {
+            return _context.Users.Find(id);
+        }
+
+        //OK
+        public User? GetUserByEmail(string email)
+        {
+            return _context.Users.FirstOrDefault(u => u.Email == email);
+        }
+
+        //OK
+        public ICollection<User> GetAllUsers()
+        {
+            return _context.Users.ToList();
+        }
+
+        //OK
+        public ICollection<User> GetUsersByRole(UserRole role)
+        {
+            var users = _context.Users.Where(u => (int)u.Role == (int)role).ToList();
+
+            Console.WriteLine($"Buscando usuarios con rol: {role} ({(int)role})");
+            Console.WriteLine($"Usuarios encontrados: {users.Count}");
+
+            foreach (var user in users)
             {
-                throw new ArgumentException("El rol especificado no es válido.", nameof(role));
+                Console.WriteLine($"Usuario encontrado: {user.Id} - {user.UserName}");
             }
 
-            return _context.Users.Where(u => u.Role == parsedRole).ToList();
-        }
-
-        public User? GetUserById(int userId)
-        {
-            return _context.Users.FirstOrDefault(u => u.UserId == userId);
-        }
-
-        public User? GetUserByUsername(string username)
-        {
-            return _context.Users.FirstOrDefault(u => u.UserName == username);
-        }
-
-        public void UpdateUser(User userToUpdate)
-        {
-            _context.Entry(userToUpdate).State = EntityState.Modified;
-        }
-
-        public void DeleteUser(int userId)
-        {
-            var user = _context.Users.Find(userId);
-            if (user != null)
-                _context.Users.Remove(user);
-        }
-
-        public ICollection<SaleOrder> GetUserSaleOrders(int userId)
-        {
-            return _context.Clients
-                 .Where(c => c.UserId == userId)
-                 .SelectMany(c => c.SaleOrders)
-                 .Include(s => s.Book)
-                 .ToList();
-        }
-        public User? ValidateUser(AuthenticationRequestBody authenticationRequestBody)
-        {
-            return _context.Users.FirstOrDefault(c => c.Email == authenticationRequestBody.Email && c.Password == authenticationRequestBody.Password);
+            return users;
         }
 
 
-        public bool SaveChanges()
+        //OK
+        public void UpdateUser(User user)
         {
-            throw new NotImplementedException();
+            _context.Users.Update(user);
+            _context.SaveChanges();
         }
+
+        public List<int> GetBookingIdsByUserId(int userId)
+        {
+            return _context.SaleOrders
+                .Where(so => so.ClientId == userId)
+                .Select(so => so.SaleOrderId)
+                .ToList();
+        }
+
+
 
         public int AddUser(User newUser)
         {
-            throw new NotImplementedException();
+            _context.Users.Add(newUser);
+            _context.SaveChanges();
+            return newUser.Id;
         }
 
-       
+        public User? ValidateUser(AuthenticationRequestBody authenticationRequestBody)
+        {
+            return _context.Users.FirstOrDefault(u =>
+                u.Email == authenticationRequestBody.Email &&
+                u.Password == authenticationRequestBody.Password);
+        }
 
-        /* public int AddUser(User newUser)
-         {
-             _context.Users.Add(newUser);
-         }*/
+
     }
 }

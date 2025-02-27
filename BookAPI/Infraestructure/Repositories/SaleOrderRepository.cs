@@ -1,4 +1,4 @@
-﻿using Domain.Interfaces;
+﻿using Application.Interfaces.Repository;
 using Domain.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -28,15 +28,17 @@ namespace Infraestructure.Repositories
         public void AddSaleOrder(SaleOrder newSaleOrder)
         {
             _context.SaleOrders.Add(newSaleOrder);
+            _context.SaveChanges();
         }
+
         public void DeleteSaleOrder(int saleOrderId)
         {
             var saleOrder = _context.SaleOrders.Find(saleOrderId);
             if (saleOrder != null)
                 _context.SaleOrders.Remove(saleOrder);
-        }    
+        }
 
 
-      
+
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\UTN\\Prog3\\BookAPI\\Application\\Application.csproj": {}
+    "E:\\BookAPI-ULTIMO\\Application\\Application.csproj": {}
   },
   "projects": {
-    "E:\\UTN\\Prog3\\BookAPI\\Application\\Application.csproj": {
+    "E:\\BookAPI-ULTIMO\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\UTN\\Prog3\\BookAPI\\Application\\Application.csproj",
+        "projectUniqueName": "E:\\BookAPI-ULTIMO\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "E:\\UTN\\Prog3\\BookAPI\\Application\\Application.csproj",
+        "projectPath": "E:\\BookAPI-ULTIMO\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-        "outputPath": "E:\\UTN\\Prog3\\BookAPI\\Application\\obj\\",
+        "outputPath": "E:\\BookAPI-ULTIMO\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\UTN\\Prog3\\BookAPI\\Domain\\Domain.csproj": {
-                "projectPath": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Domain.csproj"
+              "E:\\BookAPI-ULTIMO\\Domain\\Domain.csproj": {
+                "projectPath": "E:\\BookAPI-ULTIMO\\Domain\\Domain.csproj"
               }
             }
           }
@@ -96,14 +96,14 @@
         }
       }
     },
-    "E:\\UTN\\Prog3\\BookAPI\\Domain\\Domain.csproj": {
+    "E:\\BookAPI-ULTIMO\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Domain.csproj",
+        "projectUniqueName": "E:\\BookAPI-ULTIMO\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "E:\\UTN\\Prog3\\BookAPI\\Domain\\Domain.csproj",
+        "projectPath": "E:\\BookAPI-ULTIMO\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-        "outputPath": "E:\\UTN\\Prog3\\BookAPI\\Domain\\obj\\",
+        "outputPath": "E:\\BookAPI-ULTIMO\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,0 +1,340 @@
+[
+  {
+    "ContainingType": "BookAPI.Controllers.AutenticationController",
+    "Method": "Authenticate",
+    "RelativePath": "api/authentication/authenticate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "authenticationRequestBody",
+        "Type": "Domain.Models.AuthenticationRequestBody",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookAPI.Controllers.BooksController",
+    "Method": "AddBook",
+    "RelativePath": "api/books/CreateNewBook",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "book",
+        "Type": "Application.Dtos.BookDTOs.BookToCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookAPI.Controllers.BooksController",
+    "Method": "DeleteBook",
+    "RelativePath": "api/books/DeleteBook",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookAPI.Controllers.BooksController",
+    "Method": "EditBook",
+    "RelativePath": "api/books/EditBook/{bookId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "newUpdateBookDTO",
+        "Type": "Application.Dtos.BookDTOs.BookToUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookAPI.Controllers.BooksController",
+    "Method": "GetAllBooks",
+    "RelativePath": "api/books/GetAllBooks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.ICollection\u00601[[Application.Dtos.BookDTOs.BookDTO, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookAPI.Controllers.BooksController",
+    "Method": "GetBook",
+    "RelativePath": "api/books/GetBookById/{bookId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Dtos.BookDTOs.BookDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookAPI.Controllers.BooksController",
+    "Method": "GetBook",
+    "RelativePath": "api/books/GetBookByTitle",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "title",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Dtos.BookDTOs.BookDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookAPI.Controllers.BooksController",
+    "Method": "UpdateBookStock",
+    "RelativePath": "api/books/UpdateBookStock/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Application.Dtos.BookDTOs.BookStockDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookAPI.Controllers.UserController",
+    "Method": "GetUserByEmail",
+    "RelativePath": "api/users/{email}/GetUserByEmail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookAPI.Controllers.UserController",
+    "Method": "DisableUser",
+    "RelativePath": "api/users/{id}/disable",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookAPI.Controllers.UserController",
+    "Method": "GetClientSaleOrders",
+    "RelativePath": "api/users/{id}/GetSaleOrders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.ICollection\u00601[[Application.Dtos.SaleOrderDTOs.SaleOrderDTO, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookAPI.Controllers.UserController",
+    "Method": "GetUserById",
+    "RelativePath": "api/users/{id}/GetUserById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookAPI.Controllers.UserController",
+    "Method": "ReactivateUser",
+    "RelativePath": "api/users/{id}/reactivate",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookAPI.Controllers.UserController",
+    "Method": "GetUsers",
+    "RelativePath": "api/users/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Application.Dtos.UserDto.UserDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookAPI.Controllers.UserController",
+    "Method": "GetAllAdmins",
+    "RelativePath": "api/users/GetAllAdmins",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.ICollection\u00601[[Application.Dtos.AdminDTOs.AdminDTO, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookAPI.Controllers.UserController",
+    "Method": "GetAllClients",
+    "RelativePath": "api/users/GetAllClients",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.ICollection\u00601[[Application.Dtos.ClientDTOs.ClientDTO, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookAPI.Controllers.UserController",
+    "Method": "Login",
+    "RelativePath": "api/users/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Domain.Models.AuthenticationRequestBody",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

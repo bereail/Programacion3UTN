@@ -1,4 +1,4 @@
-﻿using Domain.Interfaces;
+﻿using Application.Interfaces.Repository;
 using System.Runtime.Intrinsics.X86;
 
 namespace Infraestructure.Repositories
@@ -27,7 +27,9 @@ namespace Infraestructure.Repositories
 
         public bool SaveChanges()
         {
-            return _context.SaveChanges() >= 0;
-        }
+
+                return _context.SaveChanges() >= 0;
+             }
+
     }
 }

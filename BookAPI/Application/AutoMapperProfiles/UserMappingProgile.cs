@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
-using Application.Dtos.UserDto;
 using Domain.Models.Entities;
 using Domain.Models;
+using Application.Dtos.UserDto;
 
 namespace Application.AutoMapperProfiles
 {

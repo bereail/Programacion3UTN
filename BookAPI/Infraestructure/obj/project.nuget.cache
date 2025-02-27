@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DzAMPQnaMW30EyTHuXtcMhEUIXvqmwgavibPuc0N6VKCxTzKGQj4JaHipUySKa9AxfjSrqtGQXiwkQmOEcEfVw==",
+  "dgSpecHash": "fwkzt+lXIqY+GbZlfPLYMy26mfK00IlX9VSwX34DQbJozxSN4uKAUX4j9QHUrt2hByvxXlMJIMdrSMvnMKtF4Q==",
   "success": true,
-  "projectFilePath": "E:\\UTN\\Prog3\\BookAPI\\Infraestructure\\Infraestructure.csproj",
+  "projectFilePath": "E:\\BookAPI-ULTIMO\\Infraestructure\\Infraestructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrador\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
@@ -15,7 +15,7 @@
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.36\\microsoft.entityframeworkcore.relational.6.0.36.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\6.0.36\\microsoft.entityframeworkcore.sqlite.6.0.36.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\6.0.36\\microsoft.entityframeworkcore.sqlite.core.6.0.36.nupkg.sha512",
-    "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.36\\microsoft.entityframeworkcore.tools.6.0.36.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\9.0.2\\microsoft.entityframeworkcore.tools.9.0.2.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.1\\microsoft.extensions.caching.abstractions.6.0.1.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.3\\microsoft.extensions.caching.memory.6.0.3.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.1\\microsoft.extensions.configuration.abstractions.6.0.1.nupkg.sha512",

@@ -1,11 +1,8 @@
-﻿using Application.Data.Implementations;
-using Application.Data.Services;
-using Application.Dtos.ClientDTOs;
+﻿using Application.Dtos.ClientDTOs;
 using Application.Dtos.SaleOrderDTOs;
+using Application.Interfaces.Services;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Authorization.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
-
 using System.Security.Claims;
 
 namespace BookAPI.Controllers
@@ -14,69 +11,74 @@ namespace BookAPI.Controllers
     [Route("api/client")]
     public class ClientController : ControllerBase
     {
-        private readonly ClientServices _clientService;
-        private readonly UserService _userService;
+        private readonly IClientService _clientService;
+        private readonly IUserService _userService;
 
-        public ClientController(ClientServices clientService, UserService userService)
+        public ClientController(IClientService clientService, IUserService userService)
         {
             _clientService = clientService;
             _userService = userService;
         }
-        [HttpGet("GetAllClients")]
-        [Authorize(Roles = "Admin")]  // Solo Admin puede ver todos los clientes
-        public ActionResult<ICollection<ClientDTO>> GetAllClients()
-        {
-            try
-            {
-                var clients = _userService.GetAllUsers("Client");
-                return Ok(clients);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, $"Internal server error: {ex.Message}");
-            }
-        }
 
-        /* [HttpGet("{id}/GetSaleOrders")]
-         [Authorize(Roles = "Admin, Client")]
-         public ActionResult<ICollection<SaleOrderDTO>> GetClientSaleOrders(int id)
+
+         [HttpGet("{id}", Name = "GetClient")]
+         /*[Authorize(Roles = "Admin, Client")]*/
+         public ActionResult<ClientDTO> GetClientById(int id)
          {
              var userRole = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
-
              var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
-             if (!int.TryParse(userIdClaim, out int userId))
+             if (!int.TryParse(userIdClaim, out int userid))
                  return Unauthorized();
 
-             if (userId != id && userRole != "Admin")
+             var client = _clientService.GetUserById(id);
+             if (client == null)
+                 return NotFound();
+
+             if (userRole != "Admin" && (client.Id) != userid)
                  return Forbid();
 
-             var saleOrders = _clientService.GetClientSaleOrders(id);
-             return Ok(saleOrders);
-
+             return Ok(client);
          }
 
-         [HttpPost("SingIn")]
-         [AllowAnonymous]
-         public ActionResult<ClientDTO> AddClient(ClientToCreateDTO clientToCreate)
-         {
-             var createdClient = _clientService.AddClient(clientToCreate);
-             return CreatedAtRoute("GetClient", new { id = createdClient.Id }, createdClient);
-         }
+        [HttpGet("{id}/GetSaleOrders")]
+        /*[Authorize(Roles = "Admin, Client")]*/
+        public ActionResult<ICollection<SaleOrderDTO>> GetClientSaleOrders(int id)
+        {
+            var userRole = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
 
-         [HttpPut("Update")]
-         [Authorize(Roles = "Client")]
-         public ActionResult UpdateClient([FromBody] ClientToUpdateDTO clientToUpdate)
-         {
-             var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+            var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+            if (!int.TryParse(userIdClaim, out int userId))
+                return Unauthorized();
 
-             if (!int.TryParse(userIdClaim, out int userId))
-                 return Unauthorized();
+            if (userId != id && userRole != "Admin")
+                return Forbid();
 
-             _clientService.UpdateClient(clientToUpdate, userId);
-             return NoContent();
-         }
+            var saleOrders = _clientService.GetClientSaleOrders(id);
+            return Ok(saleOrders);
+        }
 
-         [HttpDelete("Delete")]
+        [HttpPost("SingIn")]
+        [AllowAnonymous]
+        public ActionResult<ClientDTO> AddClient(ClientToCreateDTO clientToCreate)
+        {
+            var createdClient = _clientService.AddClient(clientToCreate);
+            return CreatedAtRoute("GetClient", new { id = createdClient.ClientId }, createdClient);
+        }
+
+        [HttpPut("Update/{id}")]
+      /*  [Authorize(Roles = "Client")]*/
+        public ActionResult UpdateClient([FromBody] ClientToUpdateDTO clientToUpdate)
+        {
+            var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+
+            if (!int.TryParse(userIdClaim, out int userId))
+                return Unauthorized();
+
+            _clientService.UpdateClient(clientToUpdate, userId);
+            return NoContent();
+        }
+
+        /* [HttpDelete("Delete")]
          [Authorize(Roles = "Client")]
          public ActionResult DeleteClient()
          {
@@ -87,7 +89,7 @@ namespace BookAPI.Controllers
 
              _userService.DeleteUser(userId);
              return NoContent();
-         }*/
+         }}*/
 
     }
-    }
+}

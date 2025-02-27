@@ -7,9 +7,10 @@ using System.Collections.Generic;
 using System;
 using Domain.Models.Entities;
 using Domain.Models;
-using Domain.Interfaces;
-using Application.Data.Services;
 using AutoMapper;
+using Application.Interfaces.Repository;
+using Application.Services;
+using Application.Interfaces.Services;
 
 namespace BookAPI.Controllers
 {
@@ -51,7 +52,7 @@ namespace BookAPI.Controllers
             var credentials = new SigningCredentials(securityPassword, SecurityAlgorithms.HmacSha256);
 
             var claimsForToken = new List<Claim>();
-            claimsForToken.Add(new Claim("sub", user.UserId.ToString()));
+            claimsForToken.Add(new Claim("sub", user.Id.ToString()));
             claimsForToken.Add(new Claim("given_name", user.Email));
             claimsForToken.Add(new Claim(ClaimTypes.Role, user.Role.ToString()));
 

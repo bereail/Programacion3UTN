@@ -1,4 +1,4 @@
-﻿using Domain.Interfaces;
+﻿using Application.Interfaces.Repository;
 using Domain.Models;
 using Domain.Models.Entities;
 using System;
@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Infraestructure.Repositories
 {
-    public class AuthenticationRepository : IAuthenticationService
+    public class AuthenticationRepository : IAuthenticationRepository
     {
         private readonly ApplicationContext _context;
 
@@ -35,10 +35,15 @@ namespace Infraestructure.Repositories
                 Console.WriteLine($"User ID in Claims: {loggedInUserId}, ID to compare: {id}");
 
 
-                return isAdmin || (id == loggedInUserId);
+                return isAdmin || id == loggedInUserId;
             }
 
             return false;
+        }
+
+        public User? GetUserByEmail(string email)
+        {
+            return _context.Users.FirstOrDefault(u => u.Email == email);
         }
 
         public User? ValidateUser(AuthenticationRequestBody authenticationRequestBody)

@@ -16,7 +16,7 @@ namespace BookAPI.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.36");
 
-            modelBuilder.Entity("Domain.Entities.Book", b =>
+            modelBuilder.Entity("Domain.Models.Entities.Book", b =>
                 {
                     b.Property<int>("BookId")
                         .ValueGeneratedOnAdd()
@@ -38,9 +38,6 @@ namespace BookAPI.Migrations
                     b.Property<int>("PublicationYear")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Status")
-                        .HasColumnType("INTEGER");
-
                     b.Property<int>("Stock")
                         .HasColumnType("INTEGER");
 
@@ -51,44 +48,9 @@ namespace BookAPI.Migrations
                     b.HasKey("BookId");
 
                     b.ToTable("Books");
-
-                    b.HasData(
-                        new
-                        {
-                            BookId = 4,
-                            Author = "",
-                            Genre = 3,
-                            Price = 10000f,
-                            PublicationYear = 0,
-                            Status = 0,
-                            Stock = 3,
-                            Title = "Harry Potter"
-                        },
-                        new
-                        {
-                            BookId = 5,
-                            Author = "",
-                            Genre = 1,
-                            Price = 50000f,
-                            PublicationYear = 0,
-                            Status = 0,
-                            Stock = 2,
-                            Title = "El Aleph"
-                        },
-                        new
-                        {
-                            BookId = 7,
-                            Author = "",
-                            Genre = 0,
-                            Price = 30000f,
-                            PublicationYear = 0,
-                            Status = 0,
-                            Stock = 0,
-                            Title = "1984"
-                        });
                 });
 
-            modelBuilder.Entity("Domain.Entities.SaleOrder", b =>
+            modelBuilder.Entity("Domain.Models.Entities.SaleOrder", b =>
                 {
                     b.Property<int>("SaleOrderId")
                         .ValueGeneratedOnAdd()
@@ -115,9 +77,9 @@ namespace BookAPI.Migrations
                     b.ToTable("SaleOrders");
                 });
 
-            modelBuilder.Entity("Domain.Entities.User", b =>
+            modelBuilder.Entity("Domain.Models.Entities.User", b =>
                 {
-                    b.Property<int>("UserId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
@@ -137,79 +99,67 @@ namespace BookAPI.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<int>("Role")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("Role");
 
                     b.Property<string>("UserName")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("UserType")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("UserId");
+                    b.HasKey("Id");
 
                     b.ToTable("Users", (string)null);
 
-                    b.HasDiscriminator<string>("UserType").HasValue("User");
+                    b.HasDiscriminator<int>("Role");
                 });
 
-            modelBuilder.Entity("Domain.Entities.Admin", b =>
+            modelBuilder.Entity("Domain.Models.Entities.Admin", b =>
                 {
-                    b.HasBaseType("Domain.Entities.User");
+                    b.HasBaseType("Domain.Models.Entities.User");
 
-                    b.HasDiscriminator().HasValue("Admin");
+                    b.HasDiscriminator().HasValue(1);
 
                     b.HasData(
                         new
                         {
-                            UserId = 3,
-                            Email = "admin@gmail.com",
-                            IsActive = false,
-                            Password = "123",
-                            Role = 0,
+                            Id = 1,
+                            Email = "admin@example.com",
+                            IsActive = true,
+                            Name = "Admin User",
+                            Password = "securepassword",
+                            Role = 1,
                             UserName = "admin"
                         });
                 });
 
-            modelBuilder.Entity("Domain.Entities.Client", b =>
+            modelBuilder.Entity("Domain.Models.Entities.Client", b =>
                 {
-                    b.HasBaseType("Domain.Entities.User");
+                    b.HasBaseType("Domain.Models.Entities.User");
 
-                    b.HasDiscriminator().HasValue("Client");
+                    b.HasDiscriminator().HasValue(2);
 
                     b.HasData(
                         new
                         {
-                            UserId = 1,
-                            Email = "bere@gmail.com",
-                            IsActive = false,
-                            Name = "Berenice",
-                            Password = "123",
-                            Role = 0,
-                            UserName = "bereail"
-                        },
-                        new
-                        {
-                            UserId = 2,
-                            Email = "sofi@gmail.com",
-                            IsActive = false,
-                            Name = "Sofia",
-                            Password = "123",
-                            Role = 0,
-                            UserName = "sofi"
+                            Id = 2,
+                            Email = "client@example.com",
+                            IsActive = true,
+                            Name = "Client User",
+                            Password = "securepassword",
+                            Role = 2,
+                            UserName = "client"
                         });
                 });
 
-            modelBuilder.Entity("Domain.Entities.SaleOrder", b =>
+            modelBuilder.Entity("Domain.Models.Entities.SaleOrder", b =>
                 {
-                    b.HasOne("Domain.Entities.Book", "Book")
+                    b.HasOne("Domain.Models.Entities.Book", "Book")
                         .WithMany("SaleOrders")
                         .HasForeignKey("BookId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Domain.Entities.Client", "Client")
+                    b.HasOne("Domain.Models.Entities.Client", "Client")
                         .WithMany("SaleOrders")
                         .HasForeignKey("ClientId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -220,12 +170,12 @@ namespace BookAPI.Migrations
                     b.Navigation("Client");
                 });
 
-            modelBuilder.Entity("Domain.Entities.Book", b =>
+            modelBuilder.Entity("Domain.Models.Entities.Book", b =>
                 {
                     b.Navigation("SaleOrders");
                 });
 
-            modelBuilder.Entity("Domain.Entities.Client", b =>
+            modelBuilder.Entity("Domain.Models.Entities.Client", b =>
                 {
                     b.Navigation("SaleOrders");
                 });

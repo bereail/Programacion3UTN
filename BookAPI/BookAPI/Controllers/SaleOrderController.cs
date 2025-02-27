@@ -1,5 +1,5 @@
-﻿/*using Application.Dtos.SaleOrderDTOs;
-using Domain.Entities.Dtos.SaleOrderDTOs;
+﻿using Application.Dtos.SaleOrderDTOs;
+using Application.Interfaces.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
@@ -35,23 +35,27 @@ namespace BookAPI.Controllers
             return Ok(saleOrder);
         }
 
-
         [HttpPost("Create")]
         [Authorize(Roles = "Client")]
         public ActionResult AddSaleOrder(SaleOrderToCreateDTO saleOrderToCreateDTO)
         {
+            // Verificar el contenido del JSON recibido
+            Console.WriteLine("SaleOrderToCreateDTO received:");
+            Console.WriteLine($"BookId: {saleOrderToCreateDTO.BookId}, BookQuantity: {saleOrderToCreateDTO.BookQuantity}");
+
             var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
-            if (!int.TryParse(userIdClaim, out int id))
+            if (!int.TryParse(userIdClaim, out int clientId))
                 return Unauthorized();
 
-            var createdSaleOrder = _saleOrderService.AddSaleOrder(saleOrderToCreateDTO, id);
+            var createdSaleOrder = _saleOrderService.AddSaleOrder(saleOrderToCreateDTO, clientId);
 
             if (createdSaleOrder == null)
                 return BadRequest();
 
-            return CreatedAtRoute("GetSaleOrder", new { saleOrderId = createdSaleOrder.Id }, createdSaleOrder);
-
+            return CreatedAtRoute("GetSaleOrder", new { saleOrderId = createdSaleOrder.SaleOrderId }, createdSaleOrder);
         }
+
+
 
         [HttpPut("{saleOrderId}")]
         [Authorize(Roles = "Admin")]
@@ -76,4 +80,3 @@ namespace BookAPI.Controllers
 
     }
 }
-*/
