@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Models.Entities
+namespace Domain.Entities.Entities
 {
     public class Client : User
     {

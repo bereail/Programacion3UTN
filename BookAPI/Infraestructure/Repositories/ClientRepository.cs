@@ -1,6 +1,6 @@
 ﻿using Application.Dtos.SaleOrderDTOs;
 using Application.Interfaces.Repository;
-using Domain.Models.Entities;
+using Domain.Entities.Entities;
 using Microsoft.EntityFrameworkCore;
 
 

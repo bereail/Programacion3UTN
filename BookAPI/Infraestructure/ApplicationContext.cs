@@ -1,5 +1,5 @@
-﻿using Domain.Enums;
-using Domain.Models.Entities;
+﻿using Domain.Entities.Entities;
+using Domain.Enums;
 using Microsoft.EntityFrameworkCore;
 using System;
 

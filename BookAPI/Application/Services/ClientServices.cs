@@ -3,8 +3,8 @@ using Application.Dtos.SaleOrderDTOs;
 using Application.Interfaces.Repository;
 using Application.Interfaces.Services;
 using AutoMapper;
+using Domain.Entities.Entities;
 using Domain.Enums;
-using Domain.Models.Entities;
 using Infraestructure.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 
@@ -41,5 +41,19 @@ namespace Application.Services
             return _mapper.Map<ICollection<SaleOrderDTO>>(saleOrders);
         }
 
+        ClientDTO IClientService.AddClient(ClientToCreateDTO clientToCreateDTO)
+        {
+            throw new NotImplementedException();
+        }
+
+        ICollection<SaleOrderDTO> IClientService.GetClientSaleOrders(int clientId)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IClientService.UpdateClient(ClientToUpdateDTO clientToUpdateDTO, int clietId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -1,5 +1,5 @@
 ﻿using Application.Interfaces.Services;
-using Domain.Models.Entities;
+using Domain.Entities.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;

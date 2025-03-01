@@ -1,81 +1,35 @@
-﻿using System.Text;
-using Microsoft.AspNetCore.Mvc;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using Microsoft.IdentityModel.Tokens;
-using System.Collections.Generic;
-using System;
-using Domain.Models.Entities;
-using Domain.Models;
-using AutoMapper;
-using Application.Interfaces.Repository;
-using Application.Services;
+﻿using Application.Interfaces;
 using Application.Interfaces.Services;
+using Application.Models;
+using Application.Models.Requests;
+using Application.Services;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 
-namespace BookAPI.Controllers
+namespace Web.Controllers
 {
-    [Route("api/authentication")]
+    [Route("api/[controller]")]
     [ApiController]
-    public class AutenticationController : ControllerBase
+    public class AuthenticationController : ControllerBase
     {
         private readonly IConfiguration _config;
-        private readonly IAuthenticationService _authenticationService;
-        private readonly IUserComparisonRepository _userComparisonService;
+        private readonly ICustomAuthenticationService _customAuthenticationService;
 
-        public AutenticationController(IConfiguration config, IAuthenticationService authenticationService, IUserComparisonRepository userComparisonService)
+        public AuthenticationController(IConfiguration config, ICustomAuthenticationService autenticacionService)
         {
-            _config = config;
-            _authenticationService = authenticationService;
-            _userComparisonService = userComparisonService;
+            _config = config; //Hacemos la inyección para poder usar el appsettings.json
+            _customAuthenticationService = autenticacionService;
         }
-
-        [HttpPost("authenticate")]
-        public ActionResult<string> Authenticate(AuthenticationRequestBody authenticationRequestBody)
+        [HttpPost] //Vamos a usar un POST ya que debemos enviar los datos para hacer el login
+        public ActionResult<string> Login(LoginRequest loginRequest) //Enviamos como parámetro la clase que creamos arriba
         {
+            var token = _customAuthenticationService.Login(loginRequest); //Lo primero que hacemos es llamar a una función que valide los parámetros que enviamos.
+            if (string.IsNullOrEmpty(token))
+                return StatusCode(401);
 
-            var user = ValidateCredentials(authenticationRequestBody);
-
-
-            if (user is null)
-            {
-                return Unauthorized("Credenciales no válidas");
-            }
-
-            if (!user.IsActive)
-            {
-                return Unauthorized("La cuenta está deshabilitada");
-            }
-
-
-            var securityPassword = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(_config["Authentication:SecretForKey"]));
-
-            var credentials = new SigningCredentials(securityPassword, SecurityAlgorithms.HmacSha256);
-
-            var claimsForToken = new List<Claim>();
-            claimsForToken.Add(new Claim("sub", user.Id.ToString()));
-            claimsForToken.Add(new Claim("given_name", user.Email));
-            claimsForToken.Add(new Claim(ClaimTypes.Role, user.Role.ToString()));
-
-            var jwtSecurityToken = new JwtSecurityToken(
-              _config["Authentication:Issuer"],
-              _config["Authentication:Audience"],
-              claimsForToken,
-              DateTime.UtcNow,
-              DateTime.UtcNow.AddHours(1),
-              credentials);
-
-            var tokenToReturn = new JwtSecurityTokenHandler()
-                .WriteToken(jwtSecurityToken);
-
-            return Ok(tokenToReturn);
+            return Ok(token);
         }
-
-        private User? ValidateCredentials(AuthenticationRequestBody authenticationRequestBody)
-        {
-            return _authenticationService.ValidateUser(authenticationRequestBody);
-        }
-
-
 
     }
 }

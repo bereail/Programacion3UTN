@@ -459,3 +459,6 @@ D:\BookAPI-ULTIMO\BookAPI\obj\Debug\net6.0\refint\BookAPI.dll
 D:\BookAPI-ULTIMO\BookAPI\obj\Debug\net6.0\BookAPI.pdb
 D:\BookAPI-ULTIMO\BookAPI\obj\Debug\net6.0\BookAPI.genruntimeconfig.cache
 D:\BookAPI-ULTIMO\BookAPI\obj\Debug\net6.0\ref\BookAPI.dll
+D:\Bere\GIT\Programacion3UTN\BookAPI\BookAPI\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Bere\GIT\Programacion3UTN\BookAPI\BookAPI\bin\Debug\net6.0\Microsoft.Bcl.Memory.dll
+D:\Bere\GIT\Programacion3UTN\BookAPI\BookAPI\bin\Debug\net6.0\Microsoft.Bcl.TimeProvider.dll

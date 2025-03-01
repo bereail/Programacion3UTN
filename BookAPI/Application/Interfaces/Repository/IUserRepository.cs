@@ -1,6 +1,7 @@
-﻿using Domain.Enums;
-using Domain.Models;
-using Domain.Models.Entities;
+﻿using Application.Dtos.UserDto;
+using Domain.Entities;
+using Domain.Entities.Entities;
+using Domain.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,7 @@ namespace Application.Interfaces.Repository
 {
     public interface IUserRepository : IRepository
     {
+        public User? GetUser(string email, string password);
 
 
         //OK

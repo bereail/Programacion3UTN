@@ -1,6 +1,4 @@
-﻿using Domain.Models.Entities;
-using Domain.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,12 +8,15 @@ using Application.Dtos.ClientDTOs;
 using Application.Dtos.UserDto;
 using System.Security.Claims;
 using Application.Dtos;
+using Domain.Entities;
+using Domain.Entities.Entities;
 
 namespace Application.Interfaces.Services
 {
     public interface IUserService
     {
         // LOGIN
+    
         BaseResponse Login(string mail, string password);
         User? ValidateUser(AuthenticationRequestBody authenticationRequestBody);
 

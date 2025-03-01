@@ -1,7 +1,6 @@
 ﻿using Application.Dtos.SaleOrderDTOs;
 using AutoMapper;
-using Domain.Models.Entities;
-
+using Domain.Entities.Entities;
 
 namespace Application.AutoMapperProfiles
 {

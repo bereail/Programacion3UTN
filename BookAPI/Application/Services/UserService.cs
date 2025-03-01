@@ -6,12 +6,12 @@ using Application.Interfaces.Repository;
 using Application.Interfaces.Services;
 using AutoMapper;
 using Domain.Enums;
-using Domain.Models;
-using Domain.Models.Entities;
 using System;
 using System.Security.Claims;
 using Microsoft.EntityFrameworkCore;
 using System.Data;
+using Domain.Entities;
+using Domain.Entities.Entities;
 
 namespace Infraestructure.Data.Repositories
 {
@@ -20,7 +20,12 @@ namespace Infraestructure.Data.Repositories
         protected readonly IUserRepository _userRepository;
         protected readonly IMapper _mapper;
 
+        public UserDto? GetUser(string email, string password)
+        {
+            var user = _userRepository.GetUser(email, password);
 
+            return user == null ? null : new UserDto { Email = user.Email };
+        }
         public UserService(IUserRepository userRepository, IMapper mapper)
         {
             _userRepository = userRepository;
@@ -121,6 +126,6 @@ namespace Infraestructure.Data.Repositories
             throw new NotImplementedException();
         }
 
-
+     
     }
 }

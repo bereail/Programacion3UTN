@@ -2,8 +2,8 @@
 using Application.Interfaces.Repository;
 using Application.Interfaces.Services;
 using AutoMapper;
+using Domain.Entities.Entities;
 using Domain.Enums;
-using Domain.Models.Entities;
 
 
 namespace Shop.API.Services.Implementations

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Domain.Models
+namespace Domain.Entities
 {
     public class AuthenticationRequestBody
     {

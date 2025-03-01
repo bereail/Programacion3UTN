@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\BookAPI-ULTIMO\\Infraestructure\\Infraestructure.csproj": {}
+    "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Infraestructure\\Infraestructure.csproj": {}
   },
   "projects": {
-    "E:\\BookAPI-ULTIMO\\Application\\Application.csproj": {
+    "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\BookAPI-ULTIMO\\Application\\Application.csproj",
+        "projectUniqueName": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "E:\\BookAPI-ULTIMO\\Application\\Application.csproj",
+        "projectPath": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-        "outputPath": "E:\\BookAPI-ULTIMO\\Application\\obj\\",
+        "outputPath": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\BookAPI-ULTIMO\\Domain\\Domain.csproj": {
-                "projectPath": "E:\\BookAPI-ULTIMO\\Domain\\Domain.csproj"
+              "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Domain\\Domain.csproj"
               }
             }
           }
@@ -60,6 +60,14 @@
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[6.0.36, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.36.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.36.0, )"
             }
           },
           "imports": [
@@ -96,14 +104,14 @@
         }
       }
     },
-    "E:\\BookAPI-ULTIMO\\Domain\\Domain.csproj": {
+    "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\BookAPI-ULTIMO\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "E:\\BookAPI-ULTIMO\\Domain\\Domain.csproj",
+        "projectPath": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-        "outputPath": "E:\\BookAPI-ULTIMO\\Domain\\obj\\",
+        "outputPath": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -174,14 +182,14 @@
         }
       }
     },
-    "E:\\BookAPI-ULTIMO\\Infraestructure\\Infraestructure.csproj": {
+    "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Infraestructure\\Infraestructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\BookAPI-ULTIMO\\Infraestructure\\Infraestructure.csproj",
+        "projectUniqueName": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Infraestructure\\Infraestructure.csproj",
         "projectName": "Infraestructure",
-        "projectPath": "E:\\BookAPI-ULTIMO\\Infraestructure\\Infraestructure.csproj",
+        "projectPath": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Infraestructure\\Infraestructure.csproj",
         "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-        "outputPath": "E:\\BookAPI-ULTIMO\\Infraestructure\\obj\\",
+        "outputPath": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Infraestructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -202,8 +210,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\BookAPI-ULTIMO\\Application\\Application.csproj": {
-                "projectPath": "E:\\BookAPI-ULTIMO\\Application\\Application.csproj"
+              "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Application.csproj": {
+                "projectPath": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Application.csproj"
               }
             }
           }
@@ -242,6 +250,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.2, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.36.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.36.0, )"
             }
           },
           "imports": [

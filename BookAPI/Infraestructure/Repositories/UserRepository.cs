@@ -1,9 +1,10 @@
-﻿using Application.Interfaces.Repository;
+﻿using Application.Dtos.UserDto;
+using Application.Interfaces.Repository;
 using Application.Interfaces.Services;
 using AutoMapper;
+using Domain.Entities;
+using Domain.Entities.Entities;
 using Domain.Enums;
-using Domain.Models;
-using Domain.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,10 @@ namespace Infraestructure.Repositories
         {
         }
 
+        public User? GetUser(string email, string password)
+        {
+            return _context.Users.FirstOrDefault(x => x.Email == email && x.Password == password);
+        }
         //OK
         public User? GetUserById(int id)
         {

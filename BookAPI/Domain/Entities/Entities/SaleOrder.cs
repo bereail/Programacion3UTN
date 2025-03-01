@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Security.Cryptography.X509Certificates;
 using Domain.Enums;
 
-namespace Domain.Models.Entities
+namespace Domain.Entities.Entities
 {
     public class SaleOrder
     {

@@ -2,7 +2,7 @@
 using Application.Interfaces.Repository;
 using Application.Interfaces.Services;
 using AutoMapper;
-using Domain.Models.Entities;
+using Domain.Entities.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Net;
