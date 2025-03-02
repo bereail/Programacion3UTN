@@ -21,15 +21,34 @@ namespace Web.Controllers
             _config = config; //Hacemos la inyección para poder usar el appsettings.json
             _customAuthenticationService = autenticacionService;
         }
-        [HttpPost] //Vamos a usar un POST ya que debemos enviar los datos para hacer el login
-        public ActionResult<string> Login(LoginRequest loginRequest) //Enviamos como parámetro la clase que creamos arriba
+        [HttpPost]
+        public ActionResult<string> Login(LoginRequest loginRequest)
         {
-            var token = _customAuthenticationService.Login(loginRequest); //Lo primero que hacemos es llamar a una función que valide los parámetros que enviamos.
-            if (string.IsNullOrEmpty(token))
-                return StatusCode(401);
+            Console.WriteLine($"🔍 Intento de login para: {loginRequest.Email}");
 
+            var user = _customAuthenticationService.ValidateUser(loginRequest); // Obtener usuario antes de generar token
+
+            if (user == null)
+            {
+                Console.WriteLine("❌ Error: Usuario no encontrado o credenciales incorrectas.");
+                return StatusCode(401);
+            }
+
+            Console.WriteLine($"✅ Usuario autenticado: {user.Email}, Rol: {user.Role}"); // Mostrar rol
+
+            var token = _customAuthenticationService.Login(loginRequest);
+
+            if (string.IsNullOrEmpty(token))
+            {
+                Console.WriteLine("❌ Error: No se generó el token.");
+                return StatusCode(401);
+            }
+
+            Console.WriteLine("✅ Token generado exitosamente.");
             return Ok(token);
         }
+
+
 
     }
 }

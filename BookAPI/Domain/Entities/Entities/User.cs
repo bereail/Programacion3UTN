@@ -24,7 +24,7 @@ namespace Domain.Entities.Entities
         [Required]
         public string Password { get; set; }
         [Required]
-        public string UserName { get; set; }
+        public string? UserName { get; set; }
 
         [Required]
         [Column("Role")]

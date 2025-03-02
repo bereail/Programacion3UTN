@@ -11,10 +11,10 @@ using Infraestructure.Repositories;
 using Infraestructure.Data.Repositories;
 using Application.Data.Implementations;
 using Shop.API.Services.Implementations;
-using static Infraestructure.Services.AuthenticationService;
-using Infraestructure.Services;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 using Microsoft.Data.Sqlite;
+using static Infrastructure.Services.AuthenticationService;
+using Infrastructure.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -86,7 +86,6 @@ builder.Services.AddAuthentication("Bearer") //"Bearer" es el tipo de auntentica
 
 // Repositories
 builder.Services.AddScoped<IUserRepository, UserRepository>();
-builder.Services.AddScoped<IUserComparisonRepository, UserComparisonRepository>();
 builder.Services.AddScoped<IBookRepository, BookRepository>();
 builder.Services.AddScoped<IClientRepository, ClientRepository>();
 builder.Services.AddScoped<ISaleOrderRepository, SaleOrderRepository>();
@@ -100,10 +99,13 @@ builder.Services.AddScoped<IClientService, ClientService>();
 builder.Services.Configure<AuthenticacionServiceOptions>(
    builder.Configuration.GetSection(AuthenticacionServiceOptions.AuthenticacionService));
 builder.Services.AddScoped<ICustomAuthenticationService, AuthenticationService>();
-builder.Services.AddScoped<IUserComparisonService, UserComparisonService>();
 builder.Services.AddScoped<IBookService, BookServices>();
 builder.Services.AddScoped<ISaleOrderService, SaleOrderService>();
 
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("Admin", policy => policy.RequireRole("Admin"));
+});
 
 
 
@@ -117,6 +119,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 app.Run();

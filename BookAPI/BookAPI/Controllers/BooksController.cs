@@ -1,11 +1,13 @@
 ﻿using Application.Dtos.BookDTOs;
 using Application.Interfaces.Services;
+using Domain.Entities.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 
 namespace BookAPI.Controllers
 {
+    [Authorize] 
     [ApiController]
     [Route("api/books")]
     /*[Authorize(Roles = "Admin")]*/
@@ -19,17 +21,30 @@ namespace BookAPI.Controllers
         }
 
         // Ruta para crear un nuevo libro
+
+        // Usar LINQ para encontrar el usuario por su Id y determinar su rol
+
+        
         [HttpPost("CreateNewBook")]
         public ActionResult CreateNewBook([FromBody] BookToCreateDTO bookToCreateDTO)
         {
+            var userRole = HttpContext.User.Claims
+                .FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
+
+            Console.WriteLine($"User Role: {userRole}"); // O usa un logger
+
+            if (userRole != "Admin")
+            {
+                Console.WriteLine($"User Role: {userRole}");
+                return Forbid(); // Retorna 403 Forbidden si no es Admin
+            }
+
             // Llamamos al servicio para agregar el libro
             var createdBook = _bookService.AddBook(bookToCreateDTO);
 
             if (createdBook == null)
                 return BadRequest();
 
-            // Regresamos el libro recién creado con un status HTTP 201 (Created)
-            // y proporcionamos la URL para obtener el libro con su ID.
             return CreatedAtRoute("GetBook", new { bookId = createdBook.BookId }, createdBook);
         }
 
