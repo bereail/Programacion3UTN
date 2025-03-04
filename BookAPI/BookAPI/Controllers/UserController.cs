@@ -3,6 +3,7 @@ using Application.Dtos.ClientDTOs;
 using Application.Dtos.SaleOrderDTOs;
 using Application.Dtos.UserDto;
 using Application.Interfaces.Services;
+using Application.Services;
 using Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -21,89 +22,27 @@ namespace BookAPI.Controllers
             _userService = userService;
         }
 
-        //OK
-        [HttpGet("{id}/GetUserById")]
-        public IActionResult GetUserById(int id)
+        [HttpGet("{id}", Name = "GetClient")]
+        public ActionResult<ClientDTO> GetClient(int id)
         {
-            try
-            {
-                var user = _userService.GetUserById(id);
-                return Ok(user);
-            }
-            catch (Exception ex)
-            {
-                return NotFound(ex.Message);
-            }
-        }
+            var userRole = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
 
-        //OK
-        [HttpGet("{email}/GetUserByEmail")]
-        public IActionResult GetUserByEmail(string email)
-        {
-            try
+            if (userRole != "Admin")
             {
-                var user = _userService.GetUserByEmail(email);
-                return Ok(user);
+                return Forbid();
             }
-            catch (Exception ex)
-            {
-                return NotFound(ex.Message);
-            }
-        }
-
-        //OK
-        [HttpGet("all")]
-        public ActionResult<List<UserDto>> GetUsers()
-        {
-            try
-            {
-                var users = _userService.GetUsers();
-                return Ok(users); // 200 OK
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { message = "Error al obtener los usuarios.", error = ex.Message });
-            }
+            var client = _userService.GetUserById(id);
+            if (client == null) return NotFound();
+            return Ok(client);
         }
 
 
-        //OK
-        [HttpPut("{id}/reactivate")]
-        public IActionResult ReactivateUser(int id)
+        [HttpPost("SingIn")]
+        [AllowAnonymous]
+        public IActionResult AddClient(ClientToCreateDTO clientToCreate)
         {
-            var response = _userService.ReactivateUser(id, User);
-            if (!response.Success)
-                return BadRequest(response.Message);
-
-            return Ok(response);
-        }
-
-
-        //OK
-        [HttpPut("{id}/disable")]
-        public IActionResult DisableUser(int id)
-        {
-            _userService.DisableAccount(id);
-            return NoContent();
-        }
-
-        //OK
-
-        [HttpGet("GetAllClients")]
-        /*[Authorize(Roles = "Admin, Client")]*/
-        public ActionResult<ICollection<ClientDTO>> GetAllClients()
-        {
-            var clients = _userService.GetClients();
-            return Ok(clients);
-        }
-
-        //OK
-        [HttpGet("GetAllAdmins")]
-        /*[Authorize(Roles = "Admin, Client")]*/
-        public ActionResult<ICollection<AdminDTO>> GetAllAdmins()
-        {
-            var admins = _userService.GetAdmins();
-            return Ok(admins);
+            _userService.AddClient(clientToCreate);
+            return Created("", new { message = "Usuario creado exitosamente" });
         }
 
 
@@ -125,16 +64,6 @@ namespace BookAPI.Controllers
 
         }
 
-
-        [HttpPost("login")]
-        public IActionResult Login([FromBody] AuthenticationRequestBody request)
-        {
-            var response = _userService.Login(request.Email, request.Password);
-            if (!response.Success)
-                return Unauthorized(response.Message);
-
-            return Ok(response);
-        }
 
     }
 }

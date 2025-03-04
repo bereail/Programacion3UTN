@@ -33,6 +33,7 @@ namespace Infraestructure.Data.Repositories
         }
 
 
+
         //OK
         public User? GetUserById(int id)
         {
@@ -126,6 +127,13 @@ namespace Infraestructure.Data.Repositories
             throw new NotImplementedException();
         }
 
-     
+        public ClientDTO AddClient(ClientToCreateDTO clientToCreateDTO)
+        {
+            var newClient = _mapper.Map<Client>(clientToCreateDTO);
+            _userRepository.AddUser(newClient);
+            _userRepository.SaveChanges();
+            return _mapper.Map<ClientDTO>(newClient);
+        }
+
     }
 }

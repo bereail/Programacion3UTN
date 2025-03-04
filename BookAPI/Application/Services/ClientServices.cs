@@ -20,13 +20,7 @@ namespace Application.Services
         }
 
 
-        public ClientDTO AddClient(ClientToCreateDTO clientToCreateDTO)
-        {
-            var newClient = _mapper.Map<Client>(clientToCreateDTO);
-            _userRepository.AddUser(newClient);
-            _userRepository.SaveChanges();
-            return _mapper.Map<ClientDTO>(newClient);
-        }
+
         public void UpdateClient(ClientToUpdateDTO clientToUpdateDTO, int clientId)
         {
             var clientToUpdate = _userRepository.GetUserById(clientId);
@@ -41,19 +35,5 @@ namespace Application.Services
             return _mapper.Map<ICollection<SaleOrderDTO>>(saleOrders);
         }
 
-        ClientDTO IClientService.AddClient(ClientToCreateDTO clientToCreateDTO)
-        {
-            throw new NotImplementedException();
-        }
-
-        ICollection<SaleOrderDTO> IClientService.GetClientSaleOrders(int clientId)
-        {
-            throw new NotImplementedException();
-        }
-
-        void IClientService.UpdateClient(ClientToUpdateDTO clientToUpdateDTO, int clietId)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

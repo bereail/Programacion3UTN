@@ -18,17 +18,27 @@ namespace BookAPI.Controllers
         }
 
         [HttpGet("GetAll")]
-        [Authorize(Roles = "Admin")]
         public ActionResult<SaleOrderDTO> GetAllSaleOrders()
         {
+            var userRole = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
+
+            if (userRole != "Admin")
+            {
+                return Forbid();
+            }
             var saleOrders = _saleOrderService.GetAllSaleOrders();
             return Ok(saleOrders);
         }
 
         [HttpGet("{saleOrderId}", Name = "GetSaleOrder")]
-        [Authorize(Roles = "Admin")]
         public ActionResult<SaleOrderDTO> GetSaleOrder(int saleOrderId)
         {
+            var userRole = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
+
+            if (userRole != "Admin")
+            {
+                return Forbid();
+            }
             var saleOrder = _saleOrderService.GetSaleOrder(saleOrderId);
             if (saleOrder == null)
                 return NotFound();
@@ -36,9 +46,10 @@ namespace BookAPI.Controllers
         }
 
         [HttpPost("Create")]
-        [Authorize(Roles = "Client")]
+
         public ActionResult AddSaleOrder(SaleOrderToCreateDTO saleOrderToCreateDTO)
         {
+
             // Verificar el contenido del JSON recibido
             Console.WriteLine("SaleOrderToCreateDTO received:");
             Console.WriteLine($"BookId: {saleOrderToCreateDTO.BookId}, BookQuantity: {saleOrderToCreateDTO.BookQuantity}");
@@ -58,9 +69,14 @@ namespace BookAPI.Controllers
 
 
         [HttpPut("{saleOrderId}")]
-        [Authorize(Roles = "Admin")]
         public ActionResult<SaleOrderStatusDTO> ChangeSaleOrderStatus(int saleOrderId)
         {
+            var userRole = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
+
+            if (userRole != "Admin")
+            {
+                return Forbid();
+            }
             var newStatus = _saleOrderService.UpdateSaleOrderStatus(saleOrderId);
             if (newStatus == null)
                 return NotFound();
@@ -69,9 +85,14 @@ namespace BookAPI.Controllers
 
 
         [HttpDelete("{saleOrderId}")]
-        [Authorize(Roles = "Admin")]
         public ActionResult DeleteSaleOrder(int saleOrderId)
         {
+            var userRole = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
+
+            if (userRole != "Admin")
+            {
+                return Forbid();
+            }
             var deletedSaleOrder = _saleOrderService.DeleteSaleOrder(saleOrderId);
             if (deletedSaleOrder == null)
                 return BadRequest();

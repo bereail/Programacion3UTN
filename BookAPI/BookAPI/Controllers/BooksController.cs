@@ -7,10 +7,9 @@ using System.Security.Claims;
 
 namespace BookAPI.Controllers
 {
-    [Authorize] 
     [ApiController]
     [Route("api/books")]
-    /*[Authorize(Roles = "Admin")]*/
+
     public class BooksController : ControllerBase
     {
         private readonly IBookService _bookService;
@@ -20,50 +19,13 @@ namespace BookAPI.Controllers
             _bookService = bookService;
         }
 
-        // Ruta para crear un nuevo libro
-
-        // Usar LINQ para encontrar el usuario por su Id y determinar su rol
-
-        
-        [HttpPost("CreateNewBook")]
-        public ActionResult CreateNewBook([FromBody] BookToCreateDTO bookToCreateDTO)
-        {
-            var userRole = HttpContext.User.Claims
-                .FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
-
-            Console.WriteLine($"User Role: {userRole}"); // O usa un logger
-
-            if (userRole != "Admin")
-            {
-                Console.WriteLine($"User Role: {userRole}");
-                return Forbid(); // Retorna 403 Forbidden si no es Admin
-            }
-
-            // Llamamos al servicio para agregar el libro
-            var createdBook = _bookService.AddBook(bookToCreateDTO);
-
-            if (createdBook == null)
-                return BadRequest();
-
-            return CreatedAtRoute("GetBook", new { bookId = createdBook.BookId }, createdBook);
-        }
-
-        // Ruta para obtener un libro por su ID
-        [HttpGet("{bookId}", Name = "GetBook")]
-        public ActionResult<BookDTO> GetBook(int bookId)
-        {
-            var book = _bookService.GetBookById(bookId);
-            if (book == null)
-                return NotFound();
-
-            return Ok(book);
-        }
 
 
         [HttpGet("GetAllBooks")]
         [AllowAnonymous]
         public ActionResult<ICollection<BookDTO>> GetAllBooks()
         {
+           
             var books = _bookService.GetAllBooks();
             return Ok(books);
         }
@@ -79,9 +41,53 @@ namespace BookAPI.Controllers
             return Ok(book);
         }
 
+
+
+        [HttpPost("CreateNewBook")]
+        public ActionResult CreateNewBook([FromBody] BookToCreateDTO bookToCreateDTO)
+        {
+            var userRole = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
+
+
+            if (userRole != "Admin")
+            {
+                return Forbid();
+            }
+
+            var createdBook = _bookService.AddBook(bookToCreateDTO);
+
+            if (createdBook == null)
+                return BadRequest();
+
+            return CreatedAtRoute("GetBook", new { bookId = createdBook.BookId }, createdBook);
+        }
+
+        [HttpGet("{bookId}", Name = "GetBook")]
+        public ActionResult<BookDTO> GetBook(int bookId)
+        {
+            var userRole = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
+
+            if (userRole != "Admin")
+            {
+                return Forbid();
+            }
+
+            var book = _bookService.GetBookById(bookId);
+            if (book == null)
+                return NotFound();
+
+            return Ok(book);
+        }
+
         [HttpPut("EditBook/{bookId}")]
         public IActionResult EditBook(int bookId, [FromBody] BookToUpdateDTO newUpdateBookDTO)
         {
+            var userRole = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
+
+            if (userRole != "Admin")
+            {
+                return Forbid(); // Retorna 403 Forbidden si no es Admin
+            }
             var updatedBook = _bookService.EditBook(bookId, newUpdateBookDTO);
             if (updatedBook == null)
                 return NotFound("El libro no existe.");
@@ -94,6 +100,12 @@ namespace BookAPI.Controllers
         [HttpPut("UpdateBookStock/{id}")]
         public IActionResult UpdateBookStock(int id, [FromBody] BookStockDTO dto)
         {
+            var userRole = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
+
+            if (userRole != "Admin")
+            {
+                return Forbid(); // Retorna 403 Forbidden si no es Admin
+            }
             try
             {
                 var updatedBook = _bookService.UpdateBookStock(id, dto.Stock);
@@ -119,6 +131,12 @@ namespace BookAPI.Controllers
         [HttpPut("DisableBook")]
         public ActionResult DisableBook(int bookId)
         {
+            var userRole = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
+
+            if (userRole != "Admin")
+            {
+                return Forbid(); // Retorna 403 Forbidden si no es Admin
+            }
             var updatedBook = _bookService.DisableBook(bookId);
 
             if (updatedBook == null)
@@ -130,6 +148,12 @@ namespace BookAPI.Controllers
         [HttpGet("stock/{bookId}")]
         public ActionResult<int> GetBookStock(int bookId)
         {
+            var userRole = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
+
+            if (userRole != "Admin")
+            {
+                return Forbid(); // Retorna 403 Forbidden si no es Admin
+            }
             var stock = _bookService.GetBookStock(bookId);
 
             if (stock == 0)

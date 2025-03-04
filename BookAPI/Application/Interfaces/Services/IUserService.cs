@@ -44,5 +44,7 @@ namespace Application.Interfaces.Services
 
         // BOOKING ASOCIADOS AL USUARIO
         List<int> GetBookingIdsByUserId(int userId);
+
+        public ClientDTO AddClient(ClientToCreateDTO clientToCreateDTO);
     }
 }

@@ -10,7 +10,7 @@ namespace Application.Interfaces.Services
 {
     public interface IClientService : IUserService
     {
-        public ClientDTO AddClient(ClientToCreateDTO clientToCreateDTO);
+     
 
         public ICollection<SaleOrderDTO> GetClientSaleOrders(int clientId);
 

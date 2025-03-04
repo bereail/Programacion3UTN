@@ -18,36 +18,35 @@ namespace Web.Controllers
 
         public AuthenticationController(IConfiguration config, ICustomAuthenticationService autenticacionService)
         {
-            _config = config; //Hacemos la inyección para poder usar el appsettings.json
+            _config = config;
             _customAuthenticationService = autenticacionService;
         }
         [HttpPost]
         public ActionResult<string> Login(LoginRequest loginRequest)
         {
-            Console.WriteLine($"🔍 Intento de login para: {loginRequest.Email}");
+            var user = _customAuthenticationService.ValidateUser(loginRequest); 
 
-            var user = _customAuthenticationService.ValidateUser(loginRequest); // Obtener usuario antes de generar token
-
-            if (user == null)
+            if (user is null)
             {
-                Console.WriteLine("❌ Error: Usuario no encontrado o credenciales incorrectas.");
-                return StatusCode(401);
-            }
+              
+                return Unauthorized("Credenciales no válidas"); 
+            }                    
 
-            Console.WriteLine($"✅ Usuario autenticado: {user.Email}, Rol: {user.Role}"); // Mostrar rol
+            if (!user.IsActive)
+            {
+           
+                return Unauthorized("La cuenta está deshabilitada");
+            }
 
             var token = _customAuthenticationService.Login(loginRequest);
 
             if (string.IsNullOrEmpty(token))
             {
-                Console.WriteLine("❌ Error: No se generó el token.");
-                return StatusCode(401);
+                return StatusCode(401, ("❌ Error: No se generó el token."));
             }
 
-            Console.WriteLine("✅ Token generado exitosamente.");
             return Ok(token);
         }
-
 
 
     }

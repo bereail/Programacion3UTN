@@ -29,24 +29,25 @@ namespace Infrastructure.Services
 
         public string? Login(LoginRequest rq)
         {
-            Console.WriteLine("📢 Entrando a Login()"); // 🚀 Depuración inicial
+            
             var user = ValidateUser(rq);
 
             if (user == null)
             {
-                Console.WriteLine("No se pudo validar el usuario. Retornando null.");
-                return null;
+              
+                throw new UnauthorizedAccessException("Usuario o contraseña incorrectos.");
             }
 
-            Console.WriteLine($"Generando token para: {user.Email}, Rol: {user.Role}");
-
-
+            if (!user.IsActive) 
+            {
+             
+                throw new UnauthorizedAccessException("El usuario no está activo.");
+            }
             //Paso 2: Crear el token
             var securityPassword = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(_options.SecretForKey)); //Traemos la SecretKey del Json. agregar antes: using Microsoft.IdentityModel.Tokens;
 
             var credentials = new SigningCredentials(securityPassword, SecurityAlgorithms.HmacSha256);
-            // Verifica qué valor tiene el role antes de firmar el token
-            Console.WriteLine($"Rol del usuario antes de generar el token: {user.Role}");
+          
 
             //Los claims son datos en clave->valor que nos permite guardar data del usuario.
             var claimsForToken = new List<Claim>
@@ -66,7 +67,6 @@ namespace Infrastructure.Services
             var tokenToReturn = new JwtSecurityTokenHandler() //Pasamos el token a string
                 .WriteToken(jwtSecurityToken);
 
-            Console.WriteLine($"Token generado: {tokenToReturn}");
 
             return tokenToReturn.ToString();
         }
@@ -80,15 +80,12 @@ namespace Infrastructure.Services
 
             if (user != null)
             {
-                Console.WriteLine($"Usuario encontrado: {user.Email}, Rol: {user.Role}");
+                return user;
             }
-            else
-            {
-                Console.WriteLine("Usuario no encontrado o credenciales incorrectas.");
-            }
-
-            return user;
+          
+            return null;
         }
+
 
 
 

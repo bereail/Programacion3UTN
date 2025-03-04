@@ -39,7 +39,7 @@ namespace Shop.API.Services.Implementations
 
             var newSaleOrder = _mapper.Map<SaleOrder>(saleOrderToCreateDTO);
             newSaleOrder.ClientId = clientId;
-            newSaleOrder.Status = SaleOrderStatus.Pendiente;
+            newSaleOrder.Status = SaleOrderStatus.Finalizado;
 
            
             Console.WriteLine($"Checking stock for BookId: {newSaleOrder.BookId}, Quantity: {newSaleOrder.BookQuantity}");
@@ -86,10 +86,10 @@ namespace Shop.API.Services.Implementations
             var saleOrderToUpdate = _saleOrderRepository.GetSaleOrder(saleOrderId);
             if (saleOrderToUpdate != null)
             {
-                if (saleOrderToUpdate.Status == SaleOrderStatus.Pendiente)
+                if (saleOrderToUpdate.Status == SaleOrderStatus.Cancelado)
                     saleOrderToUpdate.Status = SaleOrderStatus.Finalizado;
                 else
-                    saleOrderToUpdate.Status = SaleOrderStatus.Pendiente;
+                    saleOrderToUpdate.Status = SaleOrderStatus.Cancelado;
 
                 _saleOrderRepository.SaveChanges();
 

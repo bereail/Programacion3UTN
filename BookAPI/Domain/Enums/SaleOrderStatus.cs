@@ -2,8 +2,6 @@
 {
     public enum SaleOrderStatus
     {
-        Pendiente,
-        Pagado,
         Cancelado,
         Finalizado
     }
