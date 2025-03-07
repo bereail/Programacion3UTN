@@ -13,6 +13,9 @@ namespace Application.AutoMapperProfiles
             CreateMap<BookToUpdateDTO, Book>();
 
             CreateMap<BookToCreateDTO, Book>();
+
+            CreateMap<Book, BookGetDTO>();
+            
         }
     }
 }

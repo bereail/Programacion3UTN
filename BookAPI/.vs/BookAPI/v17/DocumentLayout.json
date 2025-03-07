@@ -3,151 +3,44 @@
   "WorkspaceRootPath": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\bookapi\\controllers\\autenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|solutionrelative:bookapi\\controllers\\autenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\application\\automapperprofiles\\saleorderprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\automapperprofiles\\saleorderprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\bookapi\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|solutionrelative:bookapi\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\application\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\bookapi\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|solutionrelative:bookapi\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\bookapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|solutionrelative:bookapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\domain\\entities\\entities\\saleorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\entities\\saleorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\bookapi\\controllers\\saleordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|solutionrelative:bookapi\\controllers\\saleordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\bookapi\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|solutionrelative:bookapi\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\application\\services\\bookservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\services\\bookservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\application\\models\\requests\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\models\\requests\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\application\\services\\saleorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\services\\saleorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\application\\services\\clientservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\services\\clientservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\domain\\enums\\saleorderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|solutionrelative:domain\\enums\\saleorderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrador\\.nuget\\packages\\microsoft.bcl.memory\\9.0.0\\buildTransitive\\netcoreapp2.0\\Microsoft.Bcl.Memory.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\bookapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|solutionrelative:bookapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\application\\dtos\\clientdtos\\clienttocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\dtos\\clientdtos\\clienttocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\application\\interfaces\\services\\iclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\interfaces\\services\\iclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\application\\interfaces\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\interfaces\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\application\\interfaces\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\interfaces\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1B539F4-C5F6-4E56-B9B6-31C143E1C5F6}|Infraestructure\\Infraestructure.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\infraestructure\\repositories\\authenticationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1B539F4-C5F6-4E56-B9B6-31C143E1C5F6}|Infraestructure\\Infraestructure.csproj|solutionrelative:infraestructure\\repositories\\authenticationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1B539F4-C5F6-4E56-B9B6-31C143E1C5F6}|Infraestructure\\Infraestructure.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\infraestructure\\repositories\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1B539F4-C5F6-4E56-B9B6-31C143E1C5F6}|Infraestructure\\Infraestructure.csproj|solutionrelative:infraestructure\\repositories\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1B539F4-C5F6-4E56-B9B6-31C143E1C5F6}|Infraestructure\\Infraestructure.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\infraestructure\\repositories\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1B539F4-C5F6-4E56-B9B6-31C143E1C5F6}|Infraestructure\\Infraestructure.csproj|solutionrelative:infraestructure\\repositories\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\application\\interfaces\\services\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\interfaces\\services\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\application\\dtos\\bookdtos\\bookgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\dtos\\bookdtos\\bookgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\application\\automapperprofiles\\bookprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\automapperprofiles\\bookprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\application\\dtos\\bookdtos\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\dtos\\bookdtos\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\application\\dtos\\bookdtos\\booktocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\dtos\\bookdtos\\booktocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1B539F4-C5F6-4E56-B9B6-31C143E1C5F6}|Infraestructure\\Infraestructure.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\infraestructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1B539F4-C5F6-4E56-B9B6-31C143E1C5F6}|Infraestructure\\Infraestructure.csproj|solutionrelative:infraestructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\application\\interfaces\\repository\\isaleorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\interfaces\\repository\\isaleorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F1B539F4-C5F6-4E56-B9B6-31C143E1C5F6}|Infraestructure\\Infraestructure.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\infraestructure\\repositories\\saleorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F1B539F4-C5F6-4E56-B9B6-31C143E1C5F6}|Infraestructure\\Infraestructure.csproj|solutionrelative:infraestructure\\repositories\\saleorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\application\\interfaces\\services\\icustomauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\interfaces\\services\\icustomauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\application\\interfaces\\services\\isaleorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\interfaces\\services\\isaleorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\application\\interfaces\\services\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\interfaces\\services\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\application\\services\\saleorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\services\\saleorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\bookapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|solutionrelative:bookapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1B539F4-C5F6-4E56-B9B6-31C143E1C5F6}|Infraestructure\\Infraestructure.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\infraestructure\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1B539F4-C5F6-4E56-B9B6-31C143E1C5F6}|Infraestructure\\Infraestructure.csproj|solutionrelative:infraestructure\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\bookapi\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED9342F3-124D-43DC-88A8-EBA506FD5B91}|BookAPI\\BookAPI.csproj|solutionrelative:bookapi\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\domain\\entities\\verifyaccountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\verifyaccountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\domain\\entities\\authenticationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCE2F4A2-569E-40FC-B790-0022EDE951CE}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\authenticationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\application\\dtos\\userdto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\dtos\\userdto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\application\\dtos\\clientdtos\\clientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\dtos\\clientdtos\\clientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|d:\\bere\\git\\programacion3utn\\bookapi\\application\\dtos\\saleorderdtos\\saleorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653C30F4-2ED5-47D6-8BDD-FA721D0CEED2}|Application\\Application.csproj|solutionrelative:application\\dtos\\saleorderdtos\\saleorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -157,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 23,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -169,473 +62,133 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LoginRequest.cs",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Models\\Requests\\LoginRequest.cs",
-              "RelativeDocumentMoniker": "Application\\Models\\Requests\\LoginRequest.cs",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Models\\Requests\\LoginRequest.cs",
-              "RelativeToolTip": "Application\\Models\\Requests\\LoginRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABCAAAA",
+              "DocumentIndex": 0,
+              "Title": "SaleOrderProfile.cs",
+              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\AutoMapperProfiles\\SaleOrderProfile.cs",
+              "RelativeDocumentMoniker": "Application\\AutoMapperProfiles\\SaleOrderProfile.cs",
+              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\AutoMapperProfiles\\SaleOrderProfile.cs",
+              "RelativeToolTip": "Application\\AutoMapperProfiles\\SaleOrderProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T21:03:52.056Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SaleOrderService.cs",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Services\\SaleOrderService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\SaleOrderService.cs",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Services\\SaleOrderService.cs",
-              "RelativeToolTip": "Application\\Services\\SaleOrderService.cs",
-              "ViewState": "AQIAAE4AAAAAAAAAAAAlwF4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T20:58:44.892Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthenticationService.cs",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Services\\AuthenticationService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\AuthenticationService.cs",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Services\\AuthenticationService.cs",
-              "RelativeToolTip": "Application\\Services\\AuthenticationService.cs",
-              "ViewState": "AQIAAEoAAAAAAAAAAAAwwF0AAABQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T20:55:48.583Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "SaleOrderStatus.cs",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Domain\\Enums\\SaleOrderStatus.cs",
-              "RelativeDocumentMoniker": "Domain\\Enums\\SaleOrderStatus.cs",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Domain\\Enums\\SaleOrderStatus.cs",
-              "RelativeToolTip": "Domain\\Enums\\SaleOrderStatus.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T19:55:18.547Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Interfaces\\Services\\IUserService.cs",
-              "RelativeDocumentMoniker": "Application\\Interfaces\\Services\\IUserService.cs",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Interfaces\\Services\\IUserService.cs",
-              "RelativeToolTip": "Application\\Interfaces\\Services\\IUserService.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAwwC8AAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T17:34:35.139Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\BookAPI\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "BookAPI\\Controllers\\AdminController.cs",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\BookAPI\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "BookAPI\\Controllers\\AdminController.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABgAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T17:17:33.729Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ClientController.cs",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\BookAPI\\Controllers\\ClientController.cs",
-              "RelativeDocumentMoniker": "BookAPI\\Controllers\\ClientController.cs",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\BookAPI\\Controllers\\ClientController.cs",
-              "RelativeToolTip": "BookAPI\\Controllers\\ClientController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T17:17:10.716Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SaleOrderController.cs",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\BookAPI\\Controllers\\SaleOrderController.cs",
-              "RelativeDocumentMoniker": "BookAPI\\Controllers\\SaleOrderController.cs",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\BookAPI\\Controllers\\SaleOrderController.cs",
-              "RelativeToolTip": "BookAPI\\Controllers\\SaleOrderController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAF4AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T19:30:29.674Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "BookDTO.cs",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Dtos\\BookDTOs\\BookDTO.cs",
-              "RelativeDocumentMoniker": "Application\\Dtos\\BookDTOs\\BookDTO.cs",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Dtos\\BookDTOs\\BookDTO.cs",
-              "RelativeToolTip": "Application\\Dtos\\BookDTOs\\BookDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T19:28:17.594Z",
+              "WhenOpened": "2025-03-07T16:38:52.251Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BooksController.cs",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\BookAPI\\Controllers\\BooksController.cs",
-              "RelativeDocumentMoniker": "BookAPI\\Controllers\\BooksController.cs",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\BookAPI\\Controllers\\BooksController.cs",
-              "RelativeToolTip": "BookAPI\\Controllers\\BooksController.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAIwKIAAAAAAAAA",
+              "Title": "SaleOrder.cs",
+              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Domain\\Entities\\Entities\\SaleOrder.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Entities\\SaleOrder.cs",
+              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Domain\\Entities\\Entities\\SaleOrder.cs",
+              "RelativeToolTip": "Domain\\Entities\\Entities\\SaleOrder.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwCMAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T14:02:47.098Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\BookAPI\\Program.cs",
-              "RelativeDocumentMoniker": "BookAPI\\Program.cs",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\BookAPI\\Program.cs",
-              "RelativeToolTip": "BookAPI\\Program.cs",
-              "ViewState": "AQIAAE4AAAAAAAAAAAApwFcAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T19:38:40.831Z",
+              "WhenOpened": "2025-03-07T16:35:26.389Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\BookAPI\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "BookAPI\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\BookAPI\\Controllers\\UserController.cs",
-              "RelativeToolTip": "BookAPI\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAADoAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T19:37:10.288Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ClientRepository.cs",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Infraestructure\\Repositories\\ClientRepository.cs",
-              "RelativeDocumentMoniker": "Infraestructure\\Repositories\\ClientRepository.cs",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Infraestructure\\Repositories\\ClientRepository.cs",
-              "RelativeToolTip": "Infraestructure\\Repositories\\ClientRepository.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAAAEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T13:26:51.571Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "BookRepository.cs",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Infraestructure\\Repositories\\BookRepository.cs",
-              "RelativeDocumentMoniker": "Infraestructure\\Repositories\\BookRepository.cs",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Infraestructure\\Repositories\\BookRepository.cs",
-              "RelativeToolTip": "Infraestructure\\Repositories\\BookRepository.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAUwBwAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T13:25:20.887Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "BookProfile.cs",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\AutoMapperProfiles\\BookProfile.cs",
-              "RelativeDocumentMoniker": "Application\\AutoMapperProfiles\\BookProfile.cs",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\AutoMapperProfiles\\BookProfile.cs",
-              "RelativeToolTip": "Application\\AutoMapperProfiles\\BookProfile.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T13:14:25.779Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BookServices.cs",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Services\\BookServices.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\BookServices.cs",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Services\\BookServices.cs",
-              "RelativeToolTip": "Application\\Services\\BookServices.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAiwC0AAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T18:27:47.386Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "IBookService.cs",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Interfaces\\Services\\IBookService.cs",
-              "RelativeDocumentMoniker": "Application\\Interfaces\\Services\\IBookService.cs",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Interfaces\\Services\\IBookService.cs",
-              "RelativeToolTip": "Application\\Interfaces\\Services\\IBookService.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T00:11:11.289Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "BookToCreateDTO.cs",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Dtos\\BookDTOs\\BookToCreateDTO.cs",
-              "RelativeDocumentMoniker": "Application\\Dtos\\BookDTOs\\BookToCreateDTO.cs",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Dtos\\BookDTOs\\BookToCreateDTO.cs",
-              "RelativeToolTip": "Application\\Dtos\\BookDTOs\\BookToCreateDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T19:29:16.656Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AuthenticationRepository.cs",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Infraestructure\\Repositories\\AuthenticationRepository.cs",
-              "RelativeDocumentMoniker": "Infraestructure\\Repositories\\AuthenticationRepository.cs",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Infraestructure\\Repositories\\AuthenticationRepository.cs",
-              "RelativeToolTip": "Infraestructure\\Repositories\\AuthenticationRepository.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAowDYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T21:05:49.672Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "BookGetDTO.cs",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Dtos\\BookDTOs\\BookGetDTO.cs",
-              "RelativeDocumentMoniker": "Application\\Dtos\\BookDTOs\\BookGetDTO.cs",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Dtos\\BookDTOs\\BookGetDTO.cs",
-              "RelativeToolTip": "Application\\Dtos\\BookDTOs\\BookGetDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T13:11:41.772Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
               "Title": "SaleOrderRepository.cs",
               "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Infraestructure\\Repositories\\SaleOrderRepository.cs",
               "RelativeDocumentMoniker": "Infraestructure\\Repositories\\SaleOrderRepository.cs",
               "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Infraestructure\\Repositories\\SaleOrderRepository.cs",
               "RelativeToolTip": "Infraestructure\\Repositories\\SaleOrderRepository.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACQAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T13:27:11.971Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AutenticationController.cs",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\BookAPI\\Controllers\\AutenticationController.cs",
-              "RelativeDocumentMoniker": "BookAPI\\Controllers\\AutenticationController.cs",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\BookAPI\\Controllers\\AutenticationController.cs",
-              "RelativeToolTip": "BookAPI\\Controllers\\AutenticationController.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAIwCYAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T19:31:11.324Z",
+              "WhenOpened": "2025-03-07T16:32:19.501Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Infraestructure\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Infraestructure\\Repositories\\UserRepository.cs",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Infraestructure\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "Infraestructure\\Repositories\\UserRepository.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBAAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T19:27:57.456Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Microsoft.Bcl.Memory.targets",
-              "DocumentMoniker": "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.bcl.memory\\9.0.0\\buildTransitive\\netcoreapp2.0\\Microsoft.Bcl.Memory.targets",
-              "ToolTip": "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.bcl.memory\\9.0.0\\buildTransitive\\netcoreapp2.0\\Microsoft.Bcl.Memory.targets",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-03-02T22:15:22.12Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 7,
               "Title": "UserService.cs",
               "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "Application\\Services\\UserService.cs",
               "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Services\\UserService.cs",
               "RelativeToolTip": "Application\\Services\\UserService.cs",
-              "ViewState": "AQIAAHoAAAAAAAAAAAAswIcAAAAJAAAA",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAAwHQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T17:55:55.828Z",
+              "WhenOpened": "2025-03-07T16:29:04.414Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "ICustomAuthenticationService.cs",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Interfaces\\Services\\ICustomAuthenticationService.cs",
-              "RelativeDocumentMoniker": "Application\\Interfaces\\Services\\ICustomAuthenticationService.cs",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Interfaces\\Services\\ICustomAuthenticationService.cs",
-              "RelativeToolTip": "Application\\Interfaces\\Services\\ICustomAuthenticationService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAxAAAA",
+              "DocumentIndex": 3,
+              "Title": "ISaleOrderRepository.cs",
+              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Interfaces\\Repository\\ISaleOrderRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\Repository\\ISaleOrderRepository.cs",
+              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Interfaces\\Repository\\ISaleOrderRepository.cs",
+              "RelativeToolTip": "Application\\Interfaces\\Repository\\ISaleOrderRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T17:59:44.064Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "IAuthenticationService.cs",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Interfaces\\Services\\IAuthenticationService.cs",
-              "RelativeDocumentMoniker": "Application\\Interfaces\\Services\\IAuthenticationService.cs",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Interfaces\\Services\\IAuthenticationService.cs",
-              "RelativeToolTip": "Application\\Interfaces\\Services\\IAuthenticationService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T00:10:09.95Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Interfaces\\Repository\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "Application\\Interfaces\\Repository\\IUserRepository.cs",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Interfaces\\Repository\\IUserRepository.cs",
-              "RelativeToolTip": "Application\\Interfaces\\Repository\\IUserRepository.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAA5wCEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T16:29:32.074Z",
+              "WhenOpened": "2025-03-07T16:28:53.851Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\BookAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "BookAPI\\appsettings.json",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\BookAPI\\appsettings.json",
-              "RelativeToolTip": "BookAPI\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-22T17:05:29.385Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IClientService.cs",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Interfaces\\Services\\IClientService.cs",
-              "RelativeDocumentMoniker": "Application\\Interfaces\\Services\\IClientService.cs",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Interfaces\\Services\\IClientService.cs",
-              "RelativeToolTip": "Application\\Interfaces\\Services\\IClientService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
+              "DocumentIndex": 5,
+              "Title": "ISaleOrderService.cs",
+              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Interfaces\\Services\\ISaleOrderService.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\Services\\ISaleOrderService.cs",
+              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Interfaces\\Services\\ISaleOrderService.cs",
+              "RelativeToolTip": "Application\\Interfaces\\Services\\ISaleOrderService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBIAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T00:10:32.39Z",
+              "WhenOpened": "2025-03-07T16:28:13.971Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ClientToCreateDTO.cs",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Dtos\\ClientDTOs\\ClientToCreateDTO.cs",
-              "RelativeDocumentMoniker": "Application\\Dtos\\ClientDTOs\\ClientToCreateDTO.cs",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Dtos\\ClientDTOs\\ClientToCreateDTO.cs",
-              "RelativeToolTip": "Application\\Dtos\\ClientDTOs\\ClientToCreateDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAABAAAA",
+              "DocumentIndex": 9,
+              "Title": "SaleOrderDTO.cs",
+              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Dtos\\SaleOrderDTOs\\SaleOrderDTO.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\SaleOrderDTOs\\SaleOrderDTO.cs",
+              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Dtos\\SaleOrderDTOs\\SaleOrderDTO.cs",
+              "RelativeToolTip": "Application\\Dtos\\SaleOrderDTOs\\SaleOrderDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T19:36:14.053Z",
+              "WhenOpened": "2025-03-06T16:15:50.46Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ClientServices.cs",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Services\\ClientServices.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\ClientServices.cs",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Services\\ClientServices.cs",
-              "RelativeToolTip": "Application\\Services\\ClientServices.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABYAAAAAAAAA",
+              "DocumentIndex": 6,
+              "Title": "SaleOrderService.cs",
+              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Services\\SaleOrderService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\SaleOrderService.cs",
+              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Services\\SaleOrderService.cs",
+              "RelativeToolTip": "Application\\Services\\SaleOrderService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T13:35:58.892Z",
+              "WhenOpened": "2025-03-06T15:58:10.961Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Infraestructure\\Repositories\\Repository.cs",
-              "RelativeDocumentMoniker": "Infraestructure\\Repositories\\Repository.cs",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Infraestructure\\Repositories\\Repository.cs",
-              "RelativeToolTip": "Infraestructure\\Repositories\\Repository.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAqwBYAAAA1AAAA",
+              "DocumentIndex": 2,
+              "Title": "SaleOrderController.cs",
+              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\BookAPI\\Controllers\\SaleOrderController.cs",
+              "RelativeDocumentMoniker": "BookAPI\\Controllers\\SaleOrderController.cs",
+              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\BookAPI\\Controllers\\SaleOrderController.cs",
+              "RelativeToolTip": "BookAPI\\Controllers\\SaleOrderController.cs",
+              "ViewState": "AQIAAJMAAAAAAAAAAAAmwBsAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T13:30:00.6Z"
+              "WhenOpened": "2025-03-06T15:57:32.493Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "VerifyAccountDto.cs",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Domain\\Entities\\VerifyAccountDto.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\VerifyAccountDto.cs",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Domain\\Entities\\VerifyAccountDto.cs",
-              "RelativeToolTip": "Domain\\Entities\\VerifyAccountDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAKAAAA",
+              "DocumentIndex": 8,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\BookAPI\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "BookAPI\\Controllers\\BooksController.cs",
+              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\BookAPI\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "BookAPI\\Controllers\\BooksController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAArwB4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T20:51:34.197Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "AuthenticationResult.cs",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Domain\\Entities\\AuthenticationResult.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\AuthenticationResult.cs",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Domain\\Entities\\AuthenticationResult.cs",
-              "RelativeToolTip": "Domain\\Entities\\AuthenticationResult.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T20:38:12.461Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "UserDto.cs",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Dtos\\UserDto\\UserDto.cs",
-              "RelativeDocumentMoniker": "Application\\Dtos\\UserDto\\UserDto.cs",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Dtos\\UserDto\\UserDto.cs",
-              "RelativeToolTip": "Application\\Dtos\\UserDto\\UserDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBQAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T14:03:01.234Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "ClientDTO.cs",
-              "DocumentMoniker": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Dtos\\ClientDTOs\\ClientDTO.cs",
-              "RelativeDocumentMoniker": "Application\\Dtos\\ClientDTOs\\ClientDTO.cs",
-              "ToolTip": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Application\\Dtos\\ClientDTOs\\ClientDTO.cs",
-              "RelativeToolTip": "Application\\Dtos\\ClientDTOs\\ClientDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T19:29:21.185Z"
+              "WhenOpened": "2025-03-06T15:57:29.133Z",
+              "EditorCaption": ""
             }
           ]
         }

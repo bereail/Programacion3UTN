@@ -28,8 +28,9 @@ namespace Domain.Entities.Entities
         {
             get
             {
-                return BookQuantity * Book.Price;
+                return (Book != null) ? BookQuantity * Book.Price : 0;
             }
         }
+
     }
 }

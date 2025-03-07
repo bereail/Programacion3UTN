@@ -6,18 +6,20 @@ namespace Application.Dtos.BookDTOs
 {
     public class BookToCreateDTO
     {
-        [Required]
+
+        [Required(ErrorMessage = "El título es obligatorio.")]
         public string Title { get; set; }
-        [Required]
+
+        [Required(ErrorMessage = "El título es obligatorio.")]
         public BookGenre Genre { get; set; }
-        [Required]
+
+        [Required(ErrorMessage = "El autor es obligatorio.")]
         public string Author { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "El título es obligatorio.")]
         public float Price { get; set; }
         public string Description { get; set; }
-
-        [Required]
+       
         public int Stock { get; set; }
     }
 }

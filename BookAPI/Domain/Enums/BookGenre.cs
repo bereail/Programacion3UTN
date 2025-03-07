@@ -2,9 +2,9 @@
 {
     public enum BookGenre
     {
-        Ficción,
-        Literatura,
-        Drama,
-        Juvenil
+        Ficción = 1,
+        Literatura = 2,
+        Drama = 3,
+        Juvenil = 4
     }
 }

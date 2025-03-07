@@ -19,21 +19,30 @@ namespace BookAPI.Controllers
             _bookService = bookService;
         }
 
-
-
         [HttpGet("GetAllBooks")]
         [AllowAnonymous]
-        public ActionResult<ICollection<BookDTO>> GetAllBooks()
+        public ActionResult<ICollection<BookGetDTO>> GetAllBooks()
         {
-           
+            
+            var userRole = HttpContext.User.Claims
+                .FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
+          
             var books = _bookService.GetAllBooks();
+
+            
+            if (userRole != "Admin")
+            {
+                books = books.Where(b => b.Stock > 0).ToList();
+            }
+
             return Ok(books);
         }
 
 
+
         [HttpGet("GetBookByTitle")]
         [AllowAnonymous]
-        public ActionResult<BookDTO> GetBook(string title)
+        public ActionResult<BookGetDTO> GetBook(string title)
         {
             var book = _bookService.GetBookByTitle(title);
             if (book == null)
@@ -48,7 +57,6 @@ namespace BookAPI.Controllers
         {
             var userRole = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
 
-
             if (userRole != "Admin")
             {
                 return Forbid();
@@ -57,10 +65,11 @@ namespace BookAPI.Controllers
             var createdBook = _bookService.AddBook(bookToCreateDTO);
 
             if (createdBook == null)
-                return BadRequest();
+                return BadRequest("No se pudo crear el libro. Verifique que el título no esté duplicado y que los datos sean correctos.");
 
             return CreatedAtRoute("GetBook", new { bookId = createdBook.BookId }, createdBook);
         }
+
 
         [HttpGet("{bookId}", Name = "GetBook")]
         public ActionResult<BookDTO> GetBook(int bookId)

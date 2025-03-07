@@ -15,5 +15,7 @@ namespace Application.Interfaces.Services
 
         public SaleOrderStatusDTO? UpdateSaleOrderStatus(int saleOrderId);
         public SaleOrderDTO? DeleteSaleOrder(int saleOrderId);
+
+        public IEnumerable<SaleOrderDTO> GetOrdersByUserId(int userId);
     }
 }

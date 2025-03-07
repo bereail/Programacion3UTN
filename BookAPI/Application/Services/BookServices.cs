@@ -19,36 +19,54 @@ namespace Application.Data.Implementations
             _bookRepository = bookRepository;
             _mapper = mapper;
         }
-    
+
+        public IEnumerable<BookGetDTO> GetAllBooks()
+        {
+            var books = _bookRepository.GetAllBooks();
+
+            return _mapper.Map<IEnumerable<BookGetDTO>>(books);
+        }
+
+        public IEnumerable<BookGetDTO> GetBookByTitle(string title)
+        {
+            var books = _bookRepository.GetAllBooks()
+                .Where(b => b.Title.ToLower().Contains(title.ToLower()));
+
+            return _mapper.Map<IEnumerable<BookGetDTO>>(books); 
+        }
+
         public BookDTO? AddBook(BookToCreateDTO bookToCreateDTO)
         {
-            if (bookToCreateDTO.Stock >= 0)
+            if (string.IsNullOrWhiteSpace(bookToCreateDTO.Title) || bookToCreateDTO.Stock < 0)
             {
-                var newBook = _mapper.Map<Book>(bookToCreateDTO);
-                _bookRepository.AddBook(newBook);
-                _bookRepository.SaveChanges();
-                return _mapper.Map<BookDTO>(newBook);
+                return null; 
             }
-            return null;
+
+           
+            var existingBook = _bookRepository.GetAllBooks()
+                .FirstOrDefault(b => b.Title.ToLower() == bookToCreateDTO.Title.ToLower());
+
+            if (existingBook != null)
+            {
+                return null; 
+            }
+
+            var newBook = _mapper.Map<Book>(bookToCreateDTO);
+            _bookRepository.AddBook(newBook);
+            _bookRepository.SaveChanges();
+            return _mapper.Map<BookDTO>(newBook);
         }
+
+
         public BookDTO? GetBookById(int bookId)
         {
             var book = _bookRepository.GetBookById(bookId);
             return _mapper.Map<BookDTO>(book);
         }
 
-        public Book? GetBookByTitle(string title)
-        {
-            return _bookRepository.GetBookByTitle(title);
-        }
 
 
-        public IEnumerable<BookDTO> GetAllBooks()
-        {
-            var books = _bookRepository.GetAllBooks();
 
-            return _mapper.Map<IEnumerable<BookDTO>>(books);
-        }
 
         public BookDTO? EditBook(int bookId, BookToUpdateDTO newUpdateBookDTO)
         {

@@ -12,8 +12,8 @@ namespace Application.Interfaces.Services
     {
         public BookDTO? AddBook(BookToCreateDTO bookToCreateDTO);
         public BookDTO? GetBookById(int bookId);
-        public Book? GetBookByTitle(string title);
-        public IEnumerable<BookDTO> GetAllBooks();
+        public IEnumerable<BookGetDTO> GetBookByTitle(string title);
+        public IEnumerable<BookGetDTO> GetAllBooks();
         public BookDTO? UpdateBookStock(int newStock, int bookId);
 
         public BookDTO? EditBook(int bookId, BookToUpdateDTO newUpdateBookDTO);

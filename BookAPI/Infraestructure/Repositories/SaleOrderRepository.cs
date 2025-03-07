@@ -1,4 +1,5 @@
-﻿using Application.Interfaces.Repository;
+﻿using Application.Dtos.SaleOrderDTOs;
+using Application.Interfaces.Repository;
 using Domain.Entities.Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -38,7 +39,11 @@ namespace Infraestructure.Repositories
                 _context.SaleOrders.Remove(saleOrder);
         }
 
+        public IEnumerable<SaleOrder> GetOrdersByUserId(int userId)
+        {
+            return _context.SaleOrders.Where(o => o.ClientId == userId).ToList();
+        }
 
-
+      
     }
 }
