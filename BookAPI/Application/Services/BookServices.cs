@@ -64,15 +64,23 @@ namespace Application.Data.Implementations
             return _mapper.Map<BookDTO>(newBook);
         }
 
-
         public BookDTO? GetBookById(int bookId)
         {
-            var book = _bookRepository.GetBookById(bookId);
-            return _mapper.Map<BookDTO>(book);
+            try
+            {
+                var book = _bookRepository.GetBookById(bookId);
+                if (book == null)
+                {
+                    return null;
+                }
+                return _mapper.Map<BookDTO>(book);
+            }
+            catch (Exception ex)
+            {
+              
+                throw; 
+            }
         }
-
-
-
 
 
         public BookDTO? EditBook(int bookId, BookToUpdateDTO newUpdateBookDTO)

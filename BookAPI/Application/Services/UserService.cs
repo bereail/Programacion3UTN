@@ -84,23 +84,38 @@ namespace Infraestructure.Data.Repositories
         }
 
 
-        //OK
-        public void DisableAccount(int userId)
+        public BaseResponse DisableAccount(string email)
         {
-            var user = _userRepository.GetUserById(userId);
+            var user = _userRepository.GetUserByEmail(email);
             if (user == null)
                 throw new Exception("Usuario no encontrado.");
 
+            if (user.Role.ToString() == "Admin")
+            {
+                return new BaseResponse
+                {
+                    Success = false,
+                    Message = "Por jerarquía, no se puede desactivar a otro admin."
+                };
+            }
+
+
             user.IsActive = false;
             _userRepository.UpdateUser(user);
+
+            return new BaseResponse
+            {
+                Success = true,
+                Message = "Cuenta desactivada exitosamente."
+            };
         }
 
-        //OK
-        public BaseResponse ReactivateUser(int idUser, ClaimsPrincipal user)
+        public BaseResponse ReactivateUser(string email, ClaimsPrincipal user)
         {
-            var existingUser = _userRepository.GetUserById(idUser);
+            var existingUser = _userRepository.GetUserByEmail(email);
             if (existingUser == null)
                 return new BaseResponse { Success = false, Message = "Usuario no encontrado." };
+
 
             existingUser.IsActive = true;
             _userRepository.UpdateUser(existingUser);

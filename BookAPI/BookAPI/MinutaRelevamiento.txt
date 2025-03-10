@@ -60,8 +60,9 @@ Cliente:
 Visualiza el catálogo de productos.
 Puede agregar y eliminar productos en su carrito de compras.
 Realiza pedidos y consulta el historial de pedidos.
+
 Administrador:
 
 Acceso completo para administrar productos y usuarios.
-Puede modificar, agregar y eliminar productos.
-Gestiona cuentas de usuarios, incluida la opción de desactivarlos o eliminarlos.
+Puede modificar, agregar y desactivar productos.
+Gestiona cuentas de usuarios, incluida la opción de desactivarlos y volver a reactivarlos.

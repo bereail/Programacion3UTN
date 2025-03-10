@@ -561,3 +561,4 @@ C:\Users\bsolohaga\Desktop\bere\GIT\Programacion3UTN\BookAPI\BookAPI\obj\Debug\n
 C:\Users\bsolohaga\Desktop\bere\GIT\Programacion3UTN\BookAPI\BookAPI\obj\Debug\net6.0\BookAPI.pdb
 C:\Users\bsolohaga\Desktop\bere\GIT\Programacion3UTN\BookAPI\BookAPI\obj\Debug\net6.0\BookAPI.genruntimeconfig.cache
 C:\Users\bsolohaga\Desktop\bere\GIT\Programacion3UTN\BookAPI\BookAPI\obj\Debug\net6.0\ref\BookAPI.dll
+D:\Bere\GIT\Programacion3UTN\BookAPI\BookAPI\obj\Debug\net6.0\BookAPI.MvcApplicationPartsAssemblyInfo.cs

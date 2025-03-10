@@ -65,8 +65,6 @@ namespace BookAPI.Controllers
         }
 
 
-
-
         [HttpGet("GetAllClients")]
         public ActionResult<ICollection<ClientDTO>> GetAllClients()
         {
@@ -96,38 +94,38 @@ namespace BookAPI.Controllers
             return Ok(admins);
         }
 
-
-        [HttpPut("{id}/disable")]
-        public IActionResult DisableUser(int id)
+        [HttpPut("{email}/disable")]
+        public IActionResult DisableUser(string email)
         {
-
             var userRole = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
-
             if (userRole != "Admin")
             {
                 return Forbid();
             }
-            _userService.DisableAccount(id);
-            return NoContent();
-        }
 
-
-        [HttpPut("{id}/reactivate")]
-        public IActionResult ReactivateUser(int id)
-        {
-
-            var userRole = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
-
-            if (userRole != "Admin")
-            {
-                return Forbid();
-            }
-            var response = _userService.ReactivateUser(id, User);
+            var response = _userService.DisableAccount(email);
             if (!response.Success)
                 return BadRequest(response.Message);
 
             return Ok(response);
         }
 
+
+
+        [HttpPut("{email}/reactivate")]
+        public IActionResult ReactivateUser(string email)
+        {
+            var userRole = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
+
+            if (userRole != "Admin")
+            {
+                return Forbid();
+            }
+            var response = _userService.ReactivateUser(email, User);
+            if (!response.Success)
+                return BadRequest(response.Message);
+
+            return Ok(response);
+        }
     }
 }

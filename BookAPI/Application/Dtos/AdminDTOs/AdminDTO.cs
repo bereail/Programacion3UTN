@@ -12,7 +12,9 @@
             Email = email;
         }
 
-    
+        public bool IsActive { get; set; } = true;
+
+
         public AdminDTO() { }
     }
 }

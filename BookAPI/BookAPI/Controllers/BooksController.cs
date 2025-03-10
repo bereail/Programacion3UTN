@@ -110,23 +110,32 @@ public ActionResult<IEnumerable<BookGetDTO>> GetBook(string title)
             return CreatedAtRoute("GetBook", new { bookId = createdBook.BookId }, createdBook);
         }
 
-
         [HttpGet("{bookId}", Name = "GetBook")]
         public ActionResult<BookDTO> GetBook(int bookId)
         {
-            var userRole = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
-
-            if (userRole != "Admin")
+            try
             {
-                return Forbid();
+                var userRole = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
+                if (userRole != "Admin")
+                {
+                    return Forbid();
+                }
+
+                var book = _bookService.GetBookById(bookId);
+                if (book == null)
+                {
+                    return NotFound(new { Message = $"No se encontró el libro con ID {bookId}." });
+                }
+
+                return Ok(book);
             }
-
-            var book = _bookService.GetBookById(bookId);
-            if (book == null)
-                return NotFound();
-
-            return Ok(book);
+            catch (Exception ex)
+            {
+               
+                return StatusCode(500, new { Message = "Ocurrió un error al procesar la solicitud." });
+            }
         }
+
 
         [HttpPut("EditBook/{bookId}")]
         public IActionResult EditBook(int bookId, [FromBody] BookToUpdateDTO newUpdateBookDTO)

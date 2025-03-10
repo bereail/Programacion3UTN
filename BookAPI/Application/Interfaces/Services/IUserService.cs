@@ -22,8 +22,8 @@ namespace Application.Interfaces.Services
         List<UserDto> GetUsers();
         IEnumerable<AdminDTO> GetAdmins();
         IEnumerable<ClientDTO> GetClients();
-        void DisableAccount(int userId);
-        BaseResponse ReactivateUser(int idUser, ClaimsPrincipal user);
+        BaseResponse DisableAccount(string email);
+        BaseResponse ReactivateUser(string email, ClaimsPrincipal user);
         List<int> GetBookingIdsByUserId(int userId);
         public ClientDTO AddClient(ClientToCreateDTO clientToCreateDTO);
 
