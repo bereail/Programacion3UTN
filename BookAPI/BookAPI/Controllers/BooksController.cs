@@ -25,23 +25,40 @@ namespace BookAPI.Controllers
         [AllowAnonymous]
         public ActionResult<ICollection<BookGetDTO>> GetAllBooks()
         {
-            
-            var userRole = HttpContext.User.Claims
-                .FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
-          
-            var books = _bookService.GetAllBooks();
-
-            
-            if (userRole != "Admin")
+            try
             {
-                books = books.Where(b => b.Stock > 0).ToList();
-            }
+              
+                var userRole = HttpContext.User.Claims
+                    .FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
 
-            return Ok(books);
+              
+                var books = _bookService.GetAllBooks();
+
+              
+                if (userRole != "Admin")
+                {
+                    books = books.Where(b => b.Stock > 0).ToList();
+                }
+
+               
+                if (books == null || !books.Any())
+                {
+                    return Ok(new { message = "Por el momento no hay libros disponibles." });
+                }
+
+              
+                return Ok(books);
+            }
+            catch (Exception ex)
+            {
+            
+                return StatusCode(500, new { message = "Ocurrió un error en el servidor. Por favor, inténtalo nuevamente." });
+            }
         }
 
 
-       [HttpGet("GetBookByTitle")]
+
+        [HttpGet("GetBookByTitle")]
 [AllowAnonymous]
 public ActionResult<IEnumerable<BookGetDTO>> GetBook(string title)
 {
@@ -63,7 +80,7 @@ public ActionResult<IEnumerable<BookGetDTO>> GetBook(string title)
         return StatusCode(500, new { message = "Error interno del servidor", error = ex.Message });
     }
 
-    // Filtra los libros para usuarios que NO son admin
+
     if (userRole != "Admin")
     {
         books = books.Where(b => b.Stock > 0).ToList();

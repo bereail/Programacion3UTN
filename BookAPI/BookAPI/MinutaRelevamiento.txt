@@ -1,67 +1,67 @@
-Proyecto: Sistema de Venta de Libros
-Objetivo:
-Desarrollar una aplicación que permita la venta y gestión de libros, donde los
-administradores puedan gestionar el catálogo de productos y usuarios, y los clientes puedan
-comprar libros y gestionar sus pedidos.
-Requerimientos Funcionales:
-Gestión de Usuarios:
-Login: Todos los usuarios (clientes y administradores) deben poder autenticarse en el
-sistema con su nombre de usuario y contraseña.
-Registro: Los nuevos usuarios pueden registrarse proporcionando sus datos personales.
-Gestión de Clientes:
-Explorar Productos: Los clientes deben poder navegar por el catálogo de libros y ver los
-detalles de cada producto (titulo, escritor/a, genero, año, precio, stock).
-Agregar al Carrito: Los clientes deben poder agregar libros a su carrito de compras.
-Eliminar del Carrito: Los clientes deben poder eliminar libros de su carrito de compras.
-Actualizar Cantidad en el Carrito: Los clientes pueden modificar la cantidad de libros en
-su carrito.
-Realizar Pedido: Los clientes deben poder completar la compra, lo que generará un pedido
-y actualizará el inventario.
-Ver Historial de Pedidos: Los clientes pueden revisar sus pedidos anteriores y ver detalles
-como fecha, productos, estado y total.
-Gestión de Administradores:
-Agregar Producto: Los administradores deben poder agregar nuevas libros al catálogo.
-Modificar Producto: Los administradores deben poder actualizar la información de las
-libros existentes (titulo, escritor/a, genero, año, precio, stock).
-Eliminar Producto: Los administradores deben poder eliminar productos del catálogo.
-Gestionar Usuarios: Los administradores deben poder ver, modificar y eliminar cuentas de
-usuarios.
-Gestión de Pedidos:
-Crear Pedido: Los clientes pueden crear un nuevo pedido que incluye una lista de productos
-seleccionados del carrito.
-Modificar Pedido: Los clientes pueden agregar o eliminar productos de un pedido antes de
-finalizar la compra.
-Estado del Pedido: El estado de un pedido indicará si está en proceso, enviado o
-completado.
-Total del Pedido: El sistema debe calcular automáticamente el total del pedido basado en
-los precios de las zapatillas seleccionadas.
-Gestión de Productos:
-Atributos del Producto:
+Propuesta para el Proyecto: Sistema de Venta de Libros
 
+Objetivo:
+Desarrollar una aplicación integral que facilite la venta y gestión de libros. 
+La solución permitirá que los administradores gestionen el catálogo de productos y usuarios, mientras que los clientes podrán buscar, comprar libros y administrar sus pedidos.
+
+Requerimientos Funcionales:
+
+Gestión de Usuarios:
+
+Acceso General:
+Todos los usuarios pueden ver el catálogo de libros y buscar por nombre sin necesidad de registrarse.
+
+Registro:
+Los nuevos usuarios podrán registrarse proporcionando sus datos personales.
+Login:
+Todos los usuarios (clientes y administradores) deberán autenticarse en el sistema utilizando su nombre de usuario y contraseña.
+Gestión de Clientes:
+
+Exploración de Productos:
+Los clientes podrán navegar por el catálogo de libros y ver los detalles de cada producto, como título, escritor/a, género, año, precio y stock.
+Realización de Pedidos:
+Los clientes podrán completar la compra de libros, lo que generará un pedido y actualizará el inventario.
+Historial de Pedidos:
+Los clientes podrán consultar sus pedidos anteriores, visualizando detalles como productos adquiridos, estado del pedido y total.
+Gestión de Administradores:
+
+Exploración de Productos:
+Los administradores podrán ver tanto los libros disponibles como aquellos no disponibles para el cliente por falta de stock.
+Administración del Catálogo:
+Agregar nuevos libros al catálogo.
+Modificar la información de los libros existentes (título, escritor/a, género, año, precio, stock).
+Eliminar productos del catálogo.
+Gestión de Usuarios:
+Visualizar, modificar y desactivar cuentas de usuarios.
+Gestión de Pedidos:
+
+Cálculo del Total del Pedido:
+El sistema calculará automáticamente el total del pedido basándose en los precios de los libros seleccionados.
+Gestión de Productos:
+
+Atributos del Producto:
 Nombre
-Titulo
+Título
 Escritor/a
-Genero
+Género
 Año
 Precio
 Stock
 Endpoints NO-ABMC:
-Compra de libros:
-Los clientes pueden agregar libros a una lista de compras (carrito) y proceder con la
-compra.
+
+Compra de Libros:
+Los clientes podrán realizar compras de libros.
 Administración de Usuarios y Productos:
-Los administradores pueden gestionar (agregar, eliminar, modificar) tanto productos como
-usuarios.
+Los administradores podrán gestionar (agregar, eliminar, modificar) tanto productos como usuarios.
 Niveles de Acceso:
+
 Cliente:
-Puede visualizar el catálogo de productos.
-Puede agregar y eliminar productos de su carrito de compras.
-Puede realizar pedidos y ver el historial de sus pedidos.
+
+Visualiza el catálogo de productos.
+Puede agregar y eliminar productos en su carrito de compras.
+Realiza pedidos y consulta el historial de pedidos.
 Administrador:
-Tiene acceso completo para administrar productos y usuarios.
+
+Acceso completo para administrar productos y usuarios.
 Puede modificar, agregar y eliminar productos.
-Puede gestionar cuentas de usuarios, incluyendo la eliminación de usuarios del sistema.
-
-
-
-
+Gestiona cuentas de usuarios, incluida la opción de desactivarlos o eliminarlos.

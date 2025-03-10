@@ -54,3 +54,15 @@ D:\Bere\GIT\Programacion3UTN\BookAPI\Domain\obj\Debug\net6.0\Domain.dll
 D:\Bere\GIT\Programacion3UTN\BookAPI\Domain\obj\Debug\net6.0\refint\Domain.dll
 D:\Bere\GIT\Programacion3UTN\BookAPI\Domain\obj\Debug\net6.0\Domain.pdb
 D:\Bere\GIT\Programacion3UTN\BookAPI\Domain\obj\Debug\net6.0\ref\Domain.dll
+C:\Users\bsolohaga\Desktop\bere\GIT\Programacion3UTN\BookAPI\Domain\bin\Debug\net6.0\Domain.deps.json
+C:\Users\bsolohaga\Desktop\bere\GIT\Programacion3UTN\BookAPI\Domain\bin\Debug\net6.0\Domain.dll
+C:\Users\bsolohaga\Desktop\bere\GIT\Programacion3UTN\BookAPI\Domain\bin\Debug\net6.0\Domain.pdb
+C:\Users\bsolohaga\Desktop\bere\GIT\Programacion3UTN\BookAPI\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bsolohaga\Desktop\bere\GIT\Programacion3UTN\BookAPI\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
+C:\Users\bsolohaga\Desktop\bere\GIT\Programacion3UTN\BookAPI\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
+C:\Users\bsolohaga\Desktop\bere\GIT\Programacion3UTN\BookAPI\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\bsolohaga\Desktop\bere\GIT\Programacion3UTN\BookAPI\Domain\obj\Debug\net6.0\Domain.sourcelink.json
+C:\Users\bsolohaga\Desktop\bere\GIT\Programacion3UTN\BookAPI\Domain\obj\Debug\net6.0\Domain.dll
+C:\Users\bsolohaga\Desktop\bere\GIT\Programacion3UTN\BookAPI\Domain\obj\Debug\net6.0\refint\Domain.dll
+C:\Users\bsolohaga\Desktop\bere\GIT\Programacion3UTN\BookAPI\Domain\obj\Debug\net6.0\Domain.pdb
+C:\Users\bsolohaga\Desktop\bere\GIT\Programacion3UTN\BookAPI\Domain\obj\Debug\net6.0\ref\Domain.dll

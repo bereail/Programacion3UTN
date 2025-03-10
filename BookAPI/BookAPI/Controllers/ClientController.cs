@@ -50,18 +50,5 @@ namespace BookAPI.Controllers
             return NoContent();
         }
 
-        /* [HttpDelete("Delete")]
-         [Authorize(Roles = "Client")]
-         public ActionResult DeleteClient()
-         {
-             var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
-
-             if (!int.TryParse(userIdClaim, out int userId))
-                 return Unauthorized();
-
-             _userService.DeleteUser(userId);
-             return NoContent();
-         }}*/
-
     }
 }
