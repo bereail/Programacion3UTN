@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "anIr211Tppmgg0K+7VTwcMDUlREMOwQTaqVcRLd/jlABB8YR9Q6rVMC310JDknGFa+K1OhBJMNymV4A39RJcfQ==",
+  "dgSpecHash": "RSnmUAhOfoj+1/d6HoLplNVviqlkQlSfhWGMlgB0VqU96H0Ptr+OLMQUoFzDazJ9YxHap0iS25/UGZs7ND6nrA==",
   "success": true,
   "projectFilePath": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\BookAPI\\BookAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrador\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.36\\microsoft.aspnetcore.authentication.jwtbearer.6.0.36.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\8.0.0\\microsoft.bcl.asyncinterfaces.8.0.0.nupkg.sha512",

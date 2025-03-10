@@ -1,9 +1,11 @@
 ﻿using Application.Dtos.BookDTOs;
 using Application.Interfaces.Services;
 using Domain.Entities.Entities;
+using Domain.Enums;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
+using static System.Reflection.Metadata.BlobBuilder;
 
 namespace BookAPI.Controllers
 {
@@ -39,16 +41,37 @@ namespace BookAPI.Controllers
         }
 
 
+       [HttpGet("GetBookByTitle")]
+[AllowAnonymous]
+public ActionResult<IEnumerable<BookGetDTO>> GetBook(string title)
+{
+    var userRole = HttpContext.User.Claims
+        .FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
 
-        [HttpGet("GetBookByTitle")]
-        [AllowAnonymous]
-        public ActionResult<BookGetDTO> GetBook(string title)
-        {
-            var book = _bookService.GetBookByTitle(title);
-            if (book == null)
-                return NotFound();
-            return Ok(book);
-        }
+    IEnumerable<BookGetDTO> books;
+
+    try
+    {
+        books = _bookService.GetBookByTitle(title);
+    }
+    catch (KeyNotFoundException ex)
+    {
+        return NotFound(new { message = ex.Message });
+    }
+    catch (Exception ex)
+    {
+        return StatusCode(500, new { message = "Error interno del servidor", error = ex.Message });
+    }
+
+    // Filtra los libros para usuarios que NO son admin
+    if (userRole != "Admin")
+    {
+        books = books.Where(b => b.Stock > 0).ToList();
+    }
+
+    return Ok(books);
+}
+
 
 
 

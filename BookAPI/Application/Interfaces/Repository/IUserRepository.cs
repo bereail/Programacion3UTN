@@ -1,4 +1,5 @@
-﻿using Application.Dtos.UserDto;
+﻿using Application.Dtos;
+using Application.Dtos.UserDto;
 using Domain.Entities;
 using Domain.Entities.Entities;
 using Domain.Enums;
@@ -35,7 +36,7 @@ namespace Application.Interfaces.Repository
         int AddUser(User newUser);
         User? ValidateUser(AuthenticationRequestBody authenticationRequestBody);
 
-
+      /*  public BaseResponse ReactivateUserByCredentials(string email, string password);*/
 
     }
 }

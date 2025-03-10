@@ -12,7 +12,7 @@
             Email = email;
         }
 
-        // Constructor sin parámetros por si lo necesitas en mapeo automático
+    
         public AdminDTO() { }
     }
 }

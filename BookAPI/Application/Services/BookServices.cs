@@ -30,10 +30,17 @@ namespace Application.Data.Implementations
         public IEnumerable<BookGetDTO> GetBookByTitle(string title)
         {
             var books = _bookRepository.GetAllBooks()
-                .Where(b => b.Title.ToLower().Contains(title.ToLower()));
+                .Where(b => b.Title.ToLower().Contains(title.ToLower()))
+                .ToList(); 
 
-            return _mapper.Map<IEnumerable<BookGetDTO>>(books); 
+            if (!books.Any())
+            {
+                throw new KeyNotFoundException("No se encontraron libros con ese título.");
+            }
+
+            return _mapper.Map<IEnumerable<BookGetDTO>>(books);
         }
+
 
         public BookDTO? AddBook(BookToCreateDTO bookToCreateDTO)
         {
@@ -152,16 +159,5 @@ namespace Application.Data.Implementations
         }
 
 
-        /*  public bool VerificateBookStock(int bookId, int requiredStock)
-          {
-              var book = _bookRepository.GetBookById(bookId);
-
-              if (book == null || book.Stock < requiredStock)
-                  return false; 
-
-              return true;
-          }
-
-          */
     }
 }

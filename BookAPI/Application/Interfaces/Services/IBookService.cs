@@ -20,6 +20,6 @@ namespace Application.Interfaces.Services
         public BookDTO? DisableBook(int bookId);
 
         public int GetBookStock(int bookId);
-        /*public bool VerificateBookStock(int bookid, int requiredStock);*/
+      
     }
 }

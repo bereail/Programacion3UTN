@@ -11,7 +11,7 @@ namespace Application.Interfaces.Services
     {
         public SaleOrderDTO? GetSaleOrder(int SaleOrderId);
         public ICollection<SaleOrderDTO> GetAllSaleOrders();
-        public SaleOrderDTO? AddSaleOrder(SaleOrderToCreateDTO saleOrderToCreateDTO, int clientId);
+        public SaleOrderDTO CreateSaleOrder(SaleOrderToCreateDTO saleOrderToCreateDTO, int clientId);
 
         public SaleOrderStatusDTO? UpdateSaleOrderStatus(int saleOrderId);
         public SaleOrderDTO? DeleteSaleOrder(int saleOrderId);

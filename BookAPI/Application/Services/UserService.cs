@@ -130,11 +130,23 @@ namespace Infraestructure.Data.Repositories
 
         public ClientDTO AddClient(ClientToCreateDTO clientToCreateDTO)
         {
+            if (string.IsNullOrWhiteSpace(clientToCreateDTO.Email))
+            {
+                throw new ArgumentException("El email no puede estar vacío.");
+            }
+
+            var existingUser = _userRepository.GetUserByEmail(clientToCreateDTO.Email);
+            if (existingUser != null)
+            {
+                throw new InvalidOperationException("El correo electrónico ya está registrado.");
+            }
+
             var newClient = _mapper.Map<Client>(clientToCreateDTO);
             _userRepository.AddUser(newClient);
             _userRepository.SaveChanges();
             return _mapper.Map<ClientDTO>(newClient);
         }
+
 
     }
 }

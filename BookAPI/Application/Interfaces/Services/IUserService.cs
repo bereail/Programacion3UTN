@@ -14,37 +14,19 @@ using Domain.Entities.Entities;
 namespace Application.Interfaces.Services
 {
     public interface IUserService
-    {
-        // LOGIN
-    
+    {            
         BaseResponse Login(string mail, string password);
         User? ValidateUser(AuthenticationRequestBody authenticationRequestBody);
-
-        // GESTIÓN DE USUARIOS
-        //OK
         User? GetUserById(int id);
-
-        //OK
         User? GetUserByEmail(string email);
-
-        //OK
         List<UserDto> GetUsers();
-
-        //OK
         IEnumerable<AdminDTO> GetAdmins();
-
-        //OK
         IEnumerable<ClientDTO> GetClients();
-
-        // OK
         void DisableAccount(int userId);
-
-        //OK
         BaseResponse ReactivateUser(int idUser, ClaimsPrincipal user);
-
-        // BOOKING ASOCIADOS AL USUARIO
         List<int> GetBookingIdsByUserId(int userId);
-
         public ClientDTO AddClient(ClientToCreateDTO clientToCreateDTO);
+
+      
     }
 }

@@ -36,13 +36,23 @@ namespace BookAPI.Controllers
             return Ok(client);
         }
 
-
-        [HttpPost("SingIn")]
+        [HttpPost("SignIn")]
         [AllowAnonymous]
         public IActionResult AddClient(ClientToCreateDTO clientToCreate)
         {
-            _userService.AddClient(clientToCreate);
-            return Created("", new { message = "Usuario creado exitosamente" });
+            try
+            {
+                _userService.AddClient(clientToCreate);
+                return Created("", new { message = "Usuario creado exitosamente" });
+            }
+            catch (InvalidOperationException ex)
+            {
+                return Conflict(new { message = ex.Message }); // Código HTTP 409 - Conflicto
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Error interno del servidor", error = ex.Message });
+            }
         }
 
 
@@ -64,6 +74,6 @@ namespace BookAPI.Controllers
 
         }
 
-
+       
     }
 }

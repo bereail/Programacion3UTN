@@ -11,7 +11,7 @@ namespace Application.Dtos.BookDTOs
     public class BookGetDTO
     {
         public string Title { get; set; }
-        public BookGenre Genre { get; set; }
+        public string Genre { get; set; }
         public string Author { get; set; }
 
         public float Price { get; set; }

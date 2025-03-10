@@ -10,7 +10,7 @@ namespace Application.Dtos
     {
         public bool Result { get; set; }
         public string Message { get; set; }
-        public bool Success { get; internal set; }
+        public bool Success { get; set; }
 
         public string Details { get; internal set; }
     }

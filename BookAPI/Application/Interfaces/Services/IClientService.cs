@@ -9,8 +9,7 @@ using System.Threading.Tasks;
 namespace Application.Interfaces.Services
 {
     public interface IClientService : IUserService
-    {
-     
+    {   
 
         public ICollection<SaleOrderDTO> GetClientSaleOrders(int clientId);
 

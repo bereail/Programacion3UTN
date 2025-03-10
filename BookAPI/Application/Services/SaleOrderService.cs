@@ -59,59 +59,29 @@ namespace Shop.API.Services.Implementations
             return _mapper.Map<ICollection<SaleOrderDTO>>(saleOrders);
         }
 
-        public SaleOrderDTO? AddSaleOrder(SaleOrderToCreateDTO saleOrderToCreateDTO, int clientId)
+        public SaleOrderDTO CreateSaleOrder(SaleOrderToCreateDTO saleOrderToCreateDTO, int clientId)
         {
-            try
+            var newSaleOrder = _mapper.Map<SaleOrder>(saleOrderToCreateDTO);
+            newSaleOrder.ClientId = clientId;
+            newSaleOrder.Status = SaleOrderStatus.Finalizado;
+
+            var availableStock = _bookService.GetBookStock(newSaleOrder.BookId);
+
+            if (availableStock < newSaleOrder.BookQuantity)
             {
-                Console.WriteLine("Creating SaleOrder...");
-                Console.WriteLine($"BookId: {saleOrderToCreateDTO.BookId}, BookQuantity: {saleOrderToCreateDTO.BookQuantity}");
-
-                var newSaleOrder = _mapper.Map<SaleOrder>(saleOrderToCreateDTO);
-                newSaleOrder.ClientId = clientId;
-                newSaleOrder.Status = SaleOrderStatus.Finalizado;
-
-                Console.WriteLine($"Checking stock for BookId: {newSaleOrder.BookId}, Quantity: {newSaleOrder.BookQuantity}");
-
-                var availableStock = _bookService.GetBookStock(newSaleOrder.BookId);
-
-                if (availableStock < newSaleOrder.BookQuantity)
-                {
-                    Console.WriteLine($"Error: Not enough stock for BookId {newSaleOrder.BookId}. Available: {availableStock}, Requested: {newSaleOrder.BookQuantity}");
-                    throw new InvalidOperationException("Insufficient stock for the requested book.");
-                }
-
-                var book = _bookService.GetBookById(newSaleOrder.BookId);
-                if (book == null)
-                {
-                    Console.WriteLine($"Error: Book with ID {newSaleOrder.BookId} not found.");
-                    throw new ArgumentException("Invalid book ID.");
-                }
-
-                _bookService.UpdateBookStock(newSaleOrder.BookId, book.Stock - newSaleOrder.BookQuantity);
-
-                _saleOrderRepository.AddSaleOrder(newSaleOrder);
-                _saleOrderRepository.SaveChanges();
-                Console.WriteLine("SaleOrder created successfully!");
-
-                return _mapper.Map<SaleOrderDTO>(newSaleOrder);
-            }
-            catch (InvalidOperationException ex)
-            {
-                Console.WriteLine($"Stock Error: {ex.Message}");
                 return null;
             }
-            catch (ArgumentException ex)
+
+            var book = _bookService.GetBookById(newSaleOrder.BookId);
+            if (book == null)
             {
-                Console.WriteLine($"Invalid Data Error: {ex.Message}");
                 return null;
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Unexpected Error: {ex.Message}");
-                return null;
-            }
+
+            _bookService.UpdateBookStock(newSaleOrder.BookId, book.Stock - newSaleOrder.BookQuantity);
+            _saleOrderRepository.AddSaleOrder(newSaleOrder);
+            return _mapper.Map<SaleOrderDTO>(newSaleOrder);
         }
-
 
 
         public SaleOrderDTO? DeleteSaleOrder(int saleOrderId)

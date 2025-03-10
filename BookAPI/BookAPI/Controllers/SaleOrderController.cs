@@ -1,5 +1,8 @@
-﻿using Application.Dtos.SaleOrderDTOs;
+﻿using Application.Data.Implementations;
+using Application.Dtos.SaleOrderDTOs;
 using Application.Interfaces.Services;
+using Domain.Entities.Entities;
+using Domain.Enums;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
@@ -11,6 +14,7 @@ namespace BookAPI.Controllers
     public class SaleOrderController : ControllerBase
     {
         private readonly ISaleOrderService _saleOrderService;
+        private readonly IBookService _bookService;
 
         public SaleOrderController(ISaleOrderService saleOrderService)
         {
@@ -100,32 +104,33 @@ namespace BookAPI.Controllers
             }
         }
 
-
-
         [HttpPost("Create")]
-        public ActionResult AddSaleOrder(SaleOrderToCreateDTO saleOrderToCreateDTO)
+        public IActionResult AddSaleOrder(SaleOrderToCreateDTO saleOrderToCreateDTO)
         {
-            Console.WriteLine("SaleOrderToCreateDTO received:");
-            Console.WriteLine($"BookId: {saleOrderToCreateDTO.BookId}, BookQuantity: {saleOrderToCreateDTO.BookQuantity}");
-
-            var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
-            if (!int.TryParse(userIdClaim, out int clientId))
+            try
             {
-                Console.WriteLine("Error: Unauthorized - Invalid user ID");
-                return Unauthorized(new { message = "Unauthorized: Invalid user ID" });
+                // Obtener el userId de las claims
+                var userIdClaim = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+
+                if (string.IsNullOrEmpty(userIdClaim) || !int.TryParse(userIdClaim, out int userId))
+                {
+                    return Unauthorized(new { message = "User is not authorized." });
+                }
+
+                var newSaleOrder = _saleOrderService.CreateSaleOrder(saleOrderToCreateDTO, userId);
+
+                if (newSaleOrder == null)
+                {
+                    return BadRequest(new { message = "Failed to create sale order." });
+                }
+
+                return Ok(newSaleOrder);
             }
-
-            var createdSaleOrder = _saleOrderService.AddSaleOrder(saleOrderToCreateDTO, clientId);
-
-            if (createdSaleOrder == null)
+            catch (Exception ex)
             {
-                Console.WriteLine("Error: Sale order could not be created (possible stock issue)");
-                return BadRequest(new { message = "Error: Insufficient stock or invalid book ID." });
+                return StatusCode(500, new { message = "An internal server error occurred.", error = ex.Message });
             }
-
-            return CreatedAtRoute("GetSaleOrder", new { saleOrderId = createdSaleOrder.SaleOrderId }, createdSaleOrder);
         }
-
 
 
 

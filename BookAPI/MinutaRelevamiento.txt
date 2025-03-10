@@ -1,0 +1,45 @@
+Minuta de Relevamiento - API de Gestión de Libros
+
+1. Usuarios
+
+Acciones disponibles:
+
+Registrarse
+
+Ver todos los libros disponibles
+
+Buscar libros por nombre
+
+2. Clientes
+
+Acciones disponibles (incluye las de Usuario + adicionales):
+
+Dar de baja su cuenta
+
+Volver a dar de alta su cuenta
+
+Comprar un libro
+
+Ver su historial de compras
+
+3. Administradores
+
+Acciones disponibles (incluye las de Cliente + adicionales):
+
+Buscar libro por ID
+
+Ver todos los libros, incluyendo los no disponibles para la venta
+
+Ver todos los clientes
+
+Ver todos los administradores
+
+Crear un nuevo libro
+
+Editar un libro
+
+Editar el stock de un libro
+
+Desactivar un libro
+
+Ver el historial de compra de cada cliente
