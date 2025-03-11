@@ -22,19 +22,32 @@ namespace BookAPI.Controllers
             _userService = userService;
         }
 
-        [HttpGet("{id}", Name = "GetClient")]
-        public ActionResult<ClientDTO> GetClient(int id)
+        [HttpGet("{id}")]
+        public IActionResult GetClient(int id)
         {
             var userRole = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
 
             if (userRole != "Admin")
             {
-                return Forbid();
+                return Forbid(); 
             }
-            var client = _userService.GetUserById(id);
-            if (client == null) return NotFound();
-            return Ok(client);
+
+            try
+            {
+                var user = _userService.GetUserById(id);
+                if (user == null)
+                {
+                    return NotFound(new { message = "Usuario no encontrado." });
+                }
+                return Ok(user);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Error interno del servidor.", error = ex.Message });
+            }
         }
+
+
 
         [HttpPost("SignIn")]
         [AllowAnonymous]
@@ -54,26 +67,6 @@ namespace BookAPI.Controllers
                 return StatusCode(500, new { message = "Error interno del servidor", error = ex.Message });
             }
         }
-
-
-        [HttpGet("{id}/GetSaleOrders")]
-        [Authorize(Roles = "Admin, Client")]
-        public ActionResult<ICollection<SaleOrderDTO>> GetClientSaleOrders(int id)
-        {
-            var userRole = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
-
-            var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
-            if (!int.TryParse(userIdClaim, out int userId))
-                return Unauthorized();
-
-            if (userId != id && userRole != "Admin")
-                return Forbid();
-
-            var saleOrders = _userService.GetBookingIdsByUserId(id);
-            return Ok(saleOrders);
-
-        }
-
        
     }
 }

@@ -1,68 +1,50 @@
 Propuesta para el Proyecto: Sistema de Venta de Libros
+Objetivo
+Desarrollar una aplicación integral que facilite la venta y gestión de libros. La solución permitirá que los administradores gestionen el catálogo de productos y usuarios, mientras que los clientes podrán buscar y comprar libros, así como administrar sus pedidos.
 
-Objetivo:
-Desarrollar una aplicación integral que facilite la venta y gestión de libros. 
-La solución permitirá que los administradores gestionen el catálogo de productos y usuarios, mientras que los clientes podrán buscar, comprar libros y administrar sus pedidos.
-
-Requerimientos Funcionales:
-
-Gestión de Usuarios:
-
-Acceso General:
+Requerimientos Funcionales
+Gestión de Usuarios
+Acceso General
 Todos los usuarios pueden ver el catálogo de libros y buscar por nombre sin necesidad de registrarse.
-
-Registro:
+Registro
 Los nuevos usuarios podrán registrarse proporcionando sus datos personales.
-Login:
+Login
 Todos los usuarios (clientes y administradores) deberán autenticarse en el sistema utilizando su nombre de usuario y contraseña.
-Gestión de Clientes:
-
-Exploración de Productos:
-Los clientes podrán navegar por el catálogo de libros y ver los detalles de cada producto, como título, escritor/a, género, año, precio y stock.
-Realización de Pedidos:
+Gestión de Clientes
+Exploración de Productos
+Los clientes podrán navegar por el catálogo de libros y ver los detalles de cada producto, como título, autor/a, género, año, precio y stock.
+Realización de Pedidos
 Los clientes podrán completar la compra de libros, lo que generará un pedido y actualizará el inventario.
-Historial de Pedidos:
+Historial de Pedidos
 Los clientes podrán consultar sus pedidos anteriores, visualizando detalles como productos adquiridos, estado del pedido y total.
-Gestión de Administradores:
-
-Exploración de Productos:
-Los administradores podrán ver tanto los libros disponibles como aquellos no disponibles para el cliente por falta de stock.
-Administración del Catálogo:
+Gestión de Administradores
+Exploración de Productos
+Los administradores podrán ver tanto los libros disponibles para la venta como aquellos que no se muestran al cliente por falta de stock.
+Administración del Catálogo
 Agregar nuevos libros al catálogo.
-Modificar la información de los libros existentes (título, escritor/a, género, año, precio, stock).
-Eliminar productos del catálogo.
-Gestión de Usuarios:
-Visualizar, modificar y desactivar cuentas de usuarios.
-Gestión de Pedidos:
-
-Cálculo del Total del Pedido:
+Modificar la información de los libros existentes (título, autor/a, género, año, precio, stock).
+Gestión de Pedidos
+Cálculo del Total del Pedido
 El sistema calculará automáticamente el total del pedido basándose en los precios de los libros seleccionados.
-Gestión de Productos:
-
-Atributos del Producto:
+Gestión de Productos
+Atributos del Producto
 Nombre
 Título
-Escritor/a
+Autor/a
 Género
 Año
 Precio
 Stock
-Endpoints NO-ABMC:
-
-Compra de Libros:
+Endpoints NO-ABMC
+Compra de Libros
 Los clientes podrán realizar compras de libros.
-Administración de Usuarios y Productos:
-Los administradores podrán gestionar (agregar, eliminar, modificar) tanto productos como usuarios.
-Niveles de Acceso:
-
-Cliente:
-
+Administración de Usuarios
+Visualizar, desactivar y reactivar cuentas de usuarios.
+Niveles de Acceso
+Cliente
 Visualiza el catálogo de productos.
-Puede agregar y eliminar productos en su carrito de compras.
-Realiza pedidos y consulta el historial de pedidos.
-
-Administrador:
-
+Realiza compras y consulta el historial de pedidos.
+Administrador
 Acceso completo para administrar productos y usuarios.
-Puede modificar, agregar y desactivar productos.
-Gestiona cuentas de usuarios, incluida la opción de desactivarlos y volver a reactivarlos.
+Puede modificar, agregar y desactivar libros.
+Gestiona cuentas de usuarios, incluida la opción de desactivarlos y reactivarlos.

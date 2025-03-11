@@ -80,26 +80,20 @@ namespace BookAPI.Controllers
                 var userIdClaim = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
 
                 if (string.IsNullOrEmpty(userIdClaim) || !int.TryParse(userIdClaim, out int userId))
-                {
-                    Console.WriteLine("Unauthorized access: User ID is missing or invalid.");
+                {                    
                     return Unauthorized(new { message = "User is not authorized." });
-                }
-
-                Console.WriteLine($"Fetching sale orders for user ID: {userId}");
+                }             
 
                 var saleOrders = _saleOrderService.GetOrdersByUserId(userId);
 
                 if (saleOrders == null || !saleOrders.Any())
-                {
-                    Console.WriteLine($"No sale orders found for user ID {userId}.");
+                {                   
                     return NotFound(new { message = "No sale orders found for this user." });
                 }
-
                 return Ok(saleOrders);
             }
             catch (Exception ex)
-            {
-                Console.WriteLine($"Unexpected Error: {ex.Message}");
+            {                
                 return StatusCode(500, new { message = "An internal server error occurred." });
             }
         }

@@ -39,16 +39,21 @@ namespace Infraestructure.Repositories
             if (saleOrder != null)
             {
                 saleOrder.Status = SaleOrderStatus.Cancelado;
-                _context.SaveChanges(); 
+                _context.SaveChanges();
             }
         }
 
-
         public IEnumerable<SaleOrder> GetOrdersByUserId(int userId)
         {
-            return _context.SaleOrders.Where(o => o.ClientId == userId).ToList();
-        }
+            var orders = _context.SaleOrders
+     .Where(o => o.ClientId == userId)
+     .Include(o => o.Book)
+     .ToList();
 
-      
+
+            return orders;
+
+
+        }
     }
-}
+    }

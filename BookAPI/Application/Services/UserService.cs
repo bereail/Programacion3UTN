@@ -32,18 +32,12 @@ namespace Infraestructure.Data.Repositories
             _mapper = mapper;
         }
 
-
-
-        //OK
         public User? GetUserById(int id)
         {
-            var user = _userRepository.GetUserById(id);
-            if (user == null)
-                throw new Exception("Usuario no encontrado.");
-            return user;
+            return _userRepository.GetUserById(id); 
         }
 
-        //OK
+
         public User? GetUserByEmail(string email)
         {
             if (string.IsNullOrWhiteSpace(email))
@@ -56,7 +50,7 @@ namespace Infraestructure.Data.Repositories
             return user;
         }
 
-        //OK
+
         public List<UserDto> GetUsers()
         {
             var users = _userRepository.GetAllUsers();
@@ -64,19 +58,19 @@ namespace Infraestructure.Data.Repositories
             if (users == null || users.Count == 0)
                 throw new Exception("No se encontraron usuarios.");
 
-            // Usa AutoMapper para mapear los datos a UserDto
+            
             return _mapper.Map<List<UserDto>>(users);
         }
 
 
-        //OK
+
         public IEnumerable<AdminDTO> GetAdmins()
         {
             var admins = _userRepository.GetUsersByRole(UserRole.Admin);
             return _mapper.Map<List<AdminDTO>>(admins) ;
         }
 
-        //OK
+
         public IEnumerable<ClientDTO> GetClients()
         {
             var clients = _userRepository.GetUsersByRole(UserRole.Client);

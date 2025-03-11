@@ -80,6 +80,8 @@ namespace Shop.API.Services.Implementations
 
             _bookService.UpdateBookStock(newSaleOrder.BookId, book.Stock - newSaleOrder.BookQuantity);
             _saleOrderRepository.AddSaleOrder(newSaleOrder);
+
+
             return _mapper.Map<SaleOrderDTO>(newSaleOrder);
         }
 
@@ -90,7 +92,6 @@ namespace Shop.API.Services.Implementations
 
             if (saleOrder != null)
             {
-                // Cambiar el estado directamente en el servicio o en el repositorio.
                 _saleOrderRepository.CancelSaleOrder(saleOrderId);
             }
 
@@ -115,13 +116,11 @@ namespace Shop.API.Services.Implementations
             return _mapper.Map<SaleOrderStatusDTO>(saleOrderToUpdate);
         }
 
-
         public IEnumerable<SaleOrderDTO> GetOrdersByUserId(int userId)
         {
             var saleOrders = _saleOrderRepository.GetOrdersByUserId(userId);
             return _mapper.Map<IEnumerable<SaleOrderDTO>>(saleOrders);
         }
-
 
     }
 }
