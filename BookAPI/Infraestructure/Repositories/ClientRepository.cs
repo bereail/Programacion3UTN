@@ -14,11 +14,22 @@ namespace Infraestructure.Repositories
 
         public ICollection<SaleOrder> GetClientSaleOrders(int clientId)
         {
-            return _context.Clients
-                 .Where(c => c.Id == clientId)
-                 .SelectMany(c => c.SaleOrders)
-                 .Include(s => s.Book)
-                 .ToList();
+            var client = _context.Clients
+                .Include(c => c.SaleOrders) 
+                .ThenInclude(s => s.Book)    
+                .FirstOrDefault(c => c.Id == clientId);
+
+            if (client == null)
+            {
+                throw new KeyNotFoundException($"No se encontró un cliente con el ID {clientId}.");
+            }
+
+            if (client.SaleOrders == null || !client.SaleOrders.Any())
+            {
+                throw new InvalidOperationException($"El cliente con ID {clientId} no tiene órdenes de venta.");
+            }
+
+            return client.SaleOrders;
         }
     }
 }

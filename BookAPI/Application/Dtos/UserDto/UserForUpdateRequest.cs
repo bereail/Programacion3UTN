@@ -15,7 +15,7 @@ namespace Application.Dtos.UserDto
 
         [Required]
         public string Email { get; set; }
-        //Requerido
+
         [Required]
         public string Password { get; set; }
         [Required]

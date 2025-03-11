@@ -85,20 +85,20 @@ namespace Application.Data.Implementations
 
         public BookDTO? EditBook(int bookId, BookToUpdateDTO newUpdateBookDTO)
         {
-            // Buscar el libro en la base de datos
+           
             var book = _bookRepository.GetBookById(bookId);
             if (book == null)
             {
-                return null; // Retorna null si el libro no existe
+                return null; 
             }
 
-            // Mapear los nuevos valores
+          
             _mapper.Map(newUpdateBookDTO, book);
 
-            // Guardar los cambios
+          
             _bookRepository.SaveChanges();
 
-            // Retornar el libro actualizado en formato DTO
+           
             return _mapper.Map<BookDTO>(book);
         }
 
@@ -140,7 +140,7 @@ namespace Application.Data.Implementations
             }
 
             bookToUpdate.Stock = newStock;
-            _bookRepository.UpdateBook(bookToUpdate); // Llamada al repositorio para guardar cambios
+            _bookRepository.UpdateBook(bookToUpdate); 
 
             return _mapper.Map<BookDTO>(bookToUpdate);
         }
@@ -157,13 +157,13 @@ namespace Application.Data.Implementations
         {
             var book = _bookRepository.GetBookById(bookId);
 
-            // Si el libro no existe, retornamos 0 (o un valor adecuado)
+        
             if (book == null)
             {
-                return 0; // O puedes lanzar una excepción si prefieres manejarlo de otra manera
+                return 0; 
             }
 
-            return book.Stock; // Devolvemos el stock del libro
+            return book.Stock; 
         }
 
 

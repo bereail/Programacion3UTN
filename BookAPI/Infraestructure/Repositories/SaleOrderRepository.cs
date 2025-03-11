@@ -1,6 +1,7 @@
 ﻿using Application.Dtos.SaleOrderDTOs;
 using Application.Interfaces.Repository;
 using Domain.Entities.Entities;
+using Domain.Enums;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -32,12 +33,16 @@ namespace Infraestructure.Repositories
             _context.SaveChanges();
         }
 
-        public void DeleteSaleOrder(int saleOrderId)
+        public void CancelSaleOrder(int saleOrderId)
         {
             var saleOrder = _context.SaleOrders.Find(saleOrderId);
             if (saleOrder != null)
-                _context.SaleOrders.Remove(saleOrder);
+            {
+                saleOrder.Status = SaleOrderStatus.Cancelado;
+                _context.SaveChanges(); 
+            }
         }
+
 
         public IEnumerable<SaleOrder> GetOrdersByUserId(int userId)
         {

@@ -19,16 +19,6 @@ namespace Application.Services
             _clientRepository = clientRepository;
         }
 
-
-
-        public void UpdateClient(ClientToUpdateDTO clientToUpdateDTO, int clientId)
-        {
-            var clientToUpdate = _userRepository.GetUserById(clientId);
-            _mapper.Map(clientToUpdateDTO, clientToUpdate);
-            _userRepository.UpdateUser(clientToUpdate);
-            _userRepository.SaveChanges();
-        }
-
         public ICollection<SaleOrderDTO> GetClientSaleOrders(int clientId)
         {
             var saleOrders = _clientRepository.GetClientSaleOrders(clientId);

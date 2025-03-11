@@ -21,7 +21,6 @@ namespace BookAPI.Controllers
         }
 
 
-
         [HttpGet("{id}/GetSaleOrders")]
         public ActionResult<ICollection<SaleOrderDTO>> GetClientSaleOrders(int id)
         {
@@ -29,26 +28,28 @@ namespace BookAPI.Controllers
 
             if (userRole != "Admin")
             {
-                return Forbid(); 
+                return Forbid();
             }
 
-            var saleOrders = _clientService.GetClientSaleOrders(id);
-            return Ok(saleOrders);
+            try
+            {
+                var saleOrders = _clientService.GetClientSaleOrders(id);
+                return Ok(saleOrders);
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(new { message = ex.Message });
+            }
+            catch (InvalidOperationException ex)
+            {
+                return NotFound(new { message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Ocurrió un error interno en el servidor.", error = ex.Message });
+            }
         }
 
-
-        [HttpPut("Update/{id}")]
-
-        public ActionResult UpdateClient([FromBody] ClientToUpdateDTO clientToUpdate)
-        {
-            var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
-
-            if (!int.TryParse(userIdClaim, out int userId))
-                return Unauthorized();
-
-            _clientService.UpdateClient(clientToUpdate, userId);
-            return NoContent();
-        }
 
     }
 }

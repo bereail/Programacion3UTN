@@ -21,7 +21,7 @@ namespace Infraestructure
         {
             modelBuilder.Entity<User>()
                 .ToTable("Users")
-                .HasDiscriminator<UserRole>("Role") // Aquí usar UserRole en lugar de int
+                .HasDiscriminator<UserRole>("Role") 
                 .HasValue<Admin>(UserRole.Admin)
                 .HasValue<Client>(UserRole.Client);
 
@@ -30,7 +30,7 @@ namespace Infraestructure
                 .HasColumnName("Role")
                 .HasConversion<int>();
 
-            // Configuración de datos iniciales
+          
             modelBuilder.Entity<Admin>().HasData(
                 new Admin
                 {
@@ -39,7 +39,7 @@ namespace Infraestructure
                     Email = "admin@example.com",
                     Password = "securepassword",
                     UserName = "admin",
-                    Role = UserRole.Admin, // Se almacena como 1 en la BD
+                    Role = UserRole.Admin, 
                     IsActive = true
                 }
             );
@@ -52,7 +52,7 @@ namespace Infraestructure
                     Email = "client@example.com",
                     Password = "securepassword",
                     UserName = "client",
-                    Role = UserRole.Client, // Se almacena como 2 en la BD
+                    Role = UserRole.Client, 
                     IsActive = true
                 }
             );

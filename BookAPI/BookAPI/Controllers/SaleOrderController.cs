@@ -109,7 +109,6 @@ namespace BookAPI.Controllers
         {
             try
             {
-                // Obtener el userId de las claims
                 var userIdClaim = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
 
                 if (string.IsNullOrEmpty(userIdClaim) || !int.TryParse(userIdClaim, out int userId))
@@ -134,21 +133,6 @@ namespace BookAPI.Controllers
 
 
 
-        [HttpPut("{saleOrderId}")]
-        public ActionResult<SaleOrderStatusDTO> ChangeSaleOrderStatus(int saleOrderId)
-        {
-            var userRole = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
-
-            if (userRole != "Admin")
-            {
-                return Forbid();
-            }
-            var newStatus = _saleOrderService.UpdateSaleOrderStatus(saleOrderId);
-            if (newStatus == null)
-                return NotFound();
-            return Ok("Estado de orden: " + newStatus);
-        }
-
 
         [HttpDelete("{saleOrderId}")]
         public ActionResult DeleteSaleOrder(int saleOrderId)
@@ -159,10 +143,10 @@ namespace BookAPI.Controllers
             {
                 return Forbid();
             }
-            var deletedSaleOrder = _saleOrderService.DeleteSaleOrder(saleOrderId);
+            var deletedSaleOrder = _saleOrderService.CancelSaleOrder(saleOrderId);
             if (deletedSaleOrder == null)
                 return BadRequest();
-            return Ok("Orden eliminada con Exito");
+            return Ok("Orden cancelada con Exito");
         }
 
     }

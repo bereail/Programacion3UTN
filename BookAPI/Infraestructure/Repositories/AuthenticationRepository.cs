@@ -19,7 +19,7 @@ namespace Infraestructure.Repositories
             _context = context;
         }
 
-        //-------------------------------------------------------------------------------------------------------------------------
+       
         public bool CompareUserIdWithLoggedInUser(int id, ClaimsPrincipal user)
         {
 

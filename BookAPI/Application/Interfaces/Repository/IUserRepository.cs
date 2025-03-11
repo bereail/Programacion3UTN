@@ -15,28 +15,21 @@ namespace Application.Interfaces.Repository
     {
         public User? GetUser(string email, string password);
 
-
-        //OK
         User? GetUserById(int id);
 
-        //OK
         User? GetUserByEmail(string email);
 
-        //OK
         ICollection<User> GetAllUsers();
 
-        //OK
+
         ICollection<User> GetUsersByRole(UserRole role);
 
-        //OK 
         void UpdateUser(User user);
 
         List<int> GetBookingIdsByUserId(int userId);
 
         int AddUser(User newUser);
         User? ValidateUser(AuthenticationRequestBody authenticationRequestBody);
-
-      /*  public BaseResponse ReactivateUserByCredentials(string email, string password);*/
 
     }
 }

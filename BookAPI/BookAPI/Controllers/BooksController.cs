@@ -40,6 +40,7 @@ namespace BookAPI.Controllers
                     books = books.Where(b => b.Stock > 0).ToList();
                 }
 
+
                
                 if (books == null || !books.Any())
                 {
@@ -203,29 +204,31 @@ public ActionResult<IEnumerable<BookGetDTO>> GetBook(string title)
             return Ok("El stock del libro se ha establecido a 0 exitosamente.");
         }
 
-        [HttpGet("stock/{bookId}")]
-        public ActionResult<int> GetBookStock(int bookId)
-        {
-            var userRole = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
-
-            if (userRole != "Admin")
-            {
-                return Forbid(); // Retorna 403 Forbidden si no es Admin
-            }
-            var stock = _bookService.GetBookStock(bookId);
-
-            if (stock == 0)
-            {
-                return NotFound(new { message = "Book not found." });
-            }
-
-            return Ok(stock);
-        }
     }
 
 
-    //DE PRUEBA -- ELIMINAR
+    //DE PRUEBA para verfificar si funcionan  -- ELIMINAR
 
+
+
+    /* [HttpGet("stock/{bookId}")]
+     public ActionResult<int> GetBookStock(int bookId)
+     {
+         var userRole = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
+
+         if (userRole != "Admin")
+         {
+             return Forbid(); // Retorna 403 Forbidden si no es Admin
+         }
+         var stock = _bookService.GetBookStock(bookId);
+
+         if (stock == 0)
+         {
+             return NotFound(new { message = "Book not found." });
+         }
+
+         return Ok(stock);
+     }*/
 
     /*   [HttpGet("verify-stock")]
        public IActionResult VerifyBookStock(int bookId, int requiredStock)

@@ -25,25 +25,25 @@ namespace Infraestructure.Repositories
         {
             return _context.Users.FirstOrDefault(x => x.Email == email && x.Password == password);
         }
-        //OK
+
         public User? GetUserById(int id)
         {
             return _context.Users.Find(id);
         }
 
-        //OK
+
         public User? GetUserByEmail(string email)
         {
             return _context.Users.FirstOrDefault(u => u.Email == email);
         }
 
-        //OK
+
         public ICollection<User> GetAllUsers()
         {
             return _context.Users.ToList();
         }
 
-        //OK
+
         public ICollection<User> GetUsersByRole(UserRole role)
         {
             var users = _context.Users.Where(u => (int)u.Role == (int)role).ToList();
@@ -60,7 +60,6 @@ namespace Infraestructure.Repositories
         }
 
 
-        //OK
         public void UpdateUser(User user)
         {
             _context.Users.Update(user);

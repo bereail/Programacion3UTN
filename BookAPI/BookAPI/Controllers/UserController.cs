@@ -47,7 +47,7 @@ namespace BookAPI.Controllers
             }
             catch (InvalidOperationException ex)
             {
-                return Conflict(new { message = ex.Message }); // Código HTTP 409 - Conflicto
+                return Conflict(new { message = ex.Message }); 
             }
             catch (Exception ex)
             {

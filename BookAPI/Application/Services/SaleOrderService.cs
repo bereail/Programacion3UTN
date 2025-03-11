@@ -84,18 +84,19 @@ namespace Shop.API.Services.Implementations
         }
 
 
-        public SaleOrderDTO? DeleteSaleOrder(int saleOrderId)
+        public SaleOrderDTO? CancelSaleOrder(int saleOrderId)
         {
             var saleOrder = _saleOrderRepository.GetSaleOrder(saleOrderId);
 
             if (saleOrder != null)
             {
-                _saleOrderRepository.DeleteSaleOrder(saleOrderId);
-                _saleOrderRepository.SaveChanges();
+                // Cambiar el estado directamente en el servicio o en el repositorio.
+                _saleOrderRepository.CancelSaleOrder(saleOrderId);
             }
 
             return _mapper.Map<SaleOrderDTO>(saleOrder);
         }
+
 
         public SaleOrderStatusDTO? UpdateSaleOrderStatus(int saleOrderId)
         {

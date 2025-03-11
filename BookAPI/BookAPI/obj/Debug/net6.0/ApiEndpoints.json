@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "BookAPI.Controllers.AdminController",
+    "Method": "DisableUser",
+    "RelativePath": "api/admin/{email}/disable",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookAPI.Controllers.AdminController",
     "Method": "GetUserByEmail",
     "RelativePath": "api/admin/{email}/GetUserByEmail",
     "HttpMethod": "GET",
@@ -17,15 +33,15 @@
   },
   {
     "ContainingType": "BookAPI.Controllers.AdminController",
-    "Method": "DisableUser",
-    "RelativePath": "api/admin/{id}/disable",
+    "Method": "ReactivateUser",
+    "RelativePath": "api/admin/{email}/reactivate",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Int32",
+        "Name": "email",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],
@@ -36,22 +52,6 @@
     "Method": "GetUserById",
     "RelativePath": "api/admin/{id}/GetUserById",
     "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BookAPI.Controllers.AdminController",
-    "Method": "ReactivateUser",
-    "RelativePath": "api/admin/{id}/reactivate",
-    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -257,32 +257,6 @@
   },
   {
     "ContainingType": "BookAPI.Controllers.BooksController",
-    "Method": "GetBookStock",
-    "RelativePath": "api/books/stock/{bookId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "bookId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Int32",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "BookAPI.Controllers.BooksController",
     "Method": "UpdateBookStock",
     "RelativePath": "api/books/UpdateBookStock/{id}",
     "HttpMethod": "PUT",
@@ -329,27 +303,6 @@
     ]
   },
   {
-    "ContainingType": "BookAPI.Controllers.ClientController",
-    "Method": "UpdateClient",
-    "RelativePath": "api/client/Update/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "clientToUpdate",
-        "Type": "Application.Dtos.ClientDTOs.ClientToUpdateDTO",
-        "IsRequired": true
-      },
-      {
-        "Name": "id",
-        "Type": "",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "BookAPI.Controllers.SaleOrderController",
     "Method": "GetSaleOrder",
     "RelativePath": "api/saleOrder/{saleOrderId}",
@@ -375,32 +328,6 @@
       }
     ],
     "EndpointName": "GetSaleOrder"
-  },
-  {
-    "ContainingType": "BookAPI.Controllers.SaleOrderController",
-    "Method": "ChangeSaleOrderStatus",
-    "RelativePath": "api/saleOrder/{saleOrderId}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "saleOrderId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Application.Dtos.SaleOrderDTOs.SaleOrderStatusDTO",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
   },
   {
     "ContainingType": "BookAPI.Controllers.SaleOrderController",
