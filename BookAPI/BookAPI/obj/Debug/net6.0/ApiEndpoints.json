@@ -415,44 +415,7 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "Application.Dtos.ClientDTOs.ClientDTO",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ],
-    "EndpointName": "GetClient"
-  },
-  {
-    "ContainingType": "BookAPI.Controllers.UserController",
-    "Method": "GetClientSaleOrders",
-    "RelativePath": "api/users/{id}/GetSaleOrders",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.ICollection\u00601[[Application.Dtos.SaleOrderDTOs.SaleOrderDTO, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "BookAPI.Controllers.UserController",

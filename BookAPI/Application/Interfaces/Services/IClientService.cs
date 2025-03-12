@@ -11,7 +11,7 @@ namespace Application.Interfaces.Services
     public interface IClientService : IUserService
     {   
 
-        public ICollection<SaleOrderDTO> GetClientSaleOrders(int clientId);  
+        ICollection<SaleOrderDTO> GetClientSaleOrders(int clientId);  
 
     }
 }

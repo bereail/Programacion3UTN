@@ -15,8 +15,7 @@ namespace Application.Interfaces.Services
 {
     public interface IUserService
     {            
-        BaseResponse Login(string mail, string password);
-        User? ValidateUser(AuthenticationRequestBody authenticationRequestBody);
+        BaseResponse Login(string mail, string password);     
         User? GetUserById(int id);
         User? GetUserByEmail(string email);
         List<UserDto> GetUsers();
@@ -30,3 +29,6 @@ namespace Application.Interfaces.Services
       
     }
 }
+
+
+/* User? ValidateUser(AuthenticationRequestBody authenticationRequestBody);*/

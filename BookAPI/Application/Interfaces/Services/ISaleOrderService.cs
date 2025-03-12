@@ -9,13 +9,13 @@ namespace Application.Interfaces.Services
 {
     public interface ISaleOrderService
     {
-        public SaleOrderDTO? GetSaleOrder(int SaleOrderId);
-        public ICollection<SaleOrderDTO> GetAllSaleOrders();
-        public SaleOrderDTO CreateSaleOrder(SaleOrderToCreateDTO saleOrderToCreateDTO, int clientId);
+        SaleOrderDTO? GetSaleOrder(int SaleOrderId);
+        ICollection<SaleOrderDTO> GetAllSaleOrders();
+       SaleOrderDTO CreateSaleOrder(SaleOrderToCreateDTO saleOrderToCreateDTO, int clientId);
 
-        public SaleOrderStatusDTO? UpdateSaleOrderStatus(int saleOrderId);
-        public SaleOrderDTO? CancelSaleOrder(int saleOrderId);
+        SaleOrderStatusDTO? UpdateSaleOrderStatus(int saleOrderId);
+        SaleOrderDTO? CancelSaleOrder(int saleOrderId);
 
-        public IEnumerable<SaleOrderDTO> GetOrdersByUserId(int userId);
+        IEnumerable<SaleOrderDTO> GetOrdersByUserId(int userId);
     }
 }

@@ -25,24 +25,21 @@ namespace Shop.API.Services.Implementations
             try
             {
                 if (saleOrderId <= 0)
-                {
-                    Console.WriteLine($"Error: Invalid saleOrderId {saleOrderId}");
+                {                   
                     throw new ArgumentException("Invalid sale order ID.");
                 }
 
                 var saleOrder = _saleOrderRepository.GetSaleOrder(saleOrderId);
 
                 if (saleOrder == null)
-                {
-                    Console.WriteLine($"Error: Sale order with ID {saleOrderId} not found.");
+                {                   
                     return null;
                 }
 
                 return _mapper.Map<SaleOrderDTO>(saleOrder);
             }
             catch (ArgumentException ex)
-            {
-                Console.WriteLine($"Validation Error: {ex.Message}");
+            {                
                 return null;
             }
             catch (Exception ex)
