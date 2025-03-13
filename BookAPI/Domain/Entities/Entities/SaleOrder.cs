@@ -24,6 +24,7 @@ namespace Domain.Entities.Entities
         [Required]
         public SaleOrderStatus Status { get; set; }
 
+        //Propiedad calculada
         public float Total
         {
             get

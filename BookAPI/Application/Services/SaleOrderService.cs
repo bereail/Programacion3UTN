@@ -43,8 +43,7 @@ namespace Shop.API.Services.Implementations
                 return null;
             }
             catch (Exception ex)
-            {
-                Console.WriteLine($"Unexpected Error: {ex.Message}");
+            {              
                 return null;
             }
         }
@@ -93,24 +92,6 @@ namespace Shop.API.Services.Implementations
             }
 
             return _mapper.Map<SaleOrderDTO>(saleOrder);
-        }
-
-
-        public SaleOrderStatusDTO? UpdateSaleOrderStatus(int saleOrderId)
-        {
-            var saleOrderToUpdate = _saleOrderRepository.GetSaleOrder(saleOrderId);
-            if (saleOrderToUpdate != null)
-            {
-                if (saleOrderToUpdate.Status == SaleOrderStatus.Cancelado)
-                    saleOrderToUpdate.Status = SaleOrderStatus.Finalizado;
-                else
-                    saleOrderToUpdate.Status = SaleOrderStatus.Cancelado;
-
-                _saleOrderRepository.SaveChanges();
-
-            }
-
-            return _mapper.Map<SaleOrderStatusDTO>(saleOrderToUpdate);
         }
 
         public IEnumerable<SaleOrderDTO> GetOrdersByUserId(int userId)

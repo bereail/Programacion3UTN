@@ -123,20 +123,6 @@ namespace Infraestructure.Data.Repositories
             return _userRepository.GetBookingIdsByUserId(userId);
         }
 
-
-
-
-        public User? ValidateUser(AuthenticationRequestBody authenticationRequestBody)
-        {
-            return _userRepository.ValidateUser(authenticationRequestBody);
-        }
-
-
-        public BaseResponse Login(string mail, string password)
-        {
-            throw new NotImplementedException();
-        }
-
         public ClientDTO AddClient(ClientToCreateDTO clientToCreateDTO)
         {
             if (string.IsNullOrWhiteSpace(clientToCreateDTO.Email))

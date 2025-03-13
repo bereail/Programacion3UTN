@@ -1,4 +1,4 @@
-﻿using Application.Interfaces.Repository;
+﻿/*using Application.Interfaces.Repository;
 using Domain.Entities;
 using Domain.Entities.Entities;
 using System;
@@ -52,3 +52,4 @@ namespace Infraestructure.Repositories
         }
     }
 }
+*/

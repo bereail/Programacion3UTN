@@ -12,8 +12,6 @@ namespace Application.Interfaces.Services
         SaleOrderDTO? GetSaleOrder(int SaleOrderId);
         ICollection<SaleOrderDTO> GetAllSaleOrders();
        SaleOrderDTO CreateSaleOrder(SaleOrderToCreateDTO saleOrderToCreateDTO, int clientId);
-
-        SaleOrderStatusDTO? UpdateSaleOrderStatus(int saleOrderId);
         SaleOrderDTO? CancelSaleOrder(int saleOrderId);
 
         IEnumerable<SaleOrderDTO> GetOrdersByUserId(int userId);

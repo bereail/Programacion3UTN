@@ -5,6 +5,7 @@ using Domain.Enums;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
+using static System.Net.WebRequestMethods;
 using static System.Reflection.Metadata.BlobBuilder;
 
 namespace BookAPI.Controllers
@@ -27,70 +28,64 @@ namespace BookAPI.Controllers
         {
             try
             {
-              
                 var userRole = HttpContext.User.Claims
                     .FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
-
-              
                 var books = _bookService.GetAllBooks();
-
-              
                 if (userRole != "Admin")
                 {
                     books = books.Where(b => b.Stock > 0).ToList();
                 }
-
-
-               
                 if (books == null || !books.Any())
                 {
                     return Ok(new { message = "Por el momento no hay libros disponibles." });
                 }
-
-              
                 return Ok(books);
             }
             catch (Exception ex)
             {
-            
+
                 return StatusCode(500, new { message = "Ocurrió un error en el servidor. Por favor, inténtalo nuevamente." });
             }
         }
 
 
-
         [HttpGet("GetBookByTitle")]
-[AllowAnonymous]
-public ActionResult<IEnumerable<BookGetDTO>> GetBook(string title)
-{
-    var userRole = HttpContext.User.Claims
-        .FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
+        [AllowAnonymous]
+        public ActionResult<IEnumerable<BookGetDTO>> GetBook(string title)
+        {
+            if (string.IsNullOrWhiteSpace(title))
+            {
+                return BadRequest(new { message = "El título no puede estar vacío." });
+            }
 
-    IEnumerable<BookGetDTO> books;
+            var userRole = HttpContext.User.Claims
+                .FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
 
-    try
-    {
-        books = _bookService.GetBookByTitle(title);
-    }
-    catch (KeyNotFoundException ex)
-    {
-        return NotFound(new { message = ex.Message });
-    }
-    catch (Exception ex)
-    {
-        return StatusCode(500, new { message = "Error interno del servidor", error = ex.Message });
-    }
+            try
+            {
+                var books = _bookService.GetBookByTitle(title);
 
+                if (!books.Any())
+                {
+                    return NotFound(new { message = "No se encontraron libros con ese título." });
+                }
 
-    if (userRole != "Admin")
-    {
-        books = books.Where(b => b.Stock > 0).ToList();
-    }
+                if (userRole != "Admin")
+                {
+                    books = books.Where(b => b.Stock > 0);
+                }
 
-    return Ok(books);
-}
-
-
+                return Ok(books);
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(new { message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Error interno del servidor", error = ex.Message });
+            }
+        }
 
 
         [HttpPost("CreateNewBook")]
@@ -108,6 +103,7 @@ public ActionResult<IEnumerable<BookGetDTO>> GetBook(string title)
             if (createdBook == null)
                 return BadRequest("No se pudo crear el libro. Verifique que el título no esté duplicado y que los datos sean correctos.");
 
+            // CreatedAtRoute es un método que se usa para devolver una respuesta HTTP 201 Created(creado) junto con una ubicación de la nueva entidad creada.
             return CreatedAtRoute("GetBook", new { bookId = createdBook.BookId }, createdBook);
         }
 
@@ -132,7 +128,7 @@ public ActionResult<IEnumerable<BookGetDTO>> GetBook(string title)
             }
             catch (Exception ex)
             {
-               
+
                 return StatusCode(500, new { Message = "Ocurrió un error al procesar la solicitud." });
             }
         }
@@ -163,7 +159,7 @@ public ActionResult<IEnumerable<BookGetDTO>> GetBook(string title)
 
             if (userRole != "Admin")
             {
-                return Forbid(); // Retorna 403 Forbidden si no es Admin
+                return Forbid();
             }
             try
             {
@@ -185,8 +181,6 @@ public ActionResult<IEnumerable<BookGetDTO>> GetBook(string title)
             }
         }
 
-
-
         [HttpPut("DisableBook")]
         public ActionResult DisableBook(int bookId)
         {
@@ -194,7 +188,7 @@ public ActionResult<IEnumerable<BookGetDTO>> GetBook(string title)
 
             if (userRole != "Admin")
             {
-                return Forbid(); // Retorna 403 Forbidden si no es Admin
+                return Forbid();
             }
             var updatedBook = _bookService.DisableBook(bookId);
 
@@ -205,45 +199,4 @@ public ActionResult<IEnumerable<BookGetDTO>> GetBook(string title)
         }
 
     }
-
-
-    //DE PRUEBA para verfificar si funcionan  -- ELIMINAR
-
-
-
-    /* [HttpGet("stock/{bookId}")]
-     public ActionResult<int> GetBookStock(int bookId)
-     {
-         var userRole = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
-
-         if (userRole != "Admin")
-         {
-             return Forbid(); // Retorna 403 Forbidden si no es Admin
-         }
-         var stock = _bookService.GetBookStock(bookId);
-
-         if (stock == 0)
-         {
-             return NotFound(new { message = "Book not found." });
-         }
-
-         return Ok(stock);
-     }*/
-
-    /*   [HttpGet("verify-stock")]
-       public IActionResult VerifyBookStock(int bookId, int requiredStock)
-       {
-           if (bookId <= 0 || requiredStock <= 0)
-               return BadRequest("El ID del libro y la cantidad requerida deben ser válidos.");
-
-           bool isStockAvailable = _bookService.GetBookStock(bookId);
-
-           if (!isStockAvailable)
-               return NotFound("No hay suficiente stock disponible para el libro.");
-
-           return Ok("Stock disponible.");
-       }
-    */
-
 }
-

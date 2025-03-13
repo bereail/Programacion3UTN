@@ -48,9 +48,6 @@ namespace Infraestructure.Repositories
         {
             var users = _context.Users.Where(u => (int)u.Role == (int)role).ToList();
 
-            Console.WriteLine($"Buscando usuarios con rol: {role} ({(int)role})");
-            Console.WriteLine($"Usuarios encontrados: {users.Count}");
-
             foreach (var user in users)
             {
                 Console.WriteLine($"Usuario encontrado: {user.Id} - {user.UserName}");

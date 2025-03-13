@@ -31,15 +31,16 @@ namespace Application.Data.Implementations
         {
             var books = _bookRepository.GetAllBooks()
                 .Where(b => b.Title.ToLower().Contains(title.ToLower()))
-                .ToList(); 
+                .ToList();
 
             if (!books.Any())
             {
-                throw new KeyNotFoundException("No se encontraron libros con ese título.");
+                return Enumerable.Empty<BookGetDTO>(); //200 OK
             }
 
             return _mapper.Map<IEnumerable<BookGetDTO>>(books);
         }
+
 
 
         public BookDTO? AddBook(BookToCreateDTO bookToCreateDTO)
@@ -47,9 +48,7 @@ namespace Application.Data.Implementations
             if (string.IsNullOrWhiteSpace(bookToCreateDTO.Title) || bookToCreateDTO.Stock < 0)
             {
                 return null; 
-            }
-
-           
+            }           
             var existingBook = _bookRepository.GetAllBooks()
                 .FirstOrDefault(b => b.Title.ToLower() == bookToCreateDTO.Title.ToLower());
 
@@ -103,6 +102,7 @@ namespace Application.Data.Implementations
         }
 
 
+        //Para desactivar un libro que no se visible para el user, modifica su stock a 0
         public BookDTO? DisableBook(int bookId)
         {
           
@@ -146,17 +146,9 @@ namespace Application.Data.Implementations
         }
 
 
-
-        public void RemoveStock(int quantity, Book bookToRemoveFromStock)
-        {
-            bookToRemoveFromStock.Stock -= quantity;
-            _bookRepository.SaveChanges();
-        }
-
         public int GetBookStock(int bookId)
         {
             var book = _bookRepository.GetBookById(bookId);
-
         
             if (book == null)
             {
@@ -165,7 +157,5 @@ namespace Application.Data.Implementations
 
             return book.Stock; 
         }
-
-
     }
 }

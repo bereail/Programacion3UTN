@@ -11,6 +11,7 @@ namespace Application.Dtos.BookDTOs
         [Required]
         public string Author { get; set; }
 
+        //Convierte el enum en text
         [JsonConverter(typeof(JsonStringEnumConverter))]
         public BookGenre Genre { get; set; }
         [Required]
