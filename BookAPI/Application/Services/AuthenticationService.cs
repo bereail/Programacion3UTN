@@ -42,7 +42,7 @@ namespace Infrastructure.Services
                 throw new UnauthorizedAccessException("El usuario no está activo.");
             }
             //Paso 2: Crear el token
-            var securityPassword = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(_options.SecretForKey)); //Traemos la SecretKey del Json. agregar antes: using Microsoft.IdentityModel.Tokens;
+            var securityPassword = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(_options.SecretForKey)); //Traemos la SecretKey del Json. 
 
             var credentials = new SigningCredentials(securityPassword, SecurityAlgorithms.HmacSha256);
           
@@ -54,7 +54,7 @@ namespace Infrastructure.Services
              new(ClaimTypes.Role, user.Role.ToString()) // ✅ Convertir a string
 };
 
-            var jwtSecurityToken = new JwtSecurityToken( //agregar using System.IdentityModel.Tokens.Jwt; Acá es donde se crea el token con toda la data que le pasamos antes.
+            var jwtSecurityToken = new JwtSecurityToken( // Acá es donde se crea el token con toda la data que le pasamos antes.
               _options.Issuer,
               _options.Audience,
               claimsForToken,

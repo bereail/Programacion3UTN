@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "GPtIxFMlTvY=",
+  "dgSpecHash": "Kzxjbqqb3Lgjm7HI5PVeRjpZJE+rrwW060n6+Y35o8TOujuqoCtLA0cOsZ1hFqUWGgnGUW1slKx6vcnmGz45Xw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bsolohaga\\Desktop\\bere\\GIT\\Programacion3UTN\\BookAPI\\Domain\\Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Bere\\GIT\\Programacion3UTN\\BookAPI\\Domain\\Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.31\\microsoft.windowsdesktop.app.ref.6.0.31.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.31\\microsoft.netcore.app.ref.6.0.31.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.31\\microsoft.aspnetcore.app.ref.6.0.31.nupkg.sha512"
+  ],
   "logs": []
 }

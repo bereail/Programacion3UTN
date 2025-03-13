@@ -10,13 +10,13 @@ namespace Application.Dtos.BookDTOs
         [Required(ErrorMessage = "El título es obligatorio.")]
         public string Title { get; set; }
 
-        [Required(ErrorMessage = "El título es obligatorio.")]
+        [Required(ErrorMessage = "El genero es obligatorio.")]
         public BookGenre Genre { get; set; }
 
         [Required(ErrorMessage = "El autor es obligatorio.")]
         public string Author { get; set; }
 
-        [Required(ErrorMessage = "El título es obligatorio.")]
+        [Required(ErrorMessage = "El precio es obligatorio.")]
         public float Price { get; set; }
         public string Description { get; set; }
        
