@@ -21,27 +21,7 @@ namespace BookAPI.Controllers
             _userService = userService;
             _clientService = clientService; 
         }
-
-        [HttpGet("{id}/GetUserById")]
-        public IActionResult GetUserById(int id)
-        {
-
-            var userRole = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
-
-            if (userRole != "Admin")
-            {
-                return Forbid();
-            }
-            try
-            {
-                var user = _userService.GetUserById(id);
-                return Ok(user);
-            }
-            catch (Exception ex)
-            {
-                return NotFound(ex.Message);
-            }
-        }
+       
 
         [HttpGet("{email}/GetUserByEmail")]
         public IActionResult GetUserByEmail(string email)

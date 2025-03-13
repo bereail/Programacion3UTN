@@ -14,7 +14,8 @@ using Domain.Entities.Entities;
 namespace Application.Interfaces.Services
 {
     public interface IUserService
-    {            
+    {
+        ClientDTO AddClient(ClientToCreateDTO clientToCreateDTO);
         User? GetUserById(int id);
         User? GetUserByEmail(string email);
         List<UserDto> GetUsers();
@@ -23,7 +24,6 @@ namespace Application.Interfaces.Services
         BaseResponse DisableAccount(string email);
         BaseResponse ReactivateUser(string email, ClaimsPrincipal user);
         List<int> GetBookingIdsByUserId(int userId);
-        public ClientDTO AddClient(ClientToCreateDTO clientToCreateDTO);
 
       
     }

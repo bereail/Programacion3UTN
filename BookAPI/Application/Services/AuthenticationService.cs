@@ -1,10 +1,8 @@
 ﻿using Application.Models.Requests;
 using Domain.Entities;
-
 using Microsoft.Extensions.Options;
 using System.Security.Claims;
 using System.Text;
-
 using Application.Interfaces;
 using Application.Interfaces.Repository;
 using Application.Interfaces.Services;
@@ -71,6 +69,8 @@ namespace Infrastructure.Services
             return tokenToReturn.ToString();
         }
 
+
+        //SIGN IN
         public User? ValidateUser(LoginRequest rq)
         {
             if (string.IsNullOrEmpty(rq.Email) || string.IsNullOrEmpty(rq.Password))
@@ -85,8 +85,6 @@ namespace Infrastructure.Services
           
             return null;
         }
-
-
 
 
         public class AuthenticacionServiceOptions

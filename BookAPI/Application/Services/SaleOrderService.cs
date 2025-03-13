@@ -20,6 +20,13 @@ namespace Shop.API.Services.Implementations
             _mapper = mapper;
             _bookService = bookService;
         }
+
+        public IEnumerable<SaleOrderDTO> GetOrdersByUserId(int userId)
+        {
+            var saleOrders = _saleOrderRepository.GetOrdersByUserId(userId);
+            return _mapper.Map<IEnumerable<SaleOrderDTO>>(saleOrders);
+        }
+
         public SaleOrderDTO? GetSaleOrder(int saleOrderId)
         {
             try
@@ -61,8 +68,14 @@ namespace Shop.API.Services.Implementations
             newSaleOrder.ClientId = clientId;
             newSaleOrder.Status = SaleOrderStatus.Finalizado;
 
+            if (newSaleOrder.BookQuantity <= 0)
+            {
+                throw new ArgumentException("La cantidad de libros a comprar debe ser mayor a 0.");
+            }
+
             var availableStock = _bookService.GetBookStock(newSaleOrder.BookId);
 
+         
             if (availableStock < newSaleOrder.BookQuantity)
             {
                 return null;
@@ -74,12 +87,19 @@ namespace Shop.API.Services.Implementations
                 return null;
             }
 
-            _bookService.UpdateBookStock(newSaleOrder.BookId, book.Stock - newSaleOrder.BookQuantity);
-            _saleOrderRepository.AddSaleOrder(newSaleOrder);
+            int newStock = book.Stock - newSaleOrder.BookQuantity;
+            if (newStock < 0)
+            {
+                throw new InvalidOperationException("No se puede reducir el stock a un valor negativo.");
+            }
 
+        
+            _bookService.UpdateBookStock(newSaleOrder.BookId, newStock);
+            _saleOrderRepository.AddSaleOrder(newSaleOrder);
 
             return _mapper.Map<SaleOrderDTO>(newSaleOrder);
         }
+
 
 
         public SaleOrderDTO? CancelSaleOrder(int saleOrderId)
@@ -94,11 +114,6 @@ namespace Shop.API.Services.Implementations
             return _mapper.Map<SaleOrderDTO>(saleOrder);
         }
 
-        public IEnumerable<SaleOrderDTO> GetOrdersByUserId(int userId)
-        {
-            var saleOrders = _saleOrderRepository.GetOrdersByUserId(userId);
-            return _mapper.Map<IEnumerable<SaleOrderDTO>>(saleOrders);
-        }
 
     }
 }

@@ -6,7 +6,7 @@ using Domain.Enums;
 namespace Domain.Entities.Entities
 {
     //Padre de client y admin 
-    //Clase abstracta: no se puede instanciar, solo heredar de ella (no me interesa que se cree un usuario sin Role)
+    //Clase abstracta: no se puede instanciar, solo heredar de ella 
     public abstract class User
     {
 

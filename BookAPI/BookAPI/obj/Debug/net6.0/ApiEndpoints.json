@@ -49,22 +49,6 @@
   },
   {
     "ContainingType": "BookAPI.Controllers.AdminController",
-    "Method": "GetUserById",
-    "RelativePath": "api/admin/{id}/GetUserById",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BookAPI.Controllers.AdminController",
     "Method": "GetAllAdmins",
     "RelativePath": "api/admin/GetAllAdmins",
     "HttpMethod": "GET",

@@ -7,8 +7,7 @@ namespace Infraestructure.Repositories
     {
         //Inyeccion de dependencia del contexto
         //internal: Puede obtener acceso al tipo o miembro cualquier código del mismo
-        //ensamblado, pero no de un ensamblado distinto.En otras palabras,
-        //se puede acceder a tipos o miembros internal desde el código que forma parte de la misma compilación.
+        //ensamblado, pero no de un ensamblado distinto.
         //Esto evita que otros componente externo manipulen el contexto, protegiente la db
         internal readonly ApplicationContext _context;
 

@@ -102,7 +102,7 @@ namespace Application.Data.Implementations
         }
 
 
-        //Para desactivar un libro que no se visible para el user, modifica su stock a 0
+        //Para desactivar un libro que no sea visible para el user, modifica su stock a 0
         public BookDTO? DisableBook(int bookId)
         {
           

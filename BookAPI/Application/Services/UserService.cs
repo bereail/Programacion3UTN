@@ -20,6 +20,28 @@ namespace Infraestructure.Data.Repositories
         protected readonly IUserRepository _userRepository;
         protected readonly IMapper _mapper;
 
+
+
+        //SIGN IN 
+        public ClientDTO AddClient(ClientToCreateDTO clientToCreateDTO)
+        {
+            if (string.IsNullOrWhiteSpace(clientToCreateDTO.Email))
+            {
+                throw new ArgumentException("El email no puede estar vacío.");
+            }
+
+            var existingUser = _userRepository.GetUserByEmail(clientToCreateDTO.Email);
+            if (existingUser != null)
+            {
+                throw new InvalidOperationException("El correo electrónico ya está registrado.");
+            }
+
+            var newClient = _mapper.Map<Client>(clientToCreateDTO);
+            _userRepository.AddUser(newClient);
+            _userRepository.SaveChanges();
+            return _mapper.Map<ClientDTO>(newClient);
+        }
+
         public UserDto? GetUser(string email, string password)
         {
             var user = _userRepository.GetUser(email, password);
@@ -123,24 +145,6 @@ namespace Infraestructure.Data.Repositories
             return _userRepository.GetBookingIdsByUserId(userId);
         }
 
-        public ClientDTO AddClient(ClientToCreateDTO clientToCreateDTO)
-        {
-            if (string.IsNullOrWhiteSpace(clientToCreateDTO.Email))
-            {
-                throw new ArgumentException("El email no puede estar vacío.");
-            }
-
-            var existingUser = _userRepository.GetUserByEmail(clientToCreateDTO.Email);
-            if (existingUser != null)
-            {
-                throw new InvalidOperationException("El correo electrónico ya está registrado.");
-            }
-
-            var newClient = _mapper.Map<Client>(clientToCreateDTO);
-            _userRepository.AddUser(newClient);
-            _userRepository.SaveChanges();
-            return _mapper.Map<ClientDTO>(newClient);
-        }
 
 
     }
